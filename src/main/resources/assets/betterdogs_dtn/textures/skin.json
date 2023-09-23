@@ -1,0 +1,11 @@
+{
+    "dog_skins" : [
+        {
+            "skin_name" : "Better Dogs - Borzoi",
+            "skin_id" : "betterdogs_dtn:textures/borzoi",
+            "use_model" : "betterdogs_dtn:borzoi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        }
+    ]
+}

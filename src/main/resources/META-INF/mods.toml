@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="GNU GPLv3"
+issueTrackerURL=""
+displayURL=""
+logoFile=""
+[[mods]] #mandatory
+    modId="betterdogs_dtn"
+    version="${file.jarVersion}"
+    updateJSONURL=""
+    displayName="Better Dogs For DTN"
+    credits=""
+    authors=""
+    description=""
+[[dependencies.betterdogs_dtn]] #optional
+    modId="forge"
+    mandatory=true
+    versionRange="[40.0.18,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.betterdogs_dtn]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.betterdogs_dtn]]
+    modId="doggytalents"
+    mandatory=true
+    versionRange="[1.16.0,)"
+    ordering="NONE"
+    side="BOTH"
