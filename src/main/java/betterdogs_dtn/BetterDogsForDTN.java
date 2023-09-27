@@ -1,7 +1,7 @@
 package betterdogs_dtn;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
-import doggytalents.api.events.RegisterCustomDogModelsEvent.Entry;
+import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
@@ -24,9 +24,9 @@ public class BetterDogsForDTN {
     }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
-        event.register(new Entry(getRes("borzoi"), ModelLayerLocations.BORZOI, false, false));
-        event.register(new Entry(getRes("corgi"), ModelLayerLocations.CORGI, false, false));
-        event.register(new Entry(getRes("shih_tzu"), ModelLayerLocations.SHIH_TZU, false, false));
+        event.register(new Builder(getRes("borzoi"), ModelLayerLocations.BORZOI));
+        event.register(new Builder(getRes("corgi"), ModelLayerLocations.CORGI));
+        event.register(new Builder(getRes("shih_tzu"), ModelLayerLocations.SHIH_TZU));
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
