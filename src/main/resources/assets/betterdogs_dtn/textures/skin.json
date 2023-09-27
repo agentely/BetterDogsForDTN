@@ -13,6 +13,13 @@
             "use_model" : "betterdogs_dtn:corgi",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Shih Tzu",
+            "skin_id" : "betterdogs_dtn:textures/shih_tzu",
+            "use_model" : "betterdogs_dtn:shih_tzu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }
