@@ -27,6 +27,13 @@
             "use_model" : "betterdogs_dtn:chihuahua",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Border Collie",
+            "skin_id" : "betterdogs_dtn:textures/border_collie",
+            "use_model" : "betterdogs_dtn:border_collie",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }

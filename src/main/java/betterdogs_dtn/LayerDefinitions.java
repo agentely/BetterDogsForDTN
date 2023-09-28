@@ -388,4 +388,106 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition border_collie() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 12.5F, 6.5F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, -0.25F, 2.0F));
+
+		PartDefinition bordercollie_tail2 = real_tail.addOrReplaceChild("bordercollie_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, 11.7F, 0.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_tail_rot2 = bordercollie_tail2.addOrReplaceChild("bordercollie_tail_rot2", CubeListBuilder.create().texOffs(100, 20).addBox(-1.0F, -23.5237F, 3.8556F, 3.0F, 7.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(63, 13).addBox(-1.0F, -23.5237F, 6.8556F, 3.0F, 7.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -11.0F, -11.5F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 16.25F, 5.75F));
+
+		PartDefinition bordercollie_leg6 = right_hind_leg.addOrReplaceChild("bordercollie_leg6", CubeListBuilder.create(), PartPose.offset(0.0F, 1.0F, 0.0F));
+
+		PartDefinition bordercollie_leg1_rot3 = bordercollie_leg6.addOrReplaceChild("bordercollie_leg1_rot3", CubeListBuilder.create().texOffs(124, 0).mirror().addBox(-1.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, -0.25F, -0.25F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 16.25F, 5.75F));
+
+		PartDefinition bordercollie_leg5 = left_hind_leg.addOrReplaceChild("bordercollie_leg5", CubeListBuilder.create(), PartPose.offset(0.0F, 1.0F, 0.0F));
+
+		PartDefinition bordercollie_leg1_rot2 = bordercollie_leg5.addOrReplaceChild("bordercollie_leg1_rot2", CubeListBuilder.create().texOffs(124, 0).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -0.25F, -0.25F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, -5.5F));
+
+		PartDefinition bordercollie_leg3 = right_front_leg.addOrReplaceChild("bordercollie_leg3", CubeListBuilder.create(), PartPose.offset(0.0F, -6.25F, 4.75F));
+
+		PartDefinition bordercollie_leg4_rot2 = bordercollie_leg3.addOrReplaceChild("bordercollie_leg4_rot2", CubeListBuilder.create().texOffs(106, 2).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.25F, -4.5F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, -5.5F));
+
+		PartDefinition bordercollie_leg2 = left_front_leg.addOrReplaceChild("bordercollie_leg2", CubeListBuilder.create(), PartPose.offset(0.0F, -6.25F, 4.75F));
+
+		PartDefinition bordercollie_leg4_rot3 = bordercollie_leg2.addOrReplaceChild("bordercollie_leg4_rot3", CubeListBuilder.create().texOffs(106, 2).mirror().addBox(-1.0F, -1.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 5.25F, -4.5F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_body2 = body.addOrReplaceChild("bordercollie_body2", CubeListBuilder.create().texOffs(43, 18).addBox(-3.5F, -5.0F, -3.75F, 7.0F, 7.0F, 5.0F, new CubeDeformation(0.0F))
+		.texOffs(96, 0).addBox(3.0F, -5.0F, -5.7F, 0.0F, 6.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(96, 5).addBox(-3.0F, -5.0F, -5.7F, 0.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 3.3F, 1.2F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_mane2 = upper_body.addOrReplaceChild("bordercollie_mane2", CubeListBuilder.create().texOffs(70, 16).addBox(-4.0F, -3.5F, -8.5F, 8.0F, 7.0F, 7.0F, new CubeDeformation(0.0F))
+		.texOffs(1819, 9).addBox(-4.0F, -3.5F, -10.5F, 8.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(96, 0).addBox(-3.0F, -2.3F, -10.4F, 0.0F, 6.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(96, 0).addBox(3.0F, -2.3F, -10.4F, 0.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, -0.2F, 4.2F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 10.0F, -6.75F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 3.5F, -0.25F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.0F, -1.5F, 5.0F, -0.0873F, -0.2182F, 0.0F));
+
+		PartDefinition collie_ear_left_rot_r1 = right_ear.addOrReplaceChild("collie_ear_left_rot_r1", CubeListBuilder.create().texOffs(45, 2).mirror().addBox(-2.0F, -1.5F, -0.5F, 4.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.8156F, -0.2839F, 1.2672F, -1.5708F, -0.0436F, -3.1416F));
+
+		PartDefinition collie_ear_hinge_right_r1 = right_ear.addOrReplaceChild("collie_ear_hinge_right_r1", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-2.0F, -1.0F, -0.5F, 4.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.8156F, -0.2839F, 3.7672F, -1.5708F, -0.0436F, -3.1416F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(2.0F, -1.5F, 5.0F, -0.0873F, 0.2182F, 0.0F));
+
+		PartDefinition collie_ear_right_rot_r1 = left_ear.addOrReplaceChild("collie_ear_right_rot_r1", CubeListBuilder.create().texOffs(45, 2).addBox(-2.0F, -1.5F, -0.5F, 4.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.4464F, -0.0216F, 1.0192F, -1.5708F, 0.0436F, 3.1416F));
+
+		PartDefinition collie_ear_hinge_left_r1 = left_ear.addOrReplaceChild("collie_ear_hinge_left_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -1.0F, -0.5F, 4.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.4464F, -0.0216F, 3.5192F, -1.5708F, 0.0436F, 3.1416F));
+
+		PartDefinition bordercollie_head2 = real_head.addOrReplaceChild("bordercollie_head2", CubeListBuilder.create(), PartPose.offset(0.0F, -1.75F, 11.0F));
+
+		PartDefinition bordercollie_head_rot2 = bordercollie_head2.addOrReplaceChild("bordercollie_head_rot2", CubeListBuilder.create().texOffs(73, 5).addBox(-2.25F, -2.35F, -8.15F, 6.0F, 5.0F, 5.0F, new CubeDeformation(0.08F))
+		.texOffs(1686, 23).addBox(-3.75F, -3.0F, -7.5F, 9.0F, 7.0F, 0.0F, new CubeDeformation(0.0F))
+		.texOffs(72, 4).addBox(0.25F, -2.49F, -8.3F, 1.0F, 2.0F, 2.0F, new CubeDeformation(-0.04F)), PartPose.offsetAndRotation(-0.75F, 7.75F, -7.5F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bone2 = bordercollie_head_rot2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(96, 14).addBox(-0.5F, 6.2247F, 6.6264F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.03F)), PartPose.offsetAndRotation(0.75F, -9.706F, -11.5752F, -0.4363F, 0.0F, 0.0F));
+
+		PartDefinition collie_mouth2 = bordercollie_head_rot2.addOrReplaceChild("collie_mouth2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.25F, 0.65F, -6.05F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = collie_mouth2.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(36, 13).addBox(-1.5F, 7.75F, -1.6263F, 3.0F, 2.0F, 3.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.5F, -8.0626F, -5.2431F, 0.2443F, 0.0F, 0.0F));
+
+		PartDefinition collie_nose2 = bone3.addOrReplaceChild("collie_nose2", CubeListBuilder.create().texOffs(1422, 14).addBox(-1.5F, 8.2912F, -0.3224F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.9F)), PartPose.offsetAndRotation(0.0F, -1.4133F, -1.6124F, -0.0873F, 0.0F, 0.0F));
+
+		PartDefinition collie_jaw2 = collie_mouth2.addOrReplaceChild("collie_jaw2", CubeListBuilder.create(), PartPose.offset(0.5F, -8.275F, -3.5518F));
+
+		PartDefinition collie_jaw_rot2 = collie_jaw2.addOrReplaceChild("collie_jaw_rot2", CubeListBuilder.create().texOffs(14, 24).addBox(-1.5F, 8.7919F, -5.3356F, 3.0F, 1.0F, 7.0F, new CubeDeformation(-0.25F))
+		.texOffs(107, 5).addBox(-1.5F, 9.2919F, -5.3356F, 3.0F, 1.0F, 7.0F, new CubeDeformation(-0.25F))
+		.texOffs(543, 0).addBox(-1.5F, 9.7019F, -5.3356F, 3.0F, 1.0F, 7.0F, new CubeDeformation(-0.3F)), PartPose.offsetAndRotation(0.0F, -0.1F, 0.0F, 0.4538F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_tongue2 = collie_jaw2.addOrReplaceChild("bordercollie_tongue2", CubeListBuilder.create(), PartPose.offset(0.25F, 2.6985F, -2.2603F));
+
+		PartDefinition bordercollie_tongue_rot2 = bordercollie_tongue2.addOrReplaceChild("bordercollie_tongue_rot2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.5111F, -0.8342F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_tongue_walk2 = bordercollie_tongue_rot2.addOrReplaceChild("bordercollie_tongue_walk2", CubeListBuilder.create().texOffs(615, 15).addBox(-1.6974F, 8.5915F, -8.0003F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.5F)), PartPose.offset(0.0F, -2.1F, 2.0F));
+
+		PartDefinition oog2 = bordercollie_head_rot2.addOrReplaceChild("oog2", CubeListBuilder.create().texOffs(45, 13).addBox(-0.2013F, 0.6812F, -2.56F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(53, 14).addBox(0.5487F, 0.6912F, -2.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
+		.texOffs(74, 8).addBox(0.5487F, 0.6912F, -2.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.6F, -1.6F, -5.8F, 0.0F, 0.0F, -0.0436F));
+
+		PartDefinition oog3 = bordercollie_head_rot2.addOrReplaceChild("oog3", CubeListBuilder.create().texOffs(45, 13).addBox(1.9513F, 0.6812F, -2.56F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(53, 14).addBox(1.2013F, 0.6912F, -2.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
+		.texOffs(57, 14).addBox(1.2013F, 0.6912F, -2.6F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-2.85F, -1.7F, -5.8F, 0.0F, 0.0F, 0.0436F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
