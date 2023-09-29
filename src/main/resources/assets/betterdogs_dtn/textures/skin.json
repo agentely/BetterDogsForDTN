@@ -49,6 +49,14 @@
             "use_model" : "betterdogs_dtn:border_collie",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+
+        {
+            "skin_name" : "Better Dogs - Boxer",
+            "skin_id" : "betterdogs_dtn:textures/boxer",
+            "use_model" : "betterdogs_dtn:boxer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }
