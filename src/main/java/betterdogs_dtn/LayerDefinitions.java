@@ -695,4 +695,93 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+
+	public static LayerDefinition boxer() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 13.4F, 3.4F));
+
+		PartDefinition body_rotation = body.addOrReplaceChild("body_rotation", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.6F, -1.4F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_1 = body_rotation.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition boxer_body = body_sub_1.addOrReplaceChild("boxer_body", CubeListBuilder.create().texOffs(515, 16).addBox(-3.5F, -2.25F, -3.0F, 7.0F, 9.0F, 7.0F, new CubeDeformation(-0.3F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 8.0F));
+
+		PartDefinition boxer_tail = tail.addOrReplaceChild("boxer_tail", CubeListBuilder.create().texOffs(1583, 12).addBox(-0.5F, -0.2936F, -0.6989F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition boxer_tail_bottom = boxer_tail.addOrReplaceChild("boxer_tail_bottom", CubeListBuilder.create().texOffs(1576, 0).addBox(-0.999F, -4.1654F, 2.1673F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.202F)), PartPose.offsetAndRotation(0.5F, 8.35F, -4.15F, -0.5672F, 0.0F, 0.0F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(-1.0F, 10.5F, -7.9F));
+
+		PartDefinition boxer_head = head.addOrReplaceChild("boxer_head", CubeListBuilder.create(), PartPose.offset(2.0F, -0.35F, 0.9F));
+
+		PartDefinition head_main = boxer_head.addOrReplaceChild("head_main", CubeListBuilder.create().texOffs(1558, 5).addBox(-4.0F, -3.05F, -3.5F, 6.0F, 6.0F, 6.0F, new CubeDeformation(-0.1F))
+		.texOffs(1571, 12).addBox(-2.0F, 2.35F, -2.6F, 2.0F, 1.0F, 4.0F, new CubeDeformation(-0.1F))
+		.texOffs(1602, 23).addBox(-1.5F, -2.9714F, -3.42F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition eye_brow_right = head_main.addOrReplaceChild("eye_brow_right", CubeListBuilder.create().texOffs(1548, 0).addBox(-1.9001F, -13.4965F, -5.0F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-1.25F, 10.7F, 1.3F, 0.0F, 0.0F, -0.0349F));
+
+		PartDefinition eye_brow_left = head_main.addOrReplaceChild("eye_brow_left", CubeListBuilder.create().texOffs(1548, 0).addBox(-2.1374F, -13.5254F, -5.0F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.25F, 10.8F, 1.3F, 0.0F, 0.0F, 0.0349F));
+
+		PartDefinition boxer_mouth = head_main.addOrReplaceChild("boxer_mouth", CubeListBuilder.create().texOffs(1566, 17).addBox(-2.0F, -14.0002F, -5.99F, 4.0F, 3.0F, 3.0F, new CubeDeformation(-0.16F))
+		.texOffs(1520, 26).addBox(-2.0F, -12.2483F, -6.85F, 1.0F, 2.0F, 4.0F, new CubeDeformation(0.0F))
+		.texOffs(1522, 29).addBox(-2.0F, -10.9083F, -5.6293F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F))
+		.texOffs(1522, 29).addBox(1.0F, -10.9083F, -5.6293F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F))
+		.texOffs(1520, 26).addBox(1.0F, -12.2483F, -6.85F, 1.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 13.4F, 0.35F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition boxer_nose = head_main.addOrReplaceChild("boxer_nose", CubeListBuilder.create().texOffs(1566, 0).addBox(1.0F, -11.3828F, -10.2424F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-2.5F, 11.45F, 3.85F, -0.0698F, 0.0F, 0.0F));
+
+		PartDefinition boxer_lip = head_main.addOrReplaceChild("boxer_lip", CubeListBuilder.create().texOffs(1554, 0).addBox(1.0F, -11.6957F, -9.68F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.5F, 12.05F, 3.15F, -0.0524F, 0.0F, 0.0F));
+
+		PartDefinition boxer_jaw = head_main.addOrReplaceChild("boxer_jaw", CubeListBuilder.create().texOffs(1587, 12).addBox(1.0F, -11.5017F, -9.5002F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-3.5F, 12.05F, 3.75F, 0.0175F, 0.0F, 0.0F));
+
+		PartDefinition boxer_eye_left = head_main.addOrReplaceChild("boxer_eye_left", CubeListBuilder.create().texOffs(1562, 0).addBox(0.8022F, -11.5999F, -9.35F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.03F))
+		.texOffs(1566, 0).addBox(0.4522F, -11.5999F, -9.35F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F)), PartPose.offset(-0.5F, 9.8F, 5.8F));
+
+		PartDefinition boxer_eye_right = head_main.addOrReplaceChild("boxer_eye_right", CubeListBuilder.create().texOffs(1566, 0).addBox(1.5417F, -11.578F, -9.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(1562, 0).addBox(1.1917F, -11.578F, -9.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.03F)), PartPose.offset(-4.5F, 9.8F, 5.9F));
+
+		PartDefinition boxer_nose_bridge = head_main.addOrReplaceChild("boxer_nose_bridge", CubeListBuilder.create().texOffs(1557, 17).addBox(-0.5F, -10.5311F, -5.2581F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.05F)), PartPose.offsetAndRotation(-1.0F, 9.6F, -2.6F, -0.3927F, 0.0F, 0.0F));
+
+		PartDefinition boxer_ear_right = boxer_head.addOrReplaceChild("boxer_ear_right", CubeListBuilder.create().texOffs(1577, 17).addBox(1.8923F, -13.6578F, -5.7154F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1550, 4).addBox(2.1423F, -13.7578F, -8.5154F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1550, 4).addBox(2.8478F, -13.978F, -8.5865F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1555, 4).addBox(2.1694F, -10.7517F, -7.9193F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-9.25F, 10.45F, 5.75F, 0.0F, -0.1309F, 0.0873F));
+
+		PartDefinition boxer_ear_left = boxer_head.addOrReplaceChild("boxer_ear_left", CubeListBuilder.create().texOffs(1577, 17).addBox(2.1077F, -13.6578F, -5.7154F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1550, 4).addBox(1.8577F, -13.7578F, -8.5154F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1550, 4).addBox(1.1522F, -13.978F, -8.5865F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1555, 4).addBox(1.8393F, -10.7517F, -8.0189F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.25F, 10.85F, 6.5F, 0.0F, 0.1309F, -0.0873F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, 7.0F));
+
+		PartDefinition doberman_rot6 = right_hind_leg.addOrReplaceChild("doberman_rot6", CubeListBuilder.create().texOffs(1168, 22).addBox(-1.0F, -2.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5F, 2.0F, 0.0F));
+
+		PartDefinition boxer3 = doberman_rot6.addOrReplaceChild("boxer3", CubeListBuilder.create().texOffs(1580, 20).addBox(-2.5F, -8.8492F, 6.0349F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(1.5F, 6.35F, -8.65F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.0F, 16.0F, 7.0F));
+
+		PartDefinition doberman_rot3 = left_hind_leg.addOrReplaceChild("doberman_rot3", CubeListBuilder.create().texOffs(1168, 22).addBox(1.0F, -8.0F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 8.0F, -7.0F));
+
+		PartDefinition boxer2 = doberman_rot3.addOrReplaceChild("boxer2", CubeListBuilder.create().texOffs(1580, 20).addBox(0.5F, -8.7992F, 6.0349F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.5F, 0.3F, -1.65F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
+
+		PartDefinition doberman_rot5 = right_front_leg.addOrReplaceChild("doberman_rot5", CubeListBuilder.create(), PartPose.offsetAndRotation(2.5F, 1.0F, -4.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition doberman_rot4_r1 = doberman_rot5.addOrReplaceChild("doberman_rot4_r1", CubeListBuilder.create().texOffs(1159, 14).addBox(-3.25F, -9.0F, 10.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 7.0F, 8.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.6F, 16.0F, -4.0F));
+
+		PartDefinition doberman_rot4 = left_front_leg.addOrReplaceChild("doberman_rot4", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.6F, 1.0F, -4.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition doberman_rot3_r1 = doberman_rot4.addOrReplaceChild("doberman_rot3_r1", CubeListBuilder.create().texOffs(1159, 14).addBox(1.35F, -9.0F, 10.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 7.0F, 8.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create().texOffs(1580, 18).addBox(-2.5F, -3.0F, -4.5F, 7.0F, 6.0F, 8.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(-1.0F, 13.6F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
