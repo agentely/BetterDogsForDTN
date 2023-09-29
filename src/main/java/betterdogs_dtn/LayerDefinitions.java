@@ -595,4 +595,104 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition irish_terrier() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 14.25F, 8.25F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, -1.25F, -0.75F));
+
+		PartDefinition irishterrier_tail3 = real_tail.addOrReplaceChild("irishterrier_tail3", CubeListBuilder.create(), PartPose.offset(1.5F, 1.7F, -5.0F));
+
+		PartDefinition irishterrier_tail_rot3 = irishterrier_tail3.addOrReplaceChild("irishterrier_tail_rot3", CubeListBuilder.create(), PartPose.offset(-0.5F, 1.413F, 6.155F));
+
+		PartDefinition irishterrier_tail_bottom3 = irishterrier_tail_rot3.addOrReplaceChild("irishterrier_tail_bottom3", CubeListBuilder.create().texOffs(1809, 16).addBox(-1.5F, -6.2F, 3.1F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5F, 3.2F, -4.1F));
+
+		PartDefinition irishterrier_tail_top3 = irishterrier_tail_rot3.addOrReplaceChild("irishterrier_tail_top3", CubeListBuilder.create(), PartPose.offset(0.0F, 2.45F, -0.1F));
+
+		PartDefinition irishterrier_tail_top_rot3 = irishterrier_tail_top3.addOrReplaceChild("irishterrier_tail_top_rot3", CubeListBuilder.create().texOffs(1597, 0).addBox(-1.0F, -0.32F, -0.86F, 2.0F, 6.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.0F, -0.15F, -0.3F, 1.2217F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, 7.0F));
+
+		PartDefinition irishterrier_left_hind_leg = left_hind_leg.addOrReplaceChild("irishterrier_left_hind_leg", CubeListBuilder.create().texOffs(1853, 15).addBox(-1.0F, -0.25F, -6.5F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F))
+		.texOffs(1252, 15).addBox(-1.0F, -2.25F, -1.5F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.5F, -0.05F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, 7.0F));
+
+		PartDefinition irishterrier_right_hind_leg = right_hind_leg.addOrReplaceChild("irishterrier_right_hind_leg", CubeListBuilder.create().texOffs(1853, 15).mirror().addBox(-1.0F, -0.25F, -6.5F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(1252, 15).mirror().addBox(-1.0F, -2.25F, -1.5F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, -0.5F, -0.05F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.5F, 19.0F, -5.25F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_front_right_leg = right_front_leg.addOrReplaceChild("irishterrier_front_right_leg", CubeListBuilder.create().texOffs(1853, 0).mirror().addBox(-1.0F, 2.0F, -10.5F, 2.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, -3.0F, 4.55F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 19.0F, -5.25F));
+
+		PartDefinition irishterrier_front_left_leg = left_front_leg.addOrReplaceChild("irishterrier_front_left_leg", CubeListBuilder.create().texOffs(1853, 0).addBox(-0.75F, -1.0F, -6.5F, 2.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.25F, -0.55F, 0.05F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 16.0F, 1.0F));
+
+		PartDefinition irishterrier_body2 = body.addOrReplaceChild("irishterrier_body2", CubeListBuilder.create().texOffs(1921, 19).addBox(-2.5F, 0.0F, -2.1F, 5.0F, 8.0F, 5.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(0.0F, -0.45F, -0.3F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 15.0F, -4.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_mane = upper_body.addOrReplaceChild("irishterrier_mane", CubeListBuilder.create().texOffs(1895, 17).addBox(-3.0F, -14.25F, -1.55F, 6.0F, 8.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 11.0F, -2.75F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, -6.5F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 2.75F, 1.75F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.75F, -6.0F, -3.5F));
+
+		PartDefinition irishterrier_ear_right = right_ear.addOrReplaceChild("irishterrier_ear_right", CubeListBuilder.create().texOffs(715, 4).mirror().addBox(-0.6913F, -2.149F, -1.4808F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.9368F, -0.0527F, 1.2733F, 0.3106F, 0.1871F, -0.1555F));
+
+		PartDefinition bone191 = irishterrier_ear_right.addOrReplaceChild("bone191", CubeListBuilder.create().texOffs(771, 4).mirror().addBox(-0.343F, 0.6753F, -0.662F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.3483F, -2.0768F, -0.5358F, -0.8727F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, -6.0F, -3.5F));
+
+		PartDefinition irishterrier_ear_left = left_ear.addOrReplaceChild("irishterrier_ear_left", CubeListBuilder.create().texOffs(715, 4).addBox(-2.3087F, -2.149F, -1.4808F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.1868F, -0.0527F, 1.2733F, 0.3106F, -0.1871F, 0.1555F));
+
+		PartDefinition bone184 = irishterrier_ear_left.addOrReplaceChild("bone184", CubeListBuilder.create().texOffs(771, 4).addBox(-1.457F, 0.1268F, -0.0712F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.8517F, -2.1768F, -1.3358F, -0.8727F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_head = real_head.addOrReplaceChild("irishterrier_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.0F, -0.25F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_neck_full = irishterrier_head.addOrReplaceChild("irishterrier_neck_full", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, -1.75F, 3.25F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_neck = irishterrier_neck_full.addOrReplaceChild("irishterrier_neck", CubeListBuilder.create(), PartPose.offset(-1.0F, 2.85F, 1.35F));
+
+		PartDefinition irishterrier_neck_rot = irishterrier_neck.addOrReplaceChild("irishterrier_neck_rot", CubeListBuilder.create().texOffs(7, 8).addBox(-2.0F, -1.6F, -2.9F, 4.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -3.0F, -0.25F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_head_full = irishterrier_head.addOrReplaceChild("irishterrier_head_full", CubeListBuilder.create(), PartPose.offset(1.0F, -1.75F, 2.75F));
+
+		PartDefinition irishterrier_head_rot = irishterrier_head_full.addOrReplaceChild("irishterrier_head_rot", CubeListBuilder.create().texOffs(1763, 11).addBox(-3.5F, -4.25F, -2.3F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.5F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_eye_left = irishterrier_head_rot.addOrReplaceChild("irishterrier_eye_left", CubeListBuilder.create().texOffs(751, 6).addBox(1.06F, -17.35F, 1.63F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(751, 4).addBox(1.36F, -17.2F, 1.635F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 14.0F, -4.0F));
+
+		PartDefinition irishterrier_eye_right = irishterrier_head_rot.addOrReplaceChild("irishterrier_eye_right", CubeListBuilder.create().texOffs(751, 6).mirror().addBox(-2.06F, -17.35F, 1.63F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(751, 4).mirror().addBox(-2.36F, -17.2F, 1.635F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.0F, 14.0F, -4.0F));
+
+		PartDefinition irishterrier_mouth2 = irishterrier_head_rot.addOrReplaceChild("irishterrier_mouth2", CubeListBuilder.create().texOffs(1602, 13).addBox(-2.0F, -2.9899F, -1.3271F, 4.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 1.46F, -4.2348F, 0.2967F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_neusbrug = irishterrier_mouth2.addOrReplaceChild("irishterrier_neusbrug", CubeListBuilder.create().texOffs(1576, 7).addBox(-1.0F, -0.5381F, -1.9909F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.01F)), PartPose.offsetAndRotation(0.0F, -2.9719F, 2.6553F, 0.5672F, 0.0F, 0.0F));
+
+		PartDefinition bone197 = irishterrier_mouth2.addOrReplaceChild("bone197", CubeListBuilder.create().texOffs(401, 19).addBox(-2.0F, -1.6406F, -0.859F, 4.0F, 3.0F, 3.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, 0.403F, -0.5783F, -0.0873F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_mouth = irishterrier_mouth2.addOrReplaceChild("irishterrier_mouth", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.248F, 1.8622F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_mouth_beard = irishterrier_mouth.addOrReplaceChild("irishterrier_mouth_beard", CubeListBuilder.create().texOffs(1121, 2).addBox(-1.5F, 0.3251F, 0.5771F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.7894F, -3.7479F));
+
+		PartDefinition bone204 = irishterrier_mouth.addOrReplaceChild("bone204", CubeListBuilder.create().texOffs(751, 18).addBox(-1.5F, -0.5688F, -1.4452F, 3.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.6833F, -1.7257F));
+
+		PartDefinition irishterrier_tongue = irishterrier_mouth.addOrReplaceChild("irishterrier_tongue", CubeListBuilder.create(), PartPose.offset(0.25F, 2.9235F, -3.7428F));
+
+		PartDefinition irishterrier_tongue_rot = irishterrier_tongue.addOrReplaceChild("irishterrier_tongue_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.239F, 0.0F, 0.0F));
+
+		PartDefinition irishterrier_tongue2 = irishterrier_tongue_rot.addOrReplaceChild("irishterrier_tongue2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.2F, -0.7F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone182 = irishterrier_mouth2.addOrReplaceChild("bone182", CubeListBuilder.create().texOffs(739, 2).addBox(-1.5F, -1.6298F, -0.8611F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.7F)), PartPose.offset(-0.05F, -2.0342F, -1.4958F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

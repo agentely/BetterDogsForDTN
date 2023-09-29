@@ -29,6 +29,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("shih_tzu"), ModelLayerLocations.SHIH_TZU));
         event.register(new Builder(getRes("border_collie"), ModelLayerLocations.BORDER_COLLIE));
         event.register(new Builder(getRes("basset_hound"), ModelLayerLocations.BASSET_HOUND));
+        event.register(new Builder(getRes("irish_terrier"), ModelLayerLocations.IRISH_TERRIER));
         event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
             .withDefaultScale(0.704f));
     }
@@ -44,6 +45,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.CHIHUAHUA, LayerDefinitions::chihuahua);
         event.registerLayerDefinition(ModelLayerLocations.BASSET_HOUND, LayerDefinitions::basset_hound);
         event.registerLayerDefinition(ModelLayerLocations.BORDER_COLLIE, LayerDefinitions::border_collie);
+        event.registerLayerDefinition(ModelLayerLocations.IRISH_TERRIER, LayerDefinitions::irish_terrier);
     }
 
     public static ResourceLocation getRes(String name) {
