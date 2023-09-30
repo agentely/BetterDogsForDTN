@@ -1,62 +1,180 @@
 {
     "dog_skins" : [
         {
-            "skin_name" : "Better Dogs - Borzoi",
-            "skin_id" : "betterdogs_dtn:textures/borzoi",
+            "skin_name" : "Better Dogs - Borzoi (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/borzoi_black_tan",
             "use_model" : "betterdogs_dtn:borzoi",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Corgi",
-            "skin_id" : "betterdogs_dtn:textures/corgi",
+            "skin_name" : "Better Dogs - Borzoi (White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/borzoi_white_tan",
+            "use_model" : "betterdogs_dtn:borzoi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Borzoi (White)",
+            "skin_id" : "betterdogs_dtn:textures/borzoi_white",
+            "use_model" : "betterdogs_dtn:borzoi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Corgi (Black Tan) #1",
+            "skin_id" : "betterdogs_dtn:textures/corgi_black_tan_1",
             "use_model" : "betterdogs_dtn:corgi",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Shih Tzu",
-            "skin_id" : "betterdogs_dtn:textures/shih_tzu",
+            "skin_name" : "Better Dogs - Corgi (Black Tan) #2",
+            "skin_id" : "betterdogs_dtn:textures/corgi_black_tan_2",
+            "use_model" : "betterdogs_dtn:corgi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Corgi (Black)",
+            "skin_id" : "betterdogs_dtn:textures/corgi_black",
+            "use_model" : "betterdogs_dtn:corgi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Corgi (White Tan) #1",
+            "skin_id" : "betterdogs_dtn:textures/corgi_white_tan_1",
+            "use_model" : "betterdogs_dtn:corgi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Corgi (White Tan) #2",
+            "skin_id" : "betterdogs_dtn:textures/corgi_white_tan_2",
+            "use_model" : "betterdogs_dtn:corgi",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Shih Tzu (Do)",
+            "skin_id" : "betterdogs_dtn:textures/shih_tzu_do",
             "use_model" : "betterdogs_dtn:shih_tzu",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Chihuahua",
-            "skin_id" : "betterdogs_dtn:textures/chihuahua",
+            "skin_name" : "Better Dogs - Shih Tzu (Tan)",
+            "skin_id" : "betterdogs_dtn:textures/shih_tzu_tan",
+            "use_model" : "betterdogs_dtn:shih_tzu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Shih Tzu (White)",
+            "skin_id" : "betterdogs_dtn:textures/shih_tzu_white",
+            "use_model" : "betterdogs_dtn:shih_tzu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Chihuahua (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_black_tan",
             "use_model" : "betterdogs_dtn:chihuahua",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Basset Hound",
-            "skin_id" : "betterdogs_dtn:textures/basset_hound",
+            "skin_name" : "Better Dogs - Chihuahua (Black Tan - Tongue)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_black_tan_tongue",
+            "use_model" : "betterdogs_dtn:chihuahua",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Chihuahua (White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_white_tan",
+            "use_model" : "betterdogs_dtn:chihuahua",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Chihuahua (White Tan - Tongue)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_white_tan_tongue",
+            "use_model" : "betterdogs_dtn:chihuahua",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Basset Hound (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/basset_hound_brown",
             "use_model" : "betterdogs_dtn:basset_hound",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Irish Terrier",
-            "skin_id" : "betterdogs_dtn:textures/irish_terrier",
+            "skin_name" : "Better Dogs - Basset Hound (Black)",
+            "skin_id" : "betterdogs_dtn:textures/basset_hound_black",
+            "use_model" : "betterdogs_dtn:basset_hound",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Irish Terrier (Black)",
+            "skin_id" : "betterdogs_dtn:textures/irish_terrier_black",
             "use_model" : "betterdogs_dtn:irish_terrier",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
-
         {
-            "skin_name" : "Better Dogs - Border Collie",
-            "skin_id" : "betterdogs_dtn:textures/border_collie",
+            "skin_name" : "Better Dogs - Irish Terrier (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/irish_terrier_brown",
+            "use_model" : "betterdogs_dtn:irish_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Border Collie (Black)",
+            "skin_id" : "betterdogs_dtn:textures/border_collie_black",
             "use_model" : "betterdogs_dtn:border_collie",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
-
         {
-            "skin_name" : "Better Dogs - Boxer",
-            "skin_id" : "betterdogs_dtn:textures/boxer",
+            "skin_name" : "Better Dogs - Border Collie (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/border_collie_brown",
+            "use_model" : "betterdogs_dtn:border_collie",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Border Collie (Blue Merle)",
+            "skin_id" : "betterdogs_dtn:textures/border_collie_blue_merle",
+            "use_model" : "betterdogs_dtn:border_collie",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Boxer (Dark Brown)",
+            "skin_id" : "betterdogs_dtn:textures/boxer_dark_brown",
+            "use_model" : "betterdogs_dtn:boxer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Boxer (Medium Brown)",
+            "skin_id" : "betterdogs_dtn:textures/boxer_medium_brown",
+            "use_model" : "betterdogs_dtn:boxer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Boxer (Light Brown)",
+            "skin_id" : "betterdogs_dtn:textures/boxer_light_brown",
             "use_model" : "betterdogs_dtn:boxer",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         }
+        
     ]
 }
