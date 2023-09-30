@@ -92,15 +92,15 @@
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Chihuahua (White Tan)",
-            "skin_id" : "betterdogs_dtn:textures/chihuahua_white_tan",
+            "skin_name" : "Better Dogs - Chihuahua (Light)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_light",
             "use_model" : "betterdogs_dtn:chihuahua",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Chihuahua (White Tan - Tongue)",
-            "skin_id" : "betterdogs_dtn:textures/chihuahua_white_tan_tongue",
+            "skin_name" : "Better Dogs - Chihuahua (Light - Tongue)",
+            "skin_id" : "betterdogs_dtn:textures/chihuahua_light_tongue",
             "use_model" : "betterdogs_dtn:chihuahua",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
