@@ -223,6 +223,20 @@
             "use_model" : "betterdogs_dtn:german_shepherd",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Rottweiler (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/rottweiler_brown",
+            "use_model" : "betterdogs_dtn:rottweiler",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Rottweiler (Dark Brown)",
+            "skin_id" : "betterdogs_dtn:textures/rottweiler_dark_brown",
+            "use_model" : "betterdogs_dtn:rottweiler",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }

@@ -932,4 +932,82 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+
+	public static LayerDefinition rottweiler() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 8.25F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 1.5F, -1.25F, 1.2217F, 0.0F, 0.0F));
+
+		PartDefinition rottweiler7 = real_tail.addOrReplaceChild("rottweiler7", CubeListBuilder.create().texOffs(1307, 8).addBox(-1.999F, 2.3617F, -0.174F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(2.5F, -1.0F, 4.0F, -1.2217F, 0.0F, 0.0F));
+
+		PartDefinition bone2 = rottweiler7.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(1317, 20).addBox(-0.999F, -1.4F, 1.2439F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(-1.0F, 7.1F, -1.4F, -0.5672F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, 7.0F));
+
+		PartDefinition rottweiler4 = right_hind_leg.addOrReplaceChild("rottweiler4", CubeListBuilder.create().texOffs(1295, 13).addBox(-3.5F, -8.0F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.5F, 8.0F, -7.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(0.5F, 16.0F, 7.0F));
+
+		PartDefinition rottweiler3 = left_hind_leg.addOrReplaceChild("rottweiler3", CubeListBuilder.create().texOffs(1295, 13).addBox(1.5F, -8.0F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, 8.0F, -7.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
+
+		PartDefinition rottweiler6 = right_front_leg.addOrReplaceChild("rottweiler6", CubeListBuilder.create().texOffs(1295, 13).addBox(-3.5F, -8.0F, -5.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.5F, 8.0F, 4.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(0.5F, 16.0F, -4.0F));
+
+		PartDefinition rottweiler5 = left_front_leg.addOrReplaceChild("rottweiler5", CubeListBuilder.create().texOffs(1295, 13).addBox(1.5F, -8.0F, -5.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, 8.0F, 4.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.2F, 4.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_2 = body.addOrReplaceChild("body_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, -2.2F, 0.2F));
+
+		PartDefinition rottweiler2 = body_sub_2.addOrReplaceChild("rottweiler2", CubeListBuilder.create().texOffs(1312, 0).addBox(-3.5F, -3.75F, -1.75F, 7.0F, 7.0F, 9.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, -0.15F, -0.35F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 14.7F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_2 = upper_body.addOrReplaceChild("mane_sub_2", CubeListBuilder.create(), PartPose.offset(1.0F, 2.5F, 3.2F));
+
+		PartDefinition rottweiler10 = mane_sub_2.addOrReplaceChild("rottweiler10", CubeListBuilder.create().texOffs(1331, 18).addBox(-8.0F, -6.75F, -1.0F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(4.0F, 1.25F, -5.8F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 9.9F, -6.2F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 3.6F, -0.8F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -5.5F, 0.5F));
+
+		PartDefinition rottweiler_ear_right2 = right_ear.addOrReplaceChild("rottweiler_ear_right2", CubeListBuilder.create().texOffs(1301, 23).addBox(1.75F, -13.4F, -6.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1323, 26).addBox(2.0F, -13.5F, -9.0F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1295, 23).addBox(2.0271F, -10.494F, -8.4039F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.75F, 11.95F, 7.25F, 0.0F, -0.0873F, 0.0873F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.5F, -5.4F, 0.5F));
+
+		PartDefinition rottweiler_ear_left2 = left_ear.addOrReplaceChild("rottweiler_ear_left2", CubeListBuilder.create().texOffs(1301, 23).addBox(2.25F, -13.4F, -6.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1323, 26).addBox(2.0F, -13.5F, -9.0F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1295, 23).addBox(1.9816F, -10.494F, -8.5035F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.75F, 12.25F, 7.25F, 0.0F, 0.0873F, -0.0873F));
+
+		PartDefinition rottweiler9 = real_head.addOrReplaceChild("rottweiler9", CubeListBuilder.create().texOffs(1299, 20).addBox(-4.0F, -3.05F, -3.5F, 6.0F, 6.0F, 6.0F, new CubeDeformation(-0.1F))
+		.texOffs(1291, 0).addBox(-1.5F, -0.65F, -6.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F))
+		.texOffs(1291, 0).addBox(-1.5F, 0.35F, -6.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offset(1.0F, -3.75F, 1.25F));
+
+		PartDefinition rottweiler_mouth2 = rottweiler9.addOrReplaceChild("rottweiler_mouth2", CubeListBuilder.create().texOffs(1293, 0).addBox(-2.0F, -13.9915F, -7.2911F, 4.0F, 3.0F, 4.0F, new CubeDeformation(-0.1F))
+		.texOffs(1305, 3).addBox(-2.0F, -11.2308F, -7.2876F, 4.0F, 1.0F, 4.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(-1.0F, 13.4F, 0.35F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition rottweiler_eye_left2 = rottweiler9.addOrReplaceChild("rottweiler_eye_left2", CubeListBuilder.create().texOffs(1273, 19).addBox(0.8022F, -11.5999F, -9.35F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.06F))
+		.texOffs(1291, 0).addBox(0.4522F, -11.5999F, -9.35F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.03F)), PartPose.offset(-0.5F, 9.8F, 5.8F));
+
+		PartDefinition rottweiler_eye_right2 = rottweiler9.addOrReplaceChild("rottweiler_eye_right2", CubeListBuilder.create().texOffs(1291, 0).addBox(1.5417F, -11.578F, -9.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.03F))
+		.texOffs(1311, 0).addBox(1.8418F, -12.83F, -9.39F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
+		.texOffs(1311, 0).addBox(4.0918F, -12.83F, -9.39F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
+		.texOffs(1273, 19).addBox(1.1917F, -11.578F, -9.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.06F)), PartPose.offset(-4.5F, 9.8F, 5.9F));
+
+		PartDefinition bridge2 = rottweiler9.addOrReplaceChild("bridge2", CubeListBuilder.create().texOffs(1305, 0).addBox(-1.0F, -8.9044F, -7.2387F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-1.0F, 9.2F, -2.5F, -0.6109F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
+
+
 }
