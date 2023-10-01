@@ -181,7 +181,20 @@
             "use_model" : "betterdogs_dtn:boxer",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Bull Terrier (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/bull_terrier_black_tan",
+            "use_model" : "betterdogs_dtn:bull_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Bull Terrier (White)",
+            "skin_id" : "betterdogs_dtn:textures/bull_terrier_white",
+            "use_model" : "betterdogs_dtn:bull_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
-        
     ]
 }
