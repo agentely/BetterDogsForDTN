@@ -195,6 +195,34 @@
             "use_model" : "betterdogs_dtn:bull_terrier",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - German Shepherd (Black)",
+            "skin_id" : "betterdogs_dtn:textures/german_shepherd_black",
+            "use_model" : "betterdogs_dtn:german_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - German Shepherd (Bright)",
+            "skin_id" : "betterdogs_dtn:textures/german_shepherd_bright",
+            "use_model" : "betterdogs_dtn:german_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - German Shepherd (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/german_shepherd_brown",
+            "use_model" : "betterdogs_dtn:german_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - German Shepherd (White)",
+            "skin_id" : "betterdogs_dtn:textures/german_shepherd_white",
+            "use_model" : "betterdogs_dtn:german_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }
