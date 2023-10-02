@@ -232,9 +232,16 @@
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Rottweiler (Dark Brown)",
-            "skin_id" : "betterdogs_dtn:textures/rottweiler_dark_brown",
-            "use_model" : "betterdogs_dtn:rottweiler",
+            "skin_name" : "Better Dogs - Pug (Black)",
+            "skin_id" : "betterdogs_dtn:textures/pug_black",
+            "use_model" : "betterdogs_dtn:pug",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Pug (Tan)",
+            "skin_id" : "betterdogs_dtn:textures/pug_tan",
+            "use_model" : "betterdogs_dtn:pug",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
         }
