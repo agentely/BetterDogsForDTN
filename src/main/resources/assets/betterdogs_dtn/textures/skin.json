@@ -225,6 +225,27 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Australian Shepherd (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/australian_shepherd_black_tan",
+            "use_model" : "betterdogs_dtn:australian_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Australian Shepherd (Blue Merle)",
+            "skin_id" : "betterdogs_dtn:textures/australian_shepherd_blue_merle",
+            "use_model" : "betterdogs_dtn:australian_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Australian Shepherd (Red)",
+            "skin_id" : "betterdogs_dtn:textures/australian_shepherd_red",
+            "use_model" : "betterdogs_dtn:australian_shepherd",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Rottweiler (Brown)",
             "skin_id" : "betterdogs_dtn:textures/rottweiler_brown",
             "use_model" : "betterdogs_dtn:rottweiler",

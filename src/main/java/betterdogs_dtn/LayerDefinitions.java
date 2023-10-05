@@ -1079,5 +1079,102 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition australian_shepherd() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
 
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.75F, 7.75F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -0.25F, -2.25F));
+
+		PartDefinition aus_tail = real_tail.addOrReplaceChild("aus_tail", CubeListBuilder.create().texOffs(359, 2).addBox(-1.5F, -1.0F, -2.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(365, 19).addBox(-1.5F, 0.0F, -5.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.05F, 1.75F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 17.0F, 8.0F));
+
+		PartDefinition leg9 = right_hind_leg.addOrReplaceChild("leg9", CubeListBuilder.create(), PartPose.offset(4.0F, -1.0F, -1.0F));
+
+		PartDefinition Nieuwwolfausshepherd6 = leg9.addOrReplaceChild("Nieuwwolfausshepherd6", CubeListBuilder.create().texOffs(864, 10).mirror().addBox(0.0F, -0.2477F, -2.3523F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.1F)).mirror(false)
+		.texOffs(852, 9).mirror().addBox(0.0F, -0.1F, -0.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offset(-5.0F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 17.0F, 8.0F));
+
+		PartDefinition leg1 = left_hind_leg.addOrReplaceChild("leg1", CubeListBuilder.create(), PartPose.offset(-4.0F, -1.0F, -1.0F));
+
+		PartDefinition Nieuwwolfausshepherd4 = leg1.addOrReplaceChild("Nieuwwolfausshepherd4", CubeListBuilder.create().texOffs(864, 10).addBox(-2.0F, -0.2477F, -2.3523F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.1F))
+		.texOffs(852, 9).addBox(-2.0F, -0.1F, -0.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.1F)), PartPose.offset(5.0F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, -4.0F));
+
+		PartDefinition leg10 = right_front_leg.addOrReplaceChild("leg10", CubeListBuilder.create(), PartPose.offset(4.0F, -2.0F, 0.0F));
+
+		PartDefinition GermanAussheperdHusky5 = leg10.addOrReplaceChild("GermanAussheperdHusky5", CubeListBuilder.create().texOffs(257, 22).mirror().addBox(0.0F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offset(-5.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, -4.0F));
+
+		PartDefinition leg3 = left_front_leg.addOrReplaceChild("leg3", CubeListBuilder.create(), PartPose.offset(-4.0F, -2.0F, 0.0F));
+
+		PartDefinition GermanAussheperdHusky = leg3.addOrReplaceChild("GermanAussheperdHusky", CubeListBuilder.create().texOffs(257, 22).addBox(-2.0F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(5.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 15.0F, 1.0F));
+
+		PartDefinition aus_body = body.addOrReplaceChild("aus_body", CubeListBuilder.create().texOffs(730, 16).addBox(-3.5F, -1.95F, -4.15F, 7.0F, 9.0F, 7.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(0.0F, -1.0F, 1.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 15.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane2 = upper_body.addOrReplaceChild("mane2", CubeListBuilder.create().texOffs(715, 0).addBox(-4.0F, -5.5F, -2.05F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 2.5F, -1.5F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 10.5F, -7.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.25F, -3.0F, -0.75F));
+
+		PartDefinition oor15 = right_ear.addOrReplaceChild("oor15", CubeListBuilder.create().texOffs(933, 0).addBox(2.147F, -12.957F, -8.3258F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(933, 0).addBox(2.647F, -9.9672F, -8.3093F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(933, 0).addBox(2.1224F, -12.9566F, -7.7519F, 3.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-9.0F, 11.2F, -3.25F, -1.1956F, 0.829F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.25F, -3.0F, -0.75F));
+
+		PartDefinition oor16 = left_ear.addOrReplaceChild("oor16", CubeListBuilder.create().texOffs(933, 0).mirror().addBox(-5.147F, -12.9753F, -8.3723F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(933, 0).mirror().addBox(-4.647F, -9.9855F, -8.3558F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(933, 0).mirror().addBox(-5.1224F, -12.9749F, -7.7984F, 3.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offsetAndRotation(9.0F, 11.25F, -3.25F, -1.1956F, -0.829F, 0.0F));
+
+		PartDefinition australianshepherd_head = real_head.addOrReplaceChild("australianshepherd_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.5F, 2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition australianshepherd_head_rot = australianshepherd_head.addOrReplaceChild("australianshepherd_head_rot", CubeListBuilder.create().texOffs(933, 0).addBox(-4.0F, -5.75F, -2.1F, 6.0F, 6.0F, 5.0F, new CubeDeformation(-0.1F))
+		.texOffs(955, 0).addBox(-6.0F, -6.55F, -0.35F, 10.0F, 8.0F, 0.0F, new CubeDeformation(0.0F))
+		.texOffs(628, 0).addBox(-4.9F, 1.45F, -0.34F, 2.0F, 1.0F, 0.0F, new CubeDeformation(0.0F))
+		.texOffs(950, 0).addBox(0.0F, -3.85F, -2.05F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(950, 3).addBox(0.6F, -3.85F, -2.03F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(950, 3).addBox(-3.5F, -3.85F, -2.03F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, -2.0F, -2.75F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_9 = australianshepherd_head_rot.addOrReplaceChild("mane_sub_9", CubeListBuilder.create().texOffs(950, 0).mirror().addBox(-3.0F, -3.85F, -2.05F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition bone165 = australianshepherd_head_rot.addOrReplaceChild("bone165", CubeListBuilder.create().texOffs(628, 0).addBox(-5.9F, -15.5F, -8.99F, 2.0F, 1.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.0F, -13.05F, 8.65F, 0.0F, 0.0F, -3.1416F));
+
+		PartDefinition bone42 = australianshepherd_head_rot.addOrReplaceChild("bone42", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.5F, -7.4F, 12.8F, 1.1781F, 0.0F, 0.0F));
+
+		PartDefinition bone179 = bone42.addOrReplaceChild("bone179", CubeListBuilder.create().texOffs(213, 26).addBox(-1.0F, -0.7828F, -1.9243F, 2.0F, 2.0F, 4.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.5F, -12.4163F, -10.3409F, -0.4363F, 0.0F, 0.0F));
+
+		PartDefinition bone164 = bone42.addOrReplaceChild("bone164", CubeListBuilder.create().texOffs(239, 28).addBox(1.0F, -12.0808F, -8.7317F, 1.0F, 0.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-1.0F, -4.3692F, 3.6917F, 0.3927F, 0.0F, 0.0F));
+
+		PartDefinition bone44 = australianshepherd_head_rot.addOrReplaceChild("bone44", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, -1.7805F, -3.9914F, 0.1833F, 0.0F, 0.0F));
+
+		PartDefinition bone180 = bone44.addOrReplaceChild("bone180", CubeListBuilder.create().texOffs(1156, 26).addBox(-1.5F, -1.2909F, -1.41F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.85F)), PartPose.offsetAndRotation(0.0F, -0.39F, -0.8447F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone140 = bone44.addOrReplaceChild("bone140", CubeListBuilder.create().texOffs(934, 11).addBox(-1.5F, -1.0F, -3.5F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.05F)), PartPose.offset(0.0F, 0.2093F, 2.2775F));
+
+		PartDefinition ausshepherd_jaw = bone44.addOrReplaceChild("ausshepherd_jaw", CubeListBuilder.create(), PartPose.offset(0.0F, 1.5576F, 2.2055F));
+
+		PartDefinition ausshepherd_jaw_rot = ausshepherd_jaw.addOrReplaceChild("ausshepherd_jaw_rot", CubeListBuilder.create().texOffs(652, 1).addBox(-1.5F, -0.1533F, -3.3171F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.2F))
+		.texOffs(950, 13).addBox(-1.5F, -0.657F, -3.3944F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.15F))
+		.texOffs(411, 21).addBox(-1.5F, -1.0079F, -3.3594F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.16F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition ausshepherd_tongue = bone44.addOrReplaceChild("ausshepherd_tongue", CubeListBuilder.create(), PartPose.offset(0.25F, 3.354F, 1.3792F));
+
+		PartDefinition ausshepherd_tongue_rot = ausshepherd_tongue.addOrReplaceChild("ausshepherd_tongue_rot", CubeListBuilder.create().texOffs(294, 27).addBox(-1.6974F, -2.7991F, -1.6244F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.35F)), PartPose.offsetAndRotation(0.0F, 0.5111F, -0.9342F, 0.6109F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

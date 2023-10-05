@@ -39,6 +39,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("rottweiler"), ModelLayerLocations.ROTTWEILER));
         event.register(new Builder(getRes("pug"), ModelLayerLocations.PUG));
         event.register(new Builder(getRes("wolf"), ModelLayerLocations.BD_WOLF));
+        event.register(new Builder(getRes("australian_shepherd"), ModelLayerLocations.AUSTRALIAN_SHEPHERD));
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
@@ -59,6 +60,8 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.ROTTWEILER, LayerDefinitions::rottweiler);
         event.registerLayerDefinition(ModelLayerLocations.PUG, LayerDefinitions::pug);
         event.registerLayerDefinition(ModelLayerLocations.BD_WOLF, BDWolf::createBodyLayer);
+        event.registerLayerDefinition(ModelLayerLocations.AUSTRALIAN_SHEPHERD, LayerDefinitions::australian_shepherd);
+
     }
 
     public static ResourceLocation getRes(String name) {
