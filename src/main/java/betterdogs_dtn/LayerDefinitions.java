@@ -1177,4 +1177,105 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition beagle() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 13.4F, 6.85F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, -0.75F));
+
+		PartDefinition beagle_tail = real_tail.addOrReplaceChild("beagle_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 2.0F));
+
+		PartDefinition Beagle8 = beagle_tail.addOrReplaceChild("Beagle8", CubeListBuilder.create().texOffs(677, 17).addBox(-2.0F, -2.3397F, -1.8808F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, 4.0F, -1.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.0F, 18.0F, 6.0F));
+
+		PartDefinition leg2 = right_hind_leg.addOrReplaceChild("leg2", CubeListBuilder.create(), PartPose.offset(2.5F, -2.0F, 1.0F));
+
+		PartDefinition Beagle5 = leg2.addOrReplaceChild("Beagle5", CubeListBuilder.create().texOffs(669, 17).addBox(-2.5F, 0.0F, -2.05F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(669, 17).addBox(-2.5F, 2.0F, -2.85F, 2.0F, 3.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offset(-1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 18.0F, 6.0F));
+
+		PartDefinition leg1 = left_hind_leg.addOrReplaceChild("leg1", CubeListBuilder.create(), PartPose.offset(-4.5F, -2.0F, 1.0F));
+
+		PartDefinition Beagle4 = leg1.addOrReplaceChild("Beagle4", CubeListBuilder.create().texOffs(669, 17).addBox(-1.5F, 0.0F, -2.05F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(669, 17).addBox(-1.5F, 2.0F, -2.85F, 2.0F, 3.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offset(5.0F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.25F, 19.5F, -4.0F));
+
+		PartDefinition leg4 = right_front_leg.addOrReplaceChild("leg4", CubeListBuilder.create(), PartPose.offset(2.75F, -3.5F, 0.0F));
+
+		PartDefinition Beagle7 = leg4.addOrReplaceChild("Beagle7", CubeListBuilder.create().texOffs(686, 22).addBox(-2.5F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 19.5F, -4.0F));
+
+		PartDefinition leg3 = left_front_leg.addOrReplaceChild("leg3", CubeListBuilder.create(), PartPose.offset(-4.5F, -3.5F, 0.0F));
+
+		PartDefinition Beagle6 = leg3.addOrReplaceChild("Beagle6", CubeListBuilder.create().texOffs(686, 22).addBox(-1.5F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(5.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 16.5F, 1.5F));
+
+		PartDefinition beagle_body = body.addOrReplaceChild("beagle_body", CubeListBuilder.create(), PartPose.offset(0.0F, -2.5F, 0.5F));
+
+		PartDefinition body_rotation = beagle_body.addOrReplaceChild("body_rotation", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_1 = body_rotation.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Beagle2 = body_sub_1.addOrReplaceChild("Beagle2", CubeListBuilder.create().texOffs(641, 7).addBox(-4.0F, -2.1F, -5.0F, 8.0F, 8.0F, 6.0F, new CubeDeformation(-0.201F)), PartPose.offset(0.0F, 0.0F, 0.2F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 16.5F, -3.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_rotation = upper_body.addOrReplaceChild("mane_rotation", CubeListBuilder.create(), PartPose.offset(0.0F, 3.0F, 0.0F));
+
+		PartDefinition mane_sub_1 = mane_rotation.addOrReplaceChild("mane_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Beagle3 = mane_sub_1.addOrReplaceChild("Beagle3", CubeListBuilder.create().texOffs(669, 4).addBox(-5.0F, -2.65F, -5.75F, 8.0F, 6.0F, 7.0F, new CubeDeformation(-0.2F)), PartPose.offset(1.0F, -2.5F, 2.5F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, -5.5F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -2.0F, 0.0F));
+
+		PartDefinition oor5 = right_ear.addOrReplaceChild("oor5", CubeListBuilder.create().texOffs(643, 24).addBox(0.9343F, -15.95F, -9.1938F, 1.0F, 4.0F, 4.0F, new CubeDeformation(0.0F))
+		.texOffs(591, 28).addBox(0.9375F, -11.95F, -8.9246F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(567, 28).addBox(1.498F, -16.95F, -9.2556F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.3F, 16.25F, 6.25F, -0.0175F, -0.4451F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, -2.0F, 0.0F));
+
+		PartDefinition oor2 = left_ear.addOrReplaceChild("oor2", CubeListBuilder.create().texOffs(643, 24).mirror().addBox(-1.9343F, -15.95F, -9.1938F, 1.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(591, 28).mirror().addBox(-1.9375F, -11.95F, -8.9246F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(567, 28).mirror().addBox(-2.498F, -16.95F, -9.2556F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(5.3F, 16.25F, 6.25F, -0.0175F, 0.4451F, 0.0F));
+
+		PartDefinition beagle_head = real_head.addOrReplaceChild("beagle_head", CubeListBuilder.create(), PartPose.offset(-1.0F, 2.0F, 2.25F));
+
+		PartDefinition Beagle = beagle_head.addOrReplaceChild("Beagle", CubeListBuilder.create().texOffs(619, 20).addBox(-4.0F, -3.15F, -2.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, -2.0F, -3.0F));
+
+		PartDefinition bone33 = Beagle.addOrReplaceChild("bone33", CubeListBuilder.create().texOffs(654, 24).addBox(-4.9F, -11.25F, -8.0F, 4.0F, 3.0F, 4.0F, new CubeDeformation(-0.1F))
+		.texOffs(568, 26).addBox(-3.9F, -11.3F, -8.0517F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9F, 10.3F, 2.7F, 0.0349F, 0.0F, 0.0F));
+
+		PartDefinition neus2 = bone33.addOrReplaceChild("neus2", CubeListBuilder.create().texOffs(577, 6).addBox(0.1F, -7.6828F, -7.9586F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.0001F))
+		.texOffs(581, 28).addBox(0.5F, -7.6846F, -7.9586F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(577, 6).addBox(0.9F, -7.6828F, -7.9586F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.0001F)), PartPose.offsetAndRotation(-3.9F, -5.7748F, 2.6915F, 0.2618F, 0.0F, 0.0F));
+
+		PartDefinition bone34 = bone33.addOrReplaceChild("bone34", CubeListBuilder.create().texOffs(670, 27).addBox(-2.1F, -8.7482F, -7.4F, 4.0F, 1.0F, 4.0F, new CubeDeformation(-0.11F))
+		.texOffs(575, 29).addBox(0.8F, -8.4982F, -6.9F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.101F))
+		.texOffs(575, 29).addBox(-2.0F, -8.4982F, -6.9F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.101F)), PartPose.offsetAndRotation(-2.8F, -0.107F, -0.3982F, -0.0175F, 0.0F, 0.0F));
+
+		PartDefinition oog = Beagle.addOrReplaceChild("oog", CubeListBuilder.create().texOffs(594, 23).addBox(2.4963F, -11.4694F, -7.03F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(637, 24).addBox(2.0457F, -11.4707F, -7.02F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-5.55F, 9.7F, 5.0F));
+
+		PartDefinition oog2 = Beagle.addOrReplaceChild("oog2", CubeListBuilder.create().texOffs(594, 23).addBox(0.5455F, -11.4457F, -7.03F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(637, 24).addBox(1.146F, -11.4457F, -7.02F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, 9.7F, 5.0F));
+
+		PartDefinition bone32 = Beagle.addOrReplaceChild("bone32", CubeListBuilder.create().texOffs(557, 30).addBox(0.501F, -9.773F, -5.0722F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.001F))
+		.texOffs(653, 22).addBox(0.1F, -9.7093F, -5.05F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.001F))
+		.texOffs(653, 22).addBox(0.9F, -9.7093F, -5.05F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.001F)), PartPose.offsetAndRotation(-2.0F, 7.55F, 0.55F, -0.2443F, 0.0F, 0.0F));
+
+		PartDefinition bone36 = Beagle.addOrReplaceChild("bone36", CubeListBuilder.create().texOffs(582, 29).addBox(0.5F, -7.6852F, -7.1994F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.0F, 4.5252F, 5.1914F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

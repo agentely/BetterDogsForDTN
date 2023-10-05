@@ -127,6 +127,27 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Beagle (Blue Tick)",
+            "skin_id" : "betterdogs_dtn:textures/beagle_bluetick",
+            "use_model" : "betterdogs_dtn:beagle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Beagle (Red Tri)",
+            "skin_id" : "betterdogs_dtn:textures/beagle_red_tri",
+            "use_model" : "betterdogs_dtn:beagle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Beagle (Tan Tri)",
+            "skin_id" : "betterdogs_dtn:textures/beagle_tan_tri",
+            "use_model" : "betterdogs_dtn:beagle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Irish Terrier (Black)",
             "skin_id" : "betterdogs_dtn:textures/irish_terrier_black",
             "use_model" : "betterdogs_dtn:irish_terrier",
