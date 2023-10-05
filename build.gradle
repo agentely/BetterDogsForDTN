@@ -96,7 +96,7 @@ repositories {
 dependencies {
 
     minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
-    compileOnly "blank:DoggyTalentsNext-1.20.1:1.16.3-indev3-api"
+    compileOnly "blank:DoggyTalentsNext-1.20.1:1.16.3-indev6-api"
 }
 
 jar {
