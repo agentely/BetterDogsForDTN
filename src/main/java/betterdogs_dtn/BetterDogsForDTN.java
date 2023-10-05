@@ -1,4 +1,5 @@
 package betterdogs_dtn;
+import betterdogs_dtn.models.BDWolf;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
@@ -37,6 +38,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("german_shepherd"), ModelLayerLocations.GERMAN_SHEPHERD));
         event.register(new Builder(getRes("rottweiler"), ModelLayerLocations.ROTTWEILER));
         event.register(new Builder(getRes("pug"), ModelLayerLocations.PUG));
+        event.register(new Builder(getRes("wolf"), ModelLayerLocations.BD_WOLF));
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
@@ -56,6 +58,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.GERMAN_SHEPHERD, LayerDefinitions::german_shepherd);
         event.registerLayerDefinition(ModelLayerLocations.ROTTWEILER, LayerDefinitions::rottweiler);
         event.registerLayerDefinition(ModelLayerLocations.PUG, LayerDefinitions::pug);
+        event.registerLayerDefinition(ModelLayerLocations.BD_WOLF, BDWolf::createBodyLayer);
     }
 
     public static ResourceLocation getRes(String name) {

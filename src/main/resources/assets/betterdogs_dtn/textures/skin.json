@@ -244,6 +244,48 @@
             "use_model" : "betterdogs_dtn:pug",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf",
+            "skin_id" : "betterdogs_dtn:textures/wolf",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf (Black)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_black",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_brown",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_gray",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf (Light Gray)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_light_gray",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wolf (White)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_white",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }
