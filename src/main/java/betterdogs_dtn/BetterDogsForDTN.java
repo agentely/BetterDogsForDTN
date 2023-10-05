@@ -38,7 +38,8 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("german_shepherd"), ModelLayerLocations.GERMAN_SHEPHERD));
         event.register(new Builder(getRes("rottweiler"), ModelLayerLocations.ROTTWEILER));
         event.register(new Builder(getRes("pug"), ModelLayerLocations.PUG));
-        event.register(new Builder(getRes("wolf"), ModelLayerLocations.BD_WOLF));
+        event.register(new Builder(getRes("wolf"), ModelLayerLocations.BD_WOLF)
+            .withGlowingEyes());
         event.register(new Builder(getRes("australian_shepherd"), ModelLayerLocations.AUSTRALIAN_SHEPHERD));
         event.register(new Builder(getRes("beagle"), ModelLayerLocations.BEAGLE));
     }

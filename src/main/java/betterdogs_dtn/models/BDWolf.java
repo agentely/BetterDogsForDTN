@@ -106,13 +106,17 @@ public class BDWolf {
 
 		PartDefinition bone148 = bone39.addOrReplaceChild("bone148", CubeListBuilder.create().texOffs(874, 3).addBox(-0.5F, -0.9617F, -1.5924F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(1.0F, -7.2915F, -12.4806F, 0.5672F, 0.0F, 0.0F));
 
-		PartDefinition oog5 = Nieuwwolf.addOrReplaceChild("oog5", CubeListBuilder.create(), PartPose.offsetAndRotation(-4.0163F, -0.6228F, -3.583F, 0.0019F, 0.0436F, 0.0262F));
+		PartDefinition glowing_eyes = partdefinition.addOrReplaceChild("glowing_eyes", CubeListBuilder.create(), PartPose.offset(0.0F, 10.9F, -7.0F));
+
+		PartDefinition real_glowing_eyes = glowing_eyes.addOrReplaceChild("real_glowing_eyes", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition oog5 = real_glowing_eyes.addOrReplaceChild("oog5", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.0163F, -0.8228F, -2.833F, 0.0019F, 0.0436F, 0.0262F));
 
 		PartDefinition head_sub_109 = oog5.addOrReplaceChild("head_sub_109", CubeListBuilder.create().texOffs(830, 2).mirror().addBox(1.2504F, -0.3684F, -0.167F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.01F)).mirror(false)
 		.texOffs(853, 3).mirror().addBox(0.5917F, -0.3684F, -0.167F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition oog6 = Nieuwwolf.addOrReplaceChild("oog6", CubeListBuilder.create().texOffs(830, 2).addBox(-2.2489F, -0.3683F, -0.0669F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.01F))
-		.texOffs(853, 3).addBox(-1.5902F, -0.3683F, -0.0669F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.0163F, -0.6228F, -3.683F, 0.0019F, -0.0436F, -0.0271F));
+		PartDefinition oog6 = real_glowing_eyes.addOrReplaceChild("oog6", CubeListBuilder.create().texOffs(830, 2).addBox(-2.2489F, -0.3683F, -0.0669F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.01F))
+		.texOffs(853, 3).addBox(-1.5902F, -0.3683F, -0.0669F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(3.0163F, -0.8228F, -2.933F, 0.0019F, -0.0436F, -0.0271F));
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
