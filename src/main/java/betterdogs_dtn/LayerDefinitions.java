@@ -148,9 +148,11 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 16.0F, 4.75F, 1.9635F, 0.0F, 0.0F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -5.6429F, 1.7223F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition corgi_tail3 = real_tail.addOrReplaceChild("corgi_tail3", CubeListBuilder.create(), PartPose.offset(1.0F, 4.8F, -2.2F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.0F, -5.6429F, 1.7223F));
+
+		PartDefinition corgi_tail3 = real_tail2.addOrReplaceChild("corgi_tail3", CubeListBuilder.create(), PartPose.offset(1.0F, 4.8F, -2.2F));
 
 		PartDefinition corgitail_rot3 = corgi_tail3.addOrReplaceChild("corgitail_rot3", CubeListBuilder.create().texOffs(404, 14).addBox(-2.0F, -3.8884F, 1.9255F, 2.0F, 3.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.0F, 3.0F, -3.35F, -0.2618F, 0.0F, 0.0F));
 
@@ -178,17 +180,19 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 15.5F, -5.0F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, -2.0F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.5F, 0.0F, 0.5F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, -2.0F));
+
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.5F, 0.0F, 0.5F));
 
 		PartDefinition corgi_ear_right2 = right_ear.addOrReplaceChild("corgi_ear_right2", CubeListBuilder.create().texOffs(422, 27).mirror().addBox(-1.1826F, -4.3668F, -0.7878F, 3.0F, 5.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.1087F, -1.5863F, 1.0947F, 0.0F, 0.3491F, -0.3927F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, 0.0F, 0.5F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, 0.0F, 0.5F));
 
 		PartDefinition corgi_ear_left2 = left_ear.addOrReplaceChild("corgi_ear_left2", CubeListBuilder.create().texOffs(422, 27).addBox(-1.8174F, -4.3668F, -0.7878F, 3.0F, 5.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.1087F, -1.5863F, 1.0947F, 0.0F, -0.3491F, 0.3927F));
 
-		PartDefinition corgi_head_full2 = real_head.addOrReplaceChild("corgi_head_full2", CubeListBuilder.create().texOffs(371, 0).addBox(-3.5F, -2.0F, -2.0F, 5.0F, 5.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offset(1.0F, 0.25F, 1.5F));
+		PartDefinition corgi_head_full2 = real_head2.addOrReplaceChild("corgi_head_full2", CubeListBuilder.create().texOffs(371, 0).addBox(-3.5F, -2.0F, -2.0F, 5.0F, 5.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offset(1.0F, 0.25F, 1.5F));
 
 		PartDefinition corgi_mouth_full2 = corgi_head_full2.addOrReplaceChild("corgi_mouth_full2", CubeListBuilder.create().texOffs(368, 11).addBox(-1.5F, -0.1283F, -2.2822F, 3.0F, 2.0F, 5.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-1.0F, 0.6316F, -2.7778F, 0.2618F, 0.0F, 0.0F));
 
@@ -394,9 +398,11 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 12.5F, 6.5F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, -0.25F, 2.0F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition bordercollie_tail2 = real_tail.addOrReplaceChild("bordercollie_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, 11.7F, 0.5F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.25F, 2.0F));
+
+		PartDefinition bordercollie_tail2 = real_tail2.addOrReplaceChild("bordercollie_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, 11.7F, 0.5F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition bordercollie_tail_rot2 = bordercollie_tail2.addOrReplaceChild("bordercollie_tail_rot2", CubeListBuilder.create().texOffs(100, 20).addBox(-1.0F, -23.5237F, 3.8556F, 3.0F, 7.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(63, 13).addBox(-1.0F, -23.5237F, 6.8556F, 3.0F, 7.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -11.0F, -11.5F, -1.5708F, 0.0F, 0.0F));
@@ -440,7 +446,7 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 10.0F, -6.75F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 3.5F, -0.25F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
 		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.0F, -1.5F, 5.0F, -0.0873F, -0.2182F, 0.0F));
 
@@ -495,10 +501,12 @@ public class LayerDefinitions {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 13.5F, 8.0F, 2.4871F, 0.0F, 0.0F));
+		
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, 0.0F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, 0.0F));
 
-		PartDefinition basset_tail2 = real_tail.addOrReplaceChild("basset_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, 12.75F, -5.25F, -1.5708F, 0.0F, 0.0F));
+		PartDefinition basset_tail2 = real_tail2.addOrReplaceChild("basset_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, 12.75F, -5.25F, -1.5708F, 0.0F, 0.0F));
 
 		PartDefinition basset_tail_rot2 = basset_tail2.addOrReplaceChild("basset_tail_rot2", CubeListBuilder.create().texOffs(1665, 1).addBox(-0.55F, -13.7268F, 4.1864F, 1.0F, 6.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(0.0F, 1.0F, 2.0F, 1.4835F, 0.0F, 0.0F));
 
@@ -546,19 +554,21 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 11.5F, -7.0F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, 1.0F, 2.0F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, 1.0F, 2.0F));
 
 		PartDefinition mane_sub_45_r1 = left_ear.addOrReplaceChild("mane_sub_45_r1", CubeListBuilder.create().texOffs(529, 5).mirror().addBox(-3.4F, -4.0F, -2.875F, 1.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
 		.texOffs(1705, 5).mirror().addBox(-3.4F, 0.0F, -3.125F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(3.8948F, -0.7183F, -2.7498F, -1.5304F, -0.0705F, -0.3959F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, 1.0F, 2.0F));
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, 1.0F, 2.0F));
 
 		PartDefinition mane_sub_46_r1 = right_ear.addOrReplaceChild("mane_sub_46_r1", CubeListBuilder.create().texOffs(529, 5).addBox(2.4F, -4.0F, -2.875F, 1.0F, 4.0F, 4.0F, new CubeDeformation(0.0F))
 		.texOffs(1705, 5).addBox(2.4F, 0.0F, -3.125F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.8948F, -0.7183F, -2.7498F, -1.5304F, 0.0705F, 0.3959F));
 
-		PartDefinition basset_head2 = real_head.addOrReplaceChild("basset_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 1.25F, 1.75F));
+		PartDefinition basset_head2 = real_head2.addOrReplaceChild("basset_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 1.25F, 1.75F));
 
 		PartDefinition bassethound2 = basset_head2.addOrReplaceChild("bassethound2", CubeListBuilder.create().texOffs(1709, 18).addBox(-2.9833F, -2.2833F, -1.1667F, 6.0F, 7.0F, 7.0F, new CubeDeformation(-0.1F))
 		.texOffs(1257, 0).addBox(-0.4833F, -2.1833F, -1.0667F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.01F))
@@ -601,9 +611,11 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 14.25F, 8.25F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, -1.25F, -0.75F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition irishterrier_tail3 = real_tail.addOrReplaceChild("irishterrier_tail3", CubeListBuilder.create(), PartPose.offset(1.5F, 1.7F, -5.0F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(0.0F, -1.25F, -0.75F));
+
+		PartDefinition irishterrier_tail3 = real_tail2.addOrReplaceChild("irishterrier_tail3", CubeListBuilder.create(), PartPose.offset(1.5F, 1.7F, -5.0F));
 
 		PartDefinition irishterrier_tail_rot3 = irishterrier_tail3.addOrReplaceChild("irishterrier_tail_rot3", CubeListBuilder.create(), PartPose.offset(-0.5F, 1.413F, 6.155F));
 
@@ -641,21 +653,23 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, -6.5F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 2.75F, 1.75F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.75F, -6.0F, -3.5F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 2.75F, 1.75F));
+
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.75F, -6.0F, -3.5F));
 
 		PartDefinition irishterrier_ear_right = right_ear.addOrReplaceChild("irishterrier_ear_right", CubeListBuilder.create().texOffs(715, 4).mirror().addBox(-0.6913F, -2.149F, -1.4808F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.9368F, -0.0527F, 1.2733F, 0.3106F, 0.1871F, -0.1555F));
 
 		PartDefinition bone191 = irishterrier_ear_right.addOrReplaceChild("bone191", CubeListBuilder.create().texOffs(771, 4).mirror().addBox(-0.343F, 0.6753F, -0.662F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.3483F, -2.0768F, -0.5358F, -0.8727F, 0.0F, 0.0F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, -6.0F, -3.5F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, -6.0F, -3.5F));
 
 		PartDefinition irishterrier_ear_left = left_ear.addOrReplaceChild("irishterrier_ear_left", CubeListBuilder.create().texOffs(715, 4).addBox(-2.3087F, -2.149F, -1.4808F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.1868F, -0.0527F, 1.2733F, 0.3106F, -0.1871F, 0.1555F));
 
 		PartDefinition bone184 = irishterrier_ear_left.addOrReplaceChild("bone184", CubeListBuilder.create().texOffs(771, 4).addBox(-1.457F, 0.1268F, -0.0712F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.8517F, -2.1768F, -1.3358F, -0.8727F, 0.0F, 0.0F));
 
-		PartDefinition irishterrier_head = real_head.addOrReplaceChild("irishterrier_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.0F, -0.25F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition irishterrier_head = real_head2.addOrReplaceChild("irishterrier_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.0F, -0.25F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition irishterrier_neck_full = irishterrier_head.addOrReplaceChild("irishterrier_neck_full", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, -1.75F, 3.25F, -1.5708F, 0.0F, 0.0F));
 
@@ -825,21 +839,23 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 10.1F, -5.6F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 3.4F, -1.4F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -5.0F, 2.3F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 3.4F, -1.4F));
+		
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -5.0F, 2.3F));
 
 		PartDefinition bull_terrier_ear_right2 = right_ear.addOrReplaceChild("bull_terrier_ear_right2", CubeListBuilder.create().texOffs(709, 1).addBox(-2.6327F, -11.0449F, -9.5769F, 2.0F, 3.0F, 1.0F, new CubeDeformation(0.2F))
 		.texOffs(695, 0).addBox(-2.6181F, -11.058F, -9.8989F, 2.0F, 3.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(709, 1).addBox(-2.1893F, -11.6592F, -9.5381F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(3.5F, 7.45F, 8.65F, 0.0F, 0.0873F, -0.1309F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -5.3F, 2.1F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -5.3F, 2.1F));
 
 		PartDefinition bull_terrier_ear_left2 = left_ear.addOrReplaceChild("bull_terrier_ear_left2", CubeListBuilder.create().texOffs(709, 1).addBox(-4.3559F, -10.9144F, -9.5121F, 2.0F, 3.0F, 1.0F, new CubeDeformation(0.2F))
 		.texOffs(695, 0).addBox(-4.3705F, -10.9274F, -9.8289F, 2.0F, 3.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(709, 1).addBox(-3.7993F, -11.5287F, -9.4733F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(1.5F, 8.25F, 9.2F, 0.0F, -0.0873F, 0.1309F));
 
-		PartDefinition bull_terrier_head_rot = real_head.addOrReplaceChild("bull_terrier_head_rot", CubeListBuilder.create().texOffs(693, 0).addBox(-3.5F, -4.25F, -2.1F, 5.0F, 5.0F, 6.0F, new CubeDeformation(0.2F))
+		PartDefinition bull_terrier_head_rot = real_head2.addOrReplaceChild("bull_terrier_head_rot", CubeListBuilder.create().texOffs(693, 0).addBox(-3.5F, -4.25F, -2.1F, 5.0F, 5.0F, 6.0F, new CubeDeformation(0.2F))
 		.texOffs(710, 29).addBox(-3.61F, -4.05F, -2.365F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
 		.texOffs(710, 29).addBox(0.61F, -4.05F, -2.365F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, -1.55F, 0.3F));
 
@@ -856,9 +872,11 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.3F, 12.0F, 8.0F, 1.73F, 0.0F, 0.0F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.3F, 0.0F, 0.0F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition germanausshepherd_tail2 = real_tail.addOrReplaceChild("germanausshepherd_tail2", CubeListBuilder.create().texOffs(359, 2).addBox(-1.5F, 0.0F, -2.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.3F, 0.0F, 0.0F));
+
+		PartDefinition germanausshepherd_tail2 = real_tail2.addOrReplaceChild("germanausshepherd_tail2", CubeListBuilder.create().texOffs(359, 2).addBox(-1.5F, 0.0F, -2.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(365, 19).addBox(-1.5F, 0.0F, -5.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, 0.2F, 0.5F, -0.4712F, 0.0F, 0.0F));
 
 		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, 7.0F));
@@ -887,19 +905,21 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 9.5F, -6.3F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 4.0F, -0.7F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
+		
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 4.0F, -0.7F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -6.1F, 0.5F));
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -6.1F, 0.5F));
 
 		PartDefinition germanshepherd_ear_right2 = right_ear.addOrReplaceChild("germanshepherd_ear_right2", CubeListBuilder.create().texOffs(330, 0).addBox(-1.1271F, -4.4713F, -0.529F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.01F))
 		.texOffs(316, 2).addBox(-0.1271F, -5.4413F, -0.529F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(-0.5F, 0.865F, -0.75F, -0.0168F, -0.1312F, -0.169F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -6.1F, 0.5F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -6.1F, 0.5F));
 
 		PartDefinition germanshepherd_ear_left2 = left_ear.addOrReplaceChild("germanshepherd_ear_left2", CubeListBuilder.create().texOffs(330, 0).mirror().addBox(-1.8729F, -4.4713F, -0.529F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.01F)).mirror(false)
 		.texOffs(316, 2).mirror().addBox(-0.8729F, -5.4413F, -0.529F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.01F)).mirror(false), PartPose.offsetAndRotation(0.5F, 0.865F, -0.75F, -0.0168F, 0.1312F, 0.169F));
 
-		PartDefinition germansheperd_head_rot2 = real_head.addOrReplaceChild("germansheperd_head_rot2", CubeListBuilder.create(), PartPose.offset(4.0F, 3.25F, 2.75F));
+		PartDefinition germansheperd_head_rot2 = real_head2.addOrReplaceChild("germansheperd_head_rot2", CubeListBuilder.create(), PartPose.offset(4.0F, 3.25F, 2.75F));
 
 		PartDefinition germansheperd_head2 = germansheperd_head_rot2.addOrReplaceChild("germansheperd_head2", CubeListBuilder.create().texOffs(299, 0).addBox(-3.0F, -5.7275F, -4.2487F, 6.0F, 6.0F, 5.0F, new CubeDeformation(0.0F))
 		.texOffs(327, 5).addBox(-4.0F, -3.7275F, -3.2487F, 1.0F, 4.0F, 2.0F, new CubeDeformation(0.0F))
@@ -937,9 +957,11 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 8.25F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 1.5F, -1.25F, 1.2217F, 0.0F, 0.0F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition rottweiler7 = real_tail.addOrReplaceChild("rottweiler7", CubeListBuilder.create().texOffs(1307, 8).addBox(-1.999F, 2.3617F, -0.174F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(2.5F, -1.0F, 4.0F, -1.2217F, 0.0F, 0.0F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 1.5F, -1.25F, 1.2217F, 0.0F, 0.0F));
+
+		PartDefinition rottweiler7 = real_tail2.addOrReplaceChild("rottweiler7", CubeListBuilder.create().texOffs(1307, 8).addBox(-1.999F, 2.3617F, -0.174F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(2.5F, -1.0F, 4.0F, -1.2217F, 0.0F, 0.0F));
 
 		PartDefinition bone2 = rottweiler7.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(1317, 20).addBox(-0.999F, -1.4F, 1.2439F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(-1.0F, 7.1F, -1.4F, -0.5672F, 0.0F, 0.0F));
 
@@ -972,22 +994,24 @@ public class LayerDefinitions {
 		PartDefinition rottweiler10 = mane_sub_2.addOrReplaceChild("rottweiler10", CubeListBuilder.create().texOffs(1331, 18).addBox(-8.0F, -6.75F, -1.0F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(4.0F, 1.25F, -5.8F));
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 9.9F, -6.2F));
+		
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
+		
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, 3.6F, -0.8F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 3.6F, -0.8F));
-
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -5.5F, 0.5F));
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -5.5F, 0.5F));
 
 		PartDefinition rottweiler_ear_right2 = right_ear.addOrReplaceChild("rottweiler_ear_right2", CubeListBuilder.create().texOffs(1301, 23).addBox(1.75F, -13.4F, -6.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
 		.texOffs(1323, 26).addBox(2.0F, -13.5F, -9.0F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(1295, 23).addBox(2.0271F, -10.494F, -8.4039F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.75F, 11.95F, 7.25F, 0.0F, -0.0873F, 0.0873F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.5F, -5.4F, 0.5F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.5F, -5.4F, 0.5F));
 
 		PartDefinition rottweiler_ear_left2 = left_ear.addOrReplaceChild("rottweiler_ear_left2", CubeListBuilder.create().texOffs(1301, 23).addBox(2.25F, -13.4F, -6.2F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
 		.texOffs(1323, 26).addBox(2.0F, -13.5F, -9.0F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(1295, 23).addBox(1.9816F, -10.494F, -8.5035F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.75F, 12.25F, 7.25F, 0.0F, 0.0873F, -0.0873F));
 
-		PartDefinition rottweiler9 = real_head.addOrReplaceChild("rottweiler9", CubeListBuilder.create().texOffs(1299, 20).addBox(-4.0F, -3.05F, -3.5F, 6.0F, 6.0F, 6.0F, new CubeDeformation(-0.1F))
+		PartDefinition rottweiler9 = real_head2.addOrReplaceChild("rottweiler9", CubeListBuilder.create().texOffs(1299, 20).addBox(-4.0F, -3.05F, -3.5F, 6.0F, 6.0F, 6.0F, new CubeDeformation(-0.1F))
 		.texOffs(1291, 0).addBox(-1.5F, -0.65F, -6.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F))
 		.texOffs(1291, 0).addBox(-1.5F, 0.35F, -6.45F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offset(1.0F, -3.75F, 1.25F));
 
@@ -1013,7 +1037,9 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 13.75F, 7.0F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.75F, 0.0F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
+
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.75F, 0.0F));
 
 		PartDefinition Pug7 = real_tail.addOrReplaceChild("Pug7", CubeListBuilder.create().texOffs(447, 0).addBox(0.0F, -2.63F, 0.89F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
 
@@ -1051,21 +1077,23 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 15.0F, -6.6F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, -0.4F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -3.0F, 0.5F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, -0.4F));
+
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -3.0F, 0.5F));
 
 		PartDefinition pug_ear_right2 = right_ear.addOrReplaceChild("pug_ear_right2", CubeListBuilder.create().texOffs(462, 28).addBox(2.5347F, -8.1303F, -8.3997F, 3.0F, 1.0F, 3.0F, new CubeDeformation(-0.3F))
 		.texOffs(462, 28).addBox(2.4695F, -7.6514F, -8.2716F, 3.0F, 1.0F, 3.0F, new CubeDeformation(-0.1F))
 		.texOffs(471, 28).addBox(3.1674F, -7.6338F, -8.7542F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.09F)), PartPose.offsetAndRotation(8.0F, -2.0F, 1.75F, 1.2654F, 1.7017F, -0.0436F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -3.0F, 0.5F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -3.0F, 0.5F));
 
 		PartDefinition pug_ear_left2 = left_ear.addOrReplaceChild("pug_ear_left2", CubeListBuilder.create().texOffs(462, 28).addBox(1.6933F, -7.5982F, -8.6747F, 3.0F, 1.0F, 3.0F, new CubeDeformation(-0.1F))
 		.texOffs(462, 28).addBox(1.6281F, -8.0771F, -8.8028F, 3.0F, 1.0F, 3.0F, new CubeDeformation(-0.3F))
 		.texOffs(471, 28).addBox(2.4107F, -7.5916F, -9.3494F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.09F)), PartPose.offsetAndRotation(-7.5F, -2.0F, -5.5F, 1.2217F, -1.7017F, 0.0436F));
 
-		PartDefinition Pug3 = real_head.addOrReplaceChild("Pug3", CubeListBuilder.create().texOffs(449, 22).addBox(-1.5F, 1.5F, 3.0F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.1F))
+		PartDefinition Pug3 = real_head2.addOrReplaceChild("Pug3", CubeListBuilder.create().texOffs(449, 22).addBox(-1.5F, 1.5F, 3.0F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.1F))
 		.texOffs(449, 22).addBox(-1.5F, 1.75F, 2.0F, 3.0F, 3.0F, 1.0F, new CubeDeformation(-0.3F))
 		.texOffs(449, 22).addBox(-1.5F, 1.75F, 2.35F, 3.0F, 3.0F, 1.0F, new CubeDeformation(-0.3F))
 		.texOffs(431, 20).addBox(-3.0F, -1.0F, 3.75F, 6.0F, 6.0F, 6.0F, new CubeDeformation(-0.05F))
@@ -1084,10 +1112,12 @@ public class LayerDefinitions {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.75F, 7.75F));
+		
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -0.25F, -2.25F));
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.0F, -0.25F, -2.25F));
 
-		PartDefinition aus_tail = real_tail.addOrReplaceChild("aus_tail", CubeListBuilder.create().texOffs(359, 2).addBox(-1.5F, -1.0F, -2.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
+		PartDefinition aus_tail = real_tail2.addOrReplaceChild("aus_tail", CubeListBuilder.create().texOffs(359, 2).addBox(-1.5F, -1.0F, -2.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(365, 19).addBox(-1.5F, 0.0F, -5.0F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.05F, 1.75F));
 
 		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 17.0F, 8.0F));
@@ -1183,7 +1213,9 @@ public class LayerDefinitions {
 
 		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 13.4F, 6.85F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, -0.75F));
+		var real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.ZERO);
+
+		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, -0.75F));
 
 		PartDefinition beagle_tail = real_tail.addOrReplaceChild("beagle_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 2.0F));
 
