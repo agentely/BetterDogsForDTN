@@ -1041,7 +1041,7 @@ public class LayerDefinitions {
 
 		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.75F, 0.0F));
 
-		PartDefinition Pug7 = real_tail.addOrReplaceChild("Pug7", CubeListBuilder.create().texOffs(447, 0).addBox(0.0F, -2.63F, 0.89F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+		PartDefinition Pug7 = real_tail2.addOrReplaceChild("Pug7", CubeListBuilder.create().texOffs(447, 0).addBox(0.0F, -2.63F, 0.89F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
 
 		PartDefinition bone2 = Pug7.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(433, 1).addBox(-1.0F, -9.13F, 1.89F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.201F)), PartPose.offset(1.0F, 8.5F, -3.0F));
 
@@ -1217,7 +1217,7 @@ public class LayerDefinitions {
 
 		PartDefinition real_tail2 = real_tail.addOrReplaceChild("real_tail2", CubeListBuilder.create(), PartPose.offset(-1.0F, -1.5F, -0.75F));
 
-		PartDefinition beagle_tail = real_tail.addOrReplaceChild("beagle_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 2.0F));
+		PartDefinition beagle_tail = real_tail2.addOrReplaceChild("beagle_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 2.0F));
 
 		PartDefinition Beagle8 = beagle_tail.addOrReplaceChild("Beagle8", CubeListBuilder.create().texOffs(677, 17).addBox(-2.0F, -2.3397F, -1.8808F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, 4.0F, -1.0F));
 
