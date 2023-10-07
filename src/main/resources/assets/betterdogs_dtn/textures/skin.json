@@ -169,6 +169,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - King Charles (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/king_charles_black_tan",
+            "use_model" : "betterdogs_dtn:king_charles",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - King Charles (Black and White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/king_charles_black_white_tan",
+            "use_model" : "betterdogs_dtn:king_charles",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - King Charles (Red and White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/king_charles_red_white_tan",
+            "use_model" : "betterdogs_dtn:king_charles",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - King Charles (Red)",
+            "skin_id" : "betterdogs_dtn:textures/king_charles_red",
+            "use_model" : "betterdogs_dtn:king_charles",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - English Bulldog (Black Tan)",
             "skin_id" : "betterdogs_dtn:textures/english_bulldog_black_tan",
             "use_model" : "betterdogs_dtn:english_bulldog",
