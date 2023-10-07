@@ -197,6 +197,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Cairn Terrier (Black)",
+            "skin_id" : "betterdogs_dtn:textures/cairn_black",
+            "use_model" : "betterdogs_dtn:west_cairn_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Cairn Terrier (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/cairn_brown",
+            "use_model" : "betterdogs_dtn:west_cairn_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Cairn Terrier (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/cairn_gray",
+            "use_model" : "betterdogs_dtn:west_cairn_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Western Highland White Terrier",
+            "skin_id" : "betterdogs_dtn:textures/western_highland_white_terrier",
+            "use_model" : "betterdogs_dtn:west_cairn_terrier",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - English Bulldog (Black Tan)",
             "skin_id" : "betterdogs_dtn:textures/english_bulldog_black_tan",
             "use_model" : "betterdogs_dtn:english_bulldog",
