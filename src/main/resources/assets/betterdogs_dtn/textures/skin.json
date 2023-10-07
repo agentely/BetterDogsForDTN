@@ -155,6 +155,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Dachshund (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/dachshund_black_tan",
+            "use_model" : "betterdogs_dtn:dachshund",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Dachshund (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/dachshund_brown",
+            "use_model" : "betterdogs_dtn:dachshund",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Irish Terrier (Black)",
             "skin_id" : "betterdogs_dtn:textures/irish_terrier_black",
             "use_model" : "betterdogs_dtn:irish_terrier",

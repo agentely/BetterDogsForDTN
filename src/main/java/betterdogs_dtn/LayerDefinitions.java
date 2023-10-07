@@ -1416,4 +1416,88 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition dachshund() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 16.0F, 7.5F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition dachshund_tail = tail.addOrReplaceChild("dachshund_tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -0.3064F, 0.2981F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition dachshund_tail_rotation = dachshund_tail.addOrReplaceChild("dachshund_tail_rotation", CubeListBuilder.create().texOffs(860, 11).addBox(-0.5F, -3.5F, -0.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(0.0F, 0.0F, -3.75F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, 7.0F));
+
+		PartDefinition Dachshundjackrusselleg1_rotation3 = right_hind_leg.addOrReplaceChild("Dachshundjackrusselleg1_rotation3", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, -11.5F));
+
+		PartDefinition mane_sub_4 = Dachshundjackrusselleg1_rotation3.addOrReplaceChild("mane_sub_4", CubeListBuilder.create().texOffs(925, 2).addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, 7.0F));
+
+		PartDefinition Dachshundjackrusselleg1_rotation2 = left_hind_leg.addOrReplaceChild("Dachshundjackrusselleg1_rotation2", CubeListBuilder.create(), PartPose.offset(0.0F, 5.0F, -11.5F));
+
+		PartDefinition mane_sub_87 = Dachshundjackrusselleg1_rotation2.addOrReplaceChild("mane_sub_87", CubeListBuilder.create().texOffs(925, 2).mirror().addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 19.0F, -3.5F));
+
+		PartDefinition Dachshundjackrusselleg3_rotation3 = right_front_leg.addOrReplaceChild("Dachshundjackrusselleg3_rotation3", CubeListBuilder.create(), PartPose.offset(0.0F, -2.5F, -3.0F));
+
+		PartDefinition mane_sub_3 = Dachshundjackrusselleg3_rotation3.addOrReplaceChild("mane_sub_3", CubeListBuilder.create().texOffs(925, 0).addBox(-1.0F, 0.5F, 2.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 19.0F, -3.5F));
+
+		PartDefinition Dachshundjackrusselleg3_rotation2 = left_front_leg.addOrReplaceChild("Dachshundjackrusselleg3_rotation2", CubeListBuilder.create(), PartPose.offset(0.0F, -2.5F, -3.0F));
+
+		PartDefinition mane_sub_2 = Dachshundjackrusselleg3_rotation2.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(925, 0).mirror().addBox(-1.0F, 0.5F, 2.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 17.5F, 3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Dachshund_body2 = body.addOrReplaceChild("Dachshund_body2", CubeListBuilder.create().texOffs(909, 18).addBox(-2.5F, -5.75F, -6.7F, 5.0F, 7.0F, 5.0F, new CubeDeformation(0.05F)), PartPose.offset(0.0F, 4.0F, 4.1F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 18.25F, -2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition dachshundmane2 = upper_body.addOrReplaceChild("dachshundmane2", CubeListBuilder.create().texOffs(1741, 0).addBox(-3.0F, -12.75F, -10.0F, 6.0F, 8.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 9.0F, 7.25F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -6.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -1.5F, 0.25F));
+
+		PartDefinition dachshund_ear_left2 = left_ear.addOrReplaceChild("dachshund_ear_left2", CubeListBuilder.create().texOffs(902, 10).addBox(6.0406F, -10.6247F, -9.3223F, 1.0F, 4.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(914, 1).addBox(5.8624F, -7.9415F, -8.5785F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.3371F, 11.7042F, 8.7746F, -0.1554F, 0.6055F, -0.0722F));
+
+		PartDefinition bone27_r1 = dachshund_ear_left2.addOrReplaceChild("bone27_r1", CubeListBuilder.create().texOffs(904, 18).addBox(0.9364F, -5.3589F, 6.6052F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(7.4995F, -6.3938F, -15.4367F, 0.0F, -0.3927F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -1.5F, 0.25F));
+
+		PartDefinition dachshund_ear_right2 = right_ear.addOrReplaceChild("dachshund_ear_right2", CubeListBuilder.create().texOffs(902, 10).mirror().addBox(-7.0406F, -10.6247F, -9.3223F, 1.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(914, 1).mirror().addBox(-6.8624F, -7.9415F, -8.5785F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.3371F, 11.7042F, 8.7746F, -0.1554F, -0.6055F, 0.0722F));
+
+		PartDefinition bone28_r1 = dachshund_ear_right2.addOrReplaceChild("bone28_r1", CubeListBuilder.create().texOffs(904, 18).mirror().addBox(-1.9364F, -5.3589F, 6.6052F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-7.4995F, -6.3938F, -15.4367F, 0.0F, 0.3927F, 0.0F));
+
+		PartDefinition Dachshund_head3 = real_head.addOrReplaceChild("Dachshund_head3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -6.0F, 10.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition Dachshund_rotation3 = Dachshund_head3.addOrReplaceChild("Dachshund_rotation3", CubeListBuilder.create().texOffs(882, 0).addBox(-2.5F, 7.4F, 0.75F, 5.0F, 5.0F, 5.0F, new CubeDeformation(-0.2F))
+		.texOffs(869, 1).addBox(-1.8F, 8.7829F, 0.83F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(869, 1).addBox(0.8F, 8.7829F, 0.83F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -13.5F, 4.4F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mond3 = Dachshund_rotation3.addOrReplaceChild("mond3", CubeListBuilder.create().texOffs(902, 0).addBox(-1.5F, 1.4358F, -11.2038F, 3.0F, 2.0F, 5.0F, new CubeDeformation(-0.3F))
+		.texOffs(962, 14).addBox(-1.5F, 2.8311F, -11.2038F, 3.0F, 1.0F, 5.0F, new CubeDeformation(-0.305F))
+		.texOffs(1124, 8).addBox(-1.5F, 0.755F, -11.9853F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.9F))
+		.texOffs(869, 1).addBox(-0.5F, 2.4419F, -11.154F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, 7.35F, 7.9F, 0.1134F, 0.0F, 0.0F));
+
+		PartDefinition bone4 = mond3.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(1062, 11).addBox(-1.5F, 10.7145F, 1.2287F, 3.0F, 1.0F, 5.0F, new CubeDeformation(-0.307F)), PartPose.offsetAndRotation(0.0F, -7.7035F, -11.941F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone5 = mond3.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(909, 8).addBox(-1.0F, -0.5522F, -15.7482F, 2.0F, 2.0F, 3.0F, new CubeDeformation(-0.3F)), PartPose.offsetAndRotation(0.0F, -3.84F, 5.1581F, 0.3927F, 0.0F, 0.0F));
+
+		PartDefinition dachshund_neck3 = Dachshund_head3.addOrReplaceChild("dachshund_neck3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -12.2293F, 0.1298F, 0.3927F, 0.0F, 0.0F));
+
+		PartDefinition dachshund_neck_rotation3 = dachshund_neck3.addOrReplaceChild("dachshund_neck_rotation3", CubeListBuilder.create().texOffs(887, 22).addBox(-1.95F, 7.8853F, -2.3062F, 4.0F, 4.0F, 4.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(-0.05F, 0.0164F, 1.3462F, -1.5708F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
+
 }
