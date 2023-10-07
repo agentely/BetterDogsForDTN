@@ -1360,21 +1360,23 @@ public class LayerDefinitions {
 
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 8.5F, -6.5F));
 
-		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, 0.0F));
+		var real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.ZERO);
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -2.0F, 0.0F));
+		PartDefinition real_head2 = real_head.addOrReplaceChild("real_head2", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, 0.0F));
+
+		PartDefinition right_ear = real_head2.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -2.0F, 0.0F));
 
 		PartDefinition oor2 = right_ear.addOrReplaceChild("oor2", CubeListBuilder.create().texOffs(1569, 23).addBox(1.0342F, -19.3969F, -12.3696F, 1.0F, 5.0F, 4.0F, new CubeDeformation(0.0F))
 		.texOffs(1539, 28).addBox(1.057F, -14.4153F, -12.0191F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
 		.texOffs(1494, 15).addBox(1.2265F, -13.4298F, -12.0137F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-7.75F, 17.6F, 9.05F, -0.0436F, -0.2182F, 0.1745F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, -2.0F, 0.0F));
+		PartDefinition left_ear = real_head2.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, -2.0F, 0.0F));
 
 		PartDefinition oor3 = left_ear.addOrReplaceChild("oor3", CubeListBuilder.create().texOffs(1569, 23).mirror().addBox(-2.0342F, -19.3969F, -12.3696F, 1.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
 		.texOffs(1539, 28).mirror().addBox(-2.057F, -14.4153F, -12.0191F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
 		.texOffs(1494, 15).mirror().addBox(-2.2265F, -13.4298F, -12.0137F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(7.75F, 17.6F, 9.05F, -0.0436F, 0.2182F, -0.1745F));
 
-		PartDefinition asccsa2 = real_head.addOrReplaceChild("asccsa2", CubeListBuilder.create(), PartPose.offset(-1.0F, 5.0F, 1.5F));
+		PartDefinition asccsa2 = real_head2.addOrReplaceChild("asccsa2", CubeListBuilder.create(), PartPose.offset(-1.0F, 5.0F, 1.5F));
 
 		PartDefinition bernesemountaindog2 = asccsa2.addOrReplaceChild("bernesemountaindog2", CubeListBuilder.create().texOffs(1638, 18).addBox(-3.5F, -20.05F, -11.85F, 7.0F, 7.0F, 7.0F, new CubeDeformation(0.0F))
 		.texOffs(1456, 30).addBox(-2.3F, -18.0F, -11.85F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F))
