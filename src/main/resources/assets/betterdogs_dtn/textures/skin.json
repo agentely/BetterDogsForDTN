@@ -148,6 +148,13 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Bernese Mountain Dog (Black)",
+            "skin_id" : "betterdogs_dtn:textures/bernese_black",
+            "use_model" : "betterdogs_dtn:bernese_dog",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Irish Terrier (Black)",
             "skin_id" : "betterdogs_dtn:textures/irish_terrier_black",
             "use_model" : "betterdogs_dtn:irish_terrier",

@@ -1310,4 +1310,110 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition bernese_dog() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 10.55F, 8.75F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition asca = real_tail.addOrReplaceChild("asca", CubeListBuilder.create(), PartPose.offset(-1.0F, 2.25F, -0.75F));
+
+		PartDefinition stbernard8 = asca.addOrReplaceChild("stbernard8", CubeListBuilder.create().texOffs(1545, 18).addBox(-2.5F, -3.9022F, 0.3997F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1557, 20).addBox(-2.5F, -3.9022F, -2.6003F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, 1.0F, -1.35F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.0F, 17.25F, 7.0F));
+
+		PartDefinition bernese2 = right_hind_leg.addOrReplaceChild("bernese2", CubeListBuilder.create().texOffs(709, 15).mirror().addBox(-0.5F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.3F)).mirror(false), PartPose.offset(-0.5F, -1.25F, 0.0F));
+
+		PartDefinition bone11 = bernese2.addOrReplaceChild("bone11", CubeListBuilder.create().texOffs(542, 9).mirror().addBox(2.5F, -7.9F, 2.95F, 0.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(2.0F, 7.65F, 1.35F, 0.0F, -3.1416F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 17.25F, 7.0F));
+
+		PartDefinition bernese3 = left_hind_leg.addOrReplaceChild("bernese3", CubeListBuilder.create().texOffs(709, 15).addBox(-1.5F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.3F)), PartPose.offset(0.5F, -1.25F, 0.0F));
+
+		PartDefinition bone10 = bernese3.addOrReplaceChild("bone10", CubeListBuilder.create().texOffs(542, 9).addBox(-2.5F, -7.9F, 2.95F, 0.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-2.0F, 7.65F, 1.35F, 0.0F, 3.1416F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.25F, 17.0F, -4.5F));
+
+		PartDefinition stbernardbernese5 = right_front_leg.addOrReplaceChild("stbernardbernese5", CubeListBuilder.create().texOffs(1504, 8).mirror().addBox(-0.5F, -0.35F, -1.25F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.3F)).mirror(false)
+		.texOffs(550, 9).mirror().addBox(-0.5F, -0.65F, 1.05F, 0.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.25F, -1.0F, 0.5F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.25F, 17.0F, -4.5F));
+
+		PartDefinition stbernardbernese7 = left_front_leg.addOrReplaceChild("stbernardbernese7", CubeListBuilder.create().texOffs(1504, 8).addBox(-1.5F, -0.35F, -1.25F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.3F))
+		.texOffs(550, 9).addBox(0.5F, -0.65F, 1.05F, 0.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.25F, -1.0F, 0.5F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_2 = body.addOrReplaceChild("body_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition stbernardbernese3 = body_sub_2.addOrReplaceChild("stbernardbernese3", CubeListBuilder.create().texOffs(1528, 2).addBox(-3.5F, -3.4F, -0.15F, 7.0F, 8.0F, 8.0F, new CubeDeformation(0.4F))
+		.texOffs(1534, 8).addBox(-3.5F, -3.4F, -2.95F, 7.0F, 8.0F, 2.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(0.0F, -0.25F, 1.15F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_2 = upper_body.addOrReplaceChild("mane_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, 2.5F, 2.5F));
+
+		PartDefinition stbernardbernese6 = mane_sub_2.addOrReplaceChild("stbernardbernese6", CubeListBuilder.create().texOffs(1503, 9).addBox(-8.0F, -7.75F, -2.1F, 8.0F, 8.0F, 9.0F, new CubeDeformation(0.2F)), PartPose.offset(4.0F, 1.25F, -4.5F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 8.5F, -6.5F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.0F, -2.0F, 0.0F));
+
+		PartDefinition oor2 = right_ear.addOrReplaceChild("oor2", CubeListBuilder.create().texOffs(1569, 23).addBox(1.0342F, -19.3969F, -12.3696F, 1.0F, 5.0F, 4.0F, new CubeDeformation(0.0F))
+		.texOffs(1539, 28).addBox(1.057F, -14.4153F, -12.0191F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1494, 15).addBox(1.2265F, -13.4298F, -12.0137F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-7.75F, 17.6F, 9.05F, -0.0436F, -0.2182F, 0.1745F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.0F, -2.0F, 0.0F));
+
+		PartDefinition oor3 = left_ear.addOrReplaceChild("oor3", CubeListBuilder.create().texOffs(1569, 23).mirror().addBox(-2.0342F, -19.3969F, -12.3696F, 1.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(1539, 28).mirror().addBox(-2.057F, -14.4153F, -12.0191F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(1494, 15).mirror().addBox(-2.2265F, -13.4298F, -12.0137F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(7.75F, 17.6F, 9.05F, -0.0436F, 0.2182F, -0.1745F));
+
+		PartDefinition asccsa2 = real_head.addOrReplaceChild("asccsa2", CubeListBuilder.create(), PartPose.offset(-1.0F, 5.0F, 1.5F));
+
+		PartDefinition bernesemountaindog2 = asccsa2.addOrReplaceChild("bernesemountaindog2", CubeListBuilder.create().texOffs(1638, 18).addBox(-3.5F, -20.05F, -11.85F, 7.0F, 7.0F, 7.0F, new CubeDeformation(0.0F))
+		.texOffs(1456, 30).addBox(-2.3F, -18.0F, -11.85F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F))
+		.texOffs(1467, 29).addBox(-0.5F, -20.01F, -11.81F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.05F))
+		.texOffs(1467, 29).addBox(-0.5F, -18.91F, -11.81F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.05F))
+		.texOffs(1460, 30).addBox(-2.85F, -18.0F, -11.85F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.08F))
+		.texOffs(1456, 30).addBox(1.25F, -18.0F, -11.85F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.1F))
+		.texOffs(1460, 30).addBox(1.8F, -18.0F, -11.85F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.08F)), PartPose.offset(1.0F, 11.55F, 7.5F));
+
+		PartDefinition bone2 = bernesemountaindog2.addOrReplaceChild("bone2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -2.75F, 5.25F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = bernesemountaindog2.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(1478, 0).addBox(3.9525F, -11.8972F, -7.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.25F, -6.9F, -3.95F, 0.0F, 0.0F, -0.1309F));
+
+		PartDefinition bone4 = bernesemountaindog2.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(1478, 0).addBox(2.5775F, -11.8799F, -7.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-3.2F, -7.9F, -3.95F, 0.0F, 0.0F, 0.1309F));
+
+		PartDefinition mond2 = bernesemountaindog2.addOrReplaceChild("mond2", CubeListBuilder.create().texOffs(1667, 25).addBox(-1.5F, -10.8275F, -8.4093F, 4.0F, 3.0F, 4.0F, new CubeDeformation(-0.13F))
+		.texOffs(553, 30).addBox(0.0F, -9.9246F, -8.3149F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -6.4F, -6.65F, 0.0524F, 0.0F, 0.0F));
+
+		PartDefinition bone5 = mond2.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(1452, 30).addBox(2.0F, -12.7397F, -8.3555F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.3F)), PartPose.offset(-2.0F, 2.25F, 0.25F));
+
+		PartDefinition bone6 = mond2.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(1631, 11).addBox(-1.5F, -8.5093F, -9.2932F, 4.0F, 1.0F, 4.0F, new CubeDeformation(-0.23F))
+		.texOffs(966, 9).addBox(-1.5F, -8.0393F, -9.2932F, 2.0F, 1.0F, 4.0F, new CubeDeformation(-0.3F))
+		.texOffs(1659, 18).addBox(-1.0F, -8.0993F, -9.1672F, 3.0F, 1.0F, 5.0F, new CubeDeformation(-0.28F)), PartPose.offsetAndRotation(0.0F, 0.5893F, 0.3898F, -0.0524F, 0.0F, 0.0F));
+
+		PartDefinition head_sub_2 = bone6.addOrReplaceChild("head_sub_2", CubeListBuilder.create().texOffs(965, 8).mirror().addBox(0.5F, -8.0393F, -9.2932F, 2.0F, 1.0F, 5.0F, new CubeDeformation(-0.3F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition neus2 = mond2.addOrReplaceChild("neus2", CubeListBuilder.create().texOffs(1446, 29).addBox(0.0F, -13.2162F, -4.9212F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.056F)), PartPose.offsetAndRotation(0.0F, -10.415F, 9.0455F, 1.1694F, 0.0F, 0.0F));
+
+		PartDefinition bone7 = neus2.addOrReplaceChild("bone7", CubeListBuilder.create().texOffs(1430, 29).addBox(-0.5F, -16.1343F, -6.5443F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F))
+		.texOffs(1438, 29).addBox(-0.5F, -16.1343F, -4.9444F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, 0.3555F, -13.9238F, -0.829F, 0.0F, 0.0F));
+
+		PartDefinition bone8 = bernesemountaindog2.addOrReplaceChild("bone8", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.4F, -7.5F, 0.35F, 0.0436F, 0.0F, -1.1781F));
+
+		PartDefinition oor4 = bernesemountaindog2.addOrReplaceChild("oor4", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.4F, -10.5F, 0.75F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition oor5 = bernesemountaindog2.addOrReplaceChild("oor5", CubeListBuilder.create(), PartPose.offsetAndRotation(6.15F, -10.5F, 0.0F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone9 = oor5.addOrReplaceChild("bone9", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.0F, -0.3132F, 0.0436F, 0.0F, 1.1781F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
