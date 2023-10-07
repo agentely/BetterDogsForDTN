@@ -1586,9 +1586,52 @@ public class LayerDefinitions {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition root = partdefinition.addOrReplaceChild("root", CubeListBuilder.create(), PartPose.offset(0.0F, 15.0F, 0.0F));
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 15.35F, 6.7F));
 
-		PartDefinition head = root.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, -1.5F, -5.4F));
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition kingcharles_tail_rotation2 = real_tail.addOrReplaceChild("kingcharles_tail_rotation2", CubeListBuilder.create().texOffs(1219, 2).addBox(-1.0F, -4.0F, -2.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F))
+		.texOffs(1215, 22).addBox(-1.0F, -4.0F, 0.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 3.3969F, -1.7509F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.4F, 18.5F, 5.6F));
+
+		PartDefinition KingCharlesleg4 = right_hind_leg.addOrReplaceChild("KingCharlesleg4", CubeListBuilder.create(), PartPose.offset(-0.2F, 3.2F, -10.6F));
+
+		PartDefinition bone7 = KingCharlesleg4.addOrReplaceChild("bone7", CubeListBuilder.create().texOffs(405, 26).mirror().addBox(-1.1F, -0.45F, -1.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offset(0.1F, -1.0F, 9.65F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.4F, 18.5F, 5.6F));
+
+		PartDefinition KingCharlesleg5 = left_hind_leg.addOrReplaceChild("KingCharlesleg5", CubeListBuilder.create(), PartPose.offset(0.2F, 3.2F, -10.6F));
+
+		PartDefinition bone6 = KingCharlesleg5.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(405, 26).addBox(-0.9F, -0.45F, -1.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offset(-0.1F, -1.0F, 9.65F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.85F, 20.15F, -3.9F));
+
+		PartDefinition KingCharlesleg3 = right_front_leg.addOrReplaceChild("KingCharlesleg3", CubeListBuilder.create(), PartPose.offset(0.1F, -7.0F, 0.3F));
+
+		PartDefinition bone9 = KingCharlesleg3.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(405, 25).mirror().addBox(-2.5F, -5.0F, 3.4F, 2.0F, 5.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offset(1.5F, 11.05F, -4.55F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.85F, 20.15F, -3.9F));
+
+		PartDefinition KingCharlesleg2 = left_front_leg.addOrReplaceChild("KingCharlesleg2", CubeListBuilder.create(), PartPose.offset(-0.1F, -7.0F, 0.3F));
+
+		PartDefinition bone8 = KingCharlesleg2.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(405, 25).addBox(0.5F, -5.0F, 3.4F, 2.0F, 5.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offset(-1.5F, 11.05F, -4.55F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 17.9F, 2.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition kingcharles_body2 = body.addOrReplaceChild("kingcharles_body2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.2F, 2.25F));
+
+		PartDefinition kingcharlesbody2 = kingcharles_body2.addOrReplaceChild("kingcharlesbody2", CubeListBuilder.create().texOffs(1191, 14).addBox(-3.0F, -5.95F, -5.1F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
+		.texOffs(1213, 0).addBox(2.3F, -5.8F, -6.9F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1213, 0).addBox(-2.2F, -5.8F, -6.9F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.1F, 18.2F, -2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition king_charles_mane2 = upper_body.addOrReplaceChild("king_charles_mane2", CubeListBuilder.create().texOffs(1189, 0).addBox(-3.0F, -12.75F, -9.75F, 6.0F, 7.0F, 6.0F, new CubeDeformation(0.1F))
+		.texOffs(1223, 25).addBox(2.3F, -10.8F, -11.75F, 0.0F, 5.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1223, 25).addBox(-2.2F, -10.8F, -11.75F, 0.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.1F, 9.0F, 7.2F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -5.4F));
 
 		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
@@ -1627,85 +1670,44 @@ public class LayerDefinitions {
 
 		PartDefinition neus2 = kingcharles2.addOrReplaceChild("neus2", CubeListBuilder.create().texOffs(1153, 6).addBox(0.0F, -8.5046F, -0.6268F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(-0.5F, -5.95F, -2.15F, 1.0036F, 0.0F, 0.0F));
 
-		PartDefinition upper_body = root.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.1F, 3.2F, -2.0F, 1.5708F, 0.0F, 0.0F));
-
-		PartDefinition king_charles_mane2 = upper_body.addOrReplaceChild("king_charles_mane2", CubeListBuilder.create().texOffs(1189, 0).addBox(-3.0F, -12.75F, -9.75F, 6.0F, 7.0F, 6.0F, new CubeDeformation(0.1F))
-		.texOffs(1223, 25).addBox(2.3F, -10.8F, -11.75F, 0.0F, 5.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(1223, 25).addBox(-2.2F, -10.8F, -11.75F, 0.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.1F, 9.0F, 7.2F));
-
-		PartDefinition body = root.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 2.9F, 2.2F, 1.5708F, 0.0F, 0.0F));
-
-		PartDefinition kingcharles_body2 = body.addOrReplaceChild("kingcharles_body2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.2F, 2.25F));
-
-		PartDefinition kingcharlesbody2 = kingcharles_body2.addOrReplaceChild("kingcharlesbody2", CubeListBuilder.create().texOffs(1191, 14).addBox(-3.0F, -5.95F, -5.1F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
-		.texOffs(1213, 0).addBox(2.3F, -5.8F, -6.9F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
-		.texOffs(1213, 0).addBox(-2.2F, -5.8F, -6.9F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.0F, 0.0F));
-
-		PartDefinition left_front_leg = root.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.85F, 5.15F, -3.9F));
-
-		PartDefinition KingCharlesleg2 = left_front_leg.addOrReplaceChild("KingCharlesleg2", CubeListBuilder.create(), PartPose.offset(-0.1F, -7.0F, 0.3F));
-
-		PartDefinition bone8 = KingCharlesleg2.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(405, 25).addBox(0.5F, -5.0F, 3.4F, 2.0F, 5.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offset(-1.5F, 11.05F, -4.55F));
-
-		PartDefinition right_front_leg = root.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.85F, 5.15F, -3.9F));
-
-		PartDefinition KingCharlesleg3 = right_front_leg.addOrReplaceChild("KingCharlesleg3", CubeListBuilder.create(), PartPose.offset(0.1F, -7.0F, 0.3F));
-
-		PartDefinition bone9 = KingCharlesleg3.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(405, 25).mirror().addBox(-2.5F, -5.0F, 3.4F, 2.0F, 5.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offset(1.5F, 11.05F, -4.55F));
-
-		PartDefinition left_hind_leg = root.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.4F, 3.5F, 5.6F));
-
-		PartDefinition KingCharlesleg5 = left_hind_leg.addOrReplaceChild("KingCharlesleg5", CubeListBuilder.create(), PartPose.offset(0.2F, 3.2F, -10.6F));
-
-		PartDefinition bone6 = KingCharlesleg5.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(405, 26).addBox(-0.9F, -0.45F, -1.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.2F)), PartPose.offset(-0.1F, -1.0F, 9.65F));
-
-		PartDefinition right_hind_leg = root.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.4F, 3.5F, 5.6F));
-
-		PartDefinition KingCharlesleg4 = right_hind_leg.addOrReplaceChild("KingCharlesleg4", CubeListBuilder.create(), PartPose.offset(-0.2F, 3.2F, -10.6F));
-
-		PartDefinition bone7 = KingCharlesleg4.addOrReplaceChild("bone7", CubeListBuilder.create().texOffs(405, 26).mirror().addBox(-1.1F, -0.45F, -1.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offset(0.1F, -1.0F, 9.65F));
-
-		PartDefinition tail = root.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.35F, 6.7F));
-
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-
-		PartDefinition kingcharles_tail_rotation2 = real_tail.addOrReplaceChild("kingcharles_tail_rotation2", CubeListBuilder.create().texOffs(1219, 2).addBox(-1.0F, -4.0F, -2.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F))
-		.texOffs(1215, 22).addBox(-1.0F, -4.0F, 0.2F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 3.3969F, -1.7509F));
-
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
 	public static LayerDefinition west_cairn_terrier() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 14.9F, 5.8F));
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.9F, 5.3F, 1.789F, 0.0F, 0.0F));
 
-		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, 0.1F, 1.15F));
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(-1.0F, -0.4F, 1.4F));
 
 		PartDefinition west_staart2 = real_tail.addOrReplaceChild("west_staart2", CubeListBuilder.create(), PartPose.offset(1.0F, 8.3233F, -6.7675F));
 
 		PartDefinition west_staart_rot2 = west_staart2.addOrReplaceChild("west_staart_rot2", CubeListBuilder.create().texOffs(1464, 0).addBox(-1.0F, -5.8584F, -0.7796F, 2.0F, 7.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.0F, -7.75F, 4.85F, 0.0F, 0.0F, -3.1416F));
 
-		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create().texOffs(1455, 22).addBox(-1.0F, 0.5F, -2.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.75F, 17.5F, 5.5F));
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, 7.0F));
 
-		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create().texOffs(1455, 22).mirror().addBox(-1.0F, 0.5F, -2.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(1.75F, 17.5F, 5.5F));
+		PartDefinition west_shihtzu_leg2_rot2 = right_hind_leg.addOrReplaceChild("west_shihtzu_leg2_rot2", CubeListBuilder.create().texOffs(1455, 22).addBox(-2.0F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.75F, 0.0F, 0.0F));
 
-		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 19.0F, -3.75F));
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create().texOffs(1455, 22).mirror().addBox(0.25F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.5F, 16.0F, 7.0F));
 
-		PartDefinition west_shihtzu_leg3_rot3 = right_front_leg.addOrReplaceChild("west_shihtzu_leg3_rot3", CubeListBuilder.create().texOffs(1455, 22).mirror().addBox(0.0F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.25F, -3.0F, 2.25F));
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
 
-		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 19.0F, -3.75F));
+		PartDefinition west_shihtzu_leg4_rot2 = right_front_leg.addOrReplaceChild("west_shihtzu_leg4_rot2", CubeListBuilder.create(), PartPose.offset(-0.25F, 0.0F, 2.5F));
 
-		PartDefinition west_shihtzu_leg3_rot2 = left_front_leg.addOrReplaceChild("west_shihtzu_leg3_rot2", CubeListBuilder.create().texOffs(1455, 22).addBox(-2.0F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.25F, -3.0F, 2.25F));
+		PartDefinition mane_sub_6 = west_shihtzu_leg4_rot2.addOrReplaceChild("mane_sub_6", CubeListBuilder.create().texOffs(1455, 22).mirror().addBox(0.0F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(0.5F, 16.0F, -4.0F));
+
+		PartDefinition west_shihtzu_leg3_rot2 = left_front_leg.addOrReplaceChild("west_shihtzu_leg3_rot2", CubeListBuilder.create().texOffs(1455, 22).addBox(-2.0F, 2.0F, -3.5F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.25F, 0.0F, 2.5F));
 
 		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 17.7F, 2.1F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition west_shihtzu_body2 = body.addOrReplaceChild("west_shihtzu_body2", CubeListBuilder.create().texOffs(1833, 0).addBox(-3.5F, -5.475F, -6.05F, 7.0F, 6.0F, 3.0F, new CubeDeformation(-0.15F))
 		.texOffs(1427, 13).addBox(-3.5F, -5.025F, -3.45F, 7.0F, 6.0F, 7.0F, new CubeDeformation(0.09F)), PartPose.offset(0.0F, 3.125F, 0.05F));
 
-		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 18.0F, -1.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 17.5F, -3.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition west_shihtzu_mane2 = upper_body.addOrReplaceChild("west_shihtzu_mane2", CubeListBuilder.create().texOffs(1424, 0).addBox(-3.5F, -6.0F, -8.35F, 7.0F, 6.0F, 7.0F, new CubeDeformation(0.1F)), PartPose.offset(0.0F, 1.25F, 5.35F));
+		PartDefinition west_shihtzu_mane2 = upper_body.addOrReplaceChild("west_shihtzu_mane2", CubeListBuilder.create().texOffs(1424, 0).addBox(-3.5F, -6.0F, -8.35F, 7.0F, 6.0F, 7.0F, new CubeDeformation(0.1F)), PartPose.offset(0.0F, 3.25F, 4.85F));
 
 		PartDefinition west_shihtzu_mane_hair2 = west_shihtzu_mane2.addOrReplaceChild("west_shihtzu_mane_hair2", CubeListBuilder.create().texOffs(1813, 0).addBox(-3.5F, -3.0F, -7.75F, 7.0F, 6.0F, 3.0F, new CubeDeformation(-0.1F)), PartPose.offset(0.0F, -3.0F, -3.4F));
 
