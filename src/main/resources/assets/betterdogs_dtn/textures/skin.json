@@ -169,6 +169,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - English Bulldog (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/english_bulldog_black_tan",
+            "use_model" : "betterdogs_dtn:english_bulldog",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - English Bulldog (White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/english_bulldog_white_tan",
+            "use_model" : "betterdogs_dtn:english_bulldog",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Irish Terrier (Black)",
             "skin_id" : "betterdogs_dtn:textures/irish_terrier_black",
             "use_model" : "betterdogs_dtn:irish_terrier",
