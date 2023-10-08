@@ -505,6 +505,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Pomeranian (White)",
+            "skin_id" : "betterdogs_dtn:textures/pomeranian_black",
+            "use_model" : "betterdogs_dtn:pomeranian",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Pomeranian (Red)",
+            "skin_id" : "betterdogs_dtn:textures/pomeranian_red",
+            "use_model" : "betterdogs_dtn:pomeranian",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Wolf (Black)",
             "skin_id" : "betterdogs_dtn:textures/wolf_black",
             "use_model" : "betterdogs_dtn:wolf",

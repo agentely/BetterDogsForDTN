@@ -2141,4 +2141,87 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+
+	public static LayerDefinition pomeranian() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 17.0F, 4.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition pomeranian_tail_r1 = real_tail.addOrReplaceChild("pomeranian_tail_r1", CubeListBuilder.create().texOffs(1859, 26).addBox(-2.0F, -6.85F, -2.0F, 4.0F, 3.0F, 3.0F, new CubeDeformation(-0.4F))
+		.texOffs(1845, 25).addBox(-2.0F, -4.65F, -2.0F, 4.0F, 4.0F, 3.0F, new CubeDeformation(-0.4F)), PartPose.offsetAndRotation(0.0F, -1.1805F, -0.4719F, -2.618F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create().texOffs(968, 21).mirror().addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.35F, 19.85F, 3.35F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create().texOffs(968, 21).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.35F, 19.85F, 3.35F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create().texOffs(968, 21).mirror().addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.45F, 20.025F, -3.275F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create().texOffs(968, 21).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.45F, 20.025F, -3.275F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 19.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition pomeranian_body2 = body.addOrReplaceChild("pomeranian_body2", CubeListBuilder.create().texOffs(1789, 0).addBox(-3.0F, -2.5F, -3.0F, 6.0F, 5.0F, 6.0F, new CubeDeformation(-0.2F)), PartPose.offset(0.0F, 0.45F, 0.25F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 19.0F, -1.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition pomeranian_mane2 = upper_body.addOrReplaceChild("pomeranian_mane2", CubeListBuilder.create().texOffs(1817, 19).addBox(-3.5F, -3.0F, -8.5F, 7.0F, 6.0F, 7.0F, new CubeDeformation(-0.4F)), PartPose.offset(0.0F, -1.2F, 5.25F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 16.5F, -5.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(1.5F, -2.25F, -1.5F));
+
+		PartDefinition pomeranian_ear_left3 = left_ear.addOrReplaceChild("pomeranian_ear_left3", CubeListBuilder.create(), PartPose.offsetAndRotation(1.2616F, -4.1457F, -11.05F, 0.0F, 0.0F, 0.3927F));
+
+		PartDefinition oor3 = pomeranian_ear_left3.addOrReplaceChild("oor3", CubeListBuilder.create().texOffs(973, 13).mirror().addBox(0.6512F, -1.1647F, 11.66F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.5F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.1661F, -0.0829F, 0.147F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-1.5F, -2.25F, -1.5F));
+
+		PartDefinition pomeranian_ear_right3 = right_ear.addOrReplaceChild("pomeranian_ear_right3", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.2616F, -4.1457F, -11.05F, 0.0F, 0.0F, -0.3927F));
+
+		PartDefinition oor2 = pomeranian_ear_right3.addOrReplaceChild("oor2", CubeListBuilder.create().texOffs(973, 13).addBox(-3.6512F, -1.1647F, 11.66F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.5F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.1661F, 0.0829F, -0.147F));
+
+		PartDefinition pomeranian_head2 = real_head.addOrReplaceChild("pomeranian_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.1F, 1.8667F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition chihuahuaheadd2 = pomeranian_head2.addOrReplaceChild("chihuahuaheadd2", CubeListBuilder.create().texOffs(1690, 0).addBox(-2.5F, -10.9F, -8.5F, 5.0F, 5.0F, 5.0F, new CubeDeformation(-0.5F))
+		.texOffs(1783, 0).addBox(-2.5F, -6.9F, -8.0F, 5.0F, 5.0F, 1.0F, new CubeDeformation(-0.5F))
+		.texOffs(1680, 18).addBox(-2.5F, -12.55F, -7.1F, 5.0F, 3.0F, 1.0F, new CubeDeformation(-0.5F)), PartPose.offsetAndRotation(0.0F, 4.4F, -7.6167F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition beard_right2 = chihuahuaheadd2.addOrReplaceChild("beard_right2", CubeListBuilder.create().texOffs(841, 19).addBox(-4.25F, -16.65F, -16.2F, 3.0F, 5.0F, 2.0F, new CubeDeformation(-0.7F)), PartPose.offset(0.0F, 5.75F, 8.25F));
+
+		PartDefinition pomeranian_tong2 = chihuahuaheadd2.addOrReplaceChild("pomeranian_tong2", CubeListBuilder.create(), PartPose.offset(0.0F, -5.7834F, -8.3671F));
+
+		PartDefinition pomeranian_tong_rot2 = pomeranian_tong2.addOrReplaceChild("pomeranian_tong_rot2", CubeListBuilder.create().texOffs(995, 1).addBox(-1.0F, -1.0458F, -1.9398F, 2.0F, 2.0F, 2.0F, new CubeDeformation(-0.6F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.9599F, 0.0F, 0.0F));
+
+		PartDefinition beard_left2 = chihuahuaheadd2.addOrReplaceChild("beard_left2", CubeListBuilder.create().texOffs(841, 19).mirror().addBox(1.25F, -10.9F, -7.95F, 3.0F, 5.0F, 2.0F, new CubeDeformation(-0.7F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition bridge2 = chihuahuaheadd2.addOrReplaceChild("bridge2", CubeListBuilder.create().texOffs(308, 18).addBox(-1.0F, -0.5F, -0.8F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.3F)), PartPose.offsetAndRotation(0.0F, -8.1259F, -8.022F, 1.1868F, 0.0F, 0.0F));
+
+		PartDefinition mond2 = chihuahuaheadd2.addOrReplaceChild("mond2", CubeListBuilder.create().texOffs(1087, 16).addBox(-1.5F, -1.0515F, -1.1944F, 3.0F, 2.0F, 3.0F, new CubeDeformation(-0.5F))
+		.texOffs(978, 15).addBox(-1.5F, -0.3015F, -1.2944F, 3.0F, 2.0F, 3.0F, new CubeDeformation(-0.7F)), PartPose.offsetAndRotation(0.0F, -7.4827F, -8.5314F, 0.1222F, 0.0F, 0.0F));
+
+		PartDefinition bone2 = mond2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(1000, 28).addBox(-1.0F, -0.6006F, -0.8157F, 2.0F, 2.0F, 2.0F, new CubeDeformation(-0.6F))
+		.texOffs(958, 30).addBox(-1.0F, 0.7F, -0.5F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.35F))
+		.texOffs(875, 29).addBox(-0.5F, 0.4994F, -0.3986F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, -0.6F, -0.52F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition eye3 = chihuahuaheadd2.addOrReplaceChild("eye3", CubeListBuilder.create().texOffs(902, 28).addBox(-1.3F, -0.9F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(-0.6F)), PartPose.offset(-0.8F, -8.75F, -7.65F));
+
+		PartDefinition eye4 = chihuahuaheadd2.addOrReplaceChild("eye4", CubeListBuilder.create(), PartPose.offset(0.8F, -8.75F, -7.65F));
+
+		PartDefinition mane_sub_2 = eye4.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(902, 28).mirror().addBox(-0.7F, -0.9F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(-0.6F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition smile_corner_left2 = pomeranian_head2.addOrReplaceChild("smile_corner_left2", CubeListBuilder.create().texOffs(933, 29).addBox(-0.4869F, -0.5F, -0.4009F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.95F, -3.4F, -0.5667F, 0.0F, -0.1309F, 0.0F));
+
+		PartDefinition smile_corner_right2 = pomeranian_head2.addOrReplaceChild("smile_corner_right2", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.95F, -3.4F, -0.5667F, 0.0F, 0.1309F, 0.0F));
+
+		PartDefinition mane_sub_3 = smile_corner_right2.addOrReplaceChild("mane_sub_3", CubeListBuilder.create().texOffs(933, 29).mirror().addBox(-0.5131F, -0.5F, -0.4009F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition pomeranian_neck2 = pomeranian_head2.addOrReplaceChild("pomeranian_neck2", CubeListBuilder.create().texOffs(782, 4).addBox(-2.5F, -1.5F, -2.0F, 5.0F, 2.0F, 4.0F, new CubeDeformation(-0.4F)), PartPose.offset(0.0F, -1.7F, -1.8667F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
