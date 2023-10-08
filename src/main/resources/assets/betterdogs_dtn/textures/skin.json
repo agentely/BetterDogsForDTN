@@ -505,7 +505,7 @@
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Pomeranian (White)",
+            "skin_name" : "Better Dogs - Pomeranian (Black)",
             "skin_id" : "betterdogs_dtn:textures/pomeranian_black",
             "use_model" : "betterdogs_dtn:pomeranian",
             "based_on" : "The Better Dogs Resources Pack.",
