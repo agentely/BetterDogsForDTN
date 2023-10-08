@@ -24,5 +24,6 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation ENGLISH_BULLDOG = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "english_bulldog"), "main");
     public static final ModelLayerLocation KING_CHARLES = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "king_charles"), "main");
     public static final ModelLayerLocation WEST_CAIRN_TERRIER = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "west_cairn_terrier"), "main");
+    public static final ModelLayerLocation LAB_GOL = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "labrador_golden_retriever"), "main");
 
 }

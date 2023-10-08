@@ -365,6 +365,55 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Labrador (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/labrador_brown",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Labrador (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/labrador_gray",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Labrador (Light)",
+            "skin_id" : "betterdogs_dtn:textures/labrador_light",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Labrador (Tan)",
+            "skin_id" : "betterdogs_dtn:textures/labrador_tan",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Golden Retriever (Light)",
+            "skin_id" : "betterdogs_dtn:textures/golden_retriever_light",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Golden Retriever (Red)",
+            "skin_id" : "betterdogs_dtn:textures/golden_retriever_red",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Golden Retriever (Tan)",
+            "skin_id" : "betterdogs_dtn:textures/golden_retriever_tan",
+            "use_model" : "betterdogs_dtn:labrador_golden_retriever",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Pug (Black)",
             "skin_id" : "betterdogs_dtn:textures/pug_black",
             "use_model" : "betterdogs_dtn:pug",
