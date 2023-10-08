@@ -1907,4 +1907,80 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition dalmatian() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 11.0F, 8.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition Dalmatier7 = real_tail.addOrReplaceChild("Dalmatier7", CubeListBuilder.create().texOffs(525, 7).addBox(-1.5F, 0.0F, -2.25F, 1.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, -0.3F, 1.6F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 16.0F, 7.0F));
+
+		PartDefinition Dalmatier2 = right_hind_leg.addOrReplaceChild("Dalmatier2", CubeListBuilder.create().texOffs(517, 6).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(517, 6).addBox(-2.0F, 0.25F, -2.25F, 2.0F, 3.0F, 2.0F, new CubeDeformation(-0.001F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 16.0F, 7.0F));
+
+		PartDefinition Dalmatier3 = left_hind_leg.addOrReplaceChild("Dalmatier3", CubeListBuilder.create().texOffs(517, 6).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition bone8 = Dalmatier3.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(517, 6).addBox(0.5F, -7.75F, 6.75F, 2.0F, 3.0F, 2.0F, new CubeDeformation(-0.001F)), PartPose.offset(-2.5F, 8.0F, -9.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 16.0F, -4.0F));
+
+		PartDefinition Dalmatier6 = right_front_leg.addOrReplaceChild("Dalmatier6", CubeListBuilder.create().texOffs(507, 5).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 16.0F, -4.0F));
+
+		PartDefinition Dalmatier5 = left_front_leg.addOrReplaceChild("Dalmatier5", CubeListBuilder.create().texOffs(507, 5).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 13.5F, 2.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_2 = body.addOrReplaceChild("body_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.2F, -0.5F));
+
+		PartDefinition Dalmatierboxer2 = body_sub_2.addOrReplaceChild("Dalmatierboxer2", CubeListBuilder.create().texOffs(515, 16).addBox(-3.5F, -2.25F, -3.0F, 7.0F, 9.0F, 7.0F, new CubeDeformation(-0.3F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 13.8F, -2.6F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_2 = upper_body.addOrReplaceChild("mane_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, 2.1F, 2.3F));
+
+		PartDefinition Dalmatier9 = mane_sub_2.addOrReplaceChild("Dalmatier9", CubeListBuilder.create().texOffs(483, 11).addBox(-4.0F, -5.5F, -6.25F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 9.2F, -6.5F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.7F, -1.7F, -1.0F));
+
+		PartDefinition ear_right2 = right_ear.addOrReplaceChild("ear_right2", CubeListBuilder.create().texOffs(478, 25).addBox(0.6141F, -12.1009F, -9.9394F, 1.0F, 4.0F, 3.0F, new CubeDeformation(0.1F))
+		.texOffs(466, 0).addBox(0.7992F, -8.1992F, -9.2945F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-4.55F, 11.25F, 7.25F, -0.0873F, -0.2182F, 0.1309F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.7F, -1.7F, -1.0F));
+
+		PartDefinition ear_left2 = left_ear.addOrReplaceChild("ear_left2", CubeListBuilder.create().texOffs(478, 25).addBox(3.4479F, -11.4766F, -9.7708F, 1.0F, 4.0F, 3.0F, new CubeDeformation(0.1F))
+		.texOffs(494, 28).addBox(3.2342F, -7.5836F, -9.1917F, 1.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.05F, 11.0F, 8.5F, -0.0873F, 0.3927F, -0.1309F));
+
+		PartDefinition Dalmatier4 = real_head.addOrReplaceChild("Dalmatier4", CubeListBuilder.create().texOffs(466, 0).addBox(-4.0F, -5.5F, -2.25F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 2.3F, -0.5F));
+
+		PartDefinition mond2 = Dalmatier4.addOrReplaceChild("mond2", CubeListBuilder.create().texOffs(490, 0).addBox(-0.5F, -11.8515F, -7.18F, 3.0F, 3.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(512, 0).addBox(-0.5F, -11.8515F, -7.43F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(-2.0F, 8.45F, 2.85F, 0.0873F, 0.0F, 0.0F));
+
+		PartDefinition bone2 = mond2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(492, 1).addBox(0.55F, -10.2047F, -6.1214F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, -3.2622F, 1.7302F, 0.2182F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = mond2.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(520, 0).addBox(1.0F, -10.4544F, -7.6512F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-0.45F, -1.1364F, -0.2333F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone4 = mond2.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(486, 27).addBox(0.0F, -8.9583F, -6.5677F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, -0.1F, -0.4F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone5 = Dalmatier4.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(490, 2).addBox(1.7998F, -10.5F, -7.78F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(490, 0).addBox(1.1998F, -10.5F, -7.78F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F)), PartPose.offsetAndRotation(-4.35F, 6.3F, 5.6F, 0.0F, 0.0436F, 0.0F));
+
+		PartDefinition bone6 = Dalmatier4.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(490, 2).addBox(0.2957F, -10.5F, -7.7F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(490, 0).addBox(0.8957F, -10.5F, -7.7F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F)), PartPose.offsetAndRotation(-0.65F, 6.3F, 5.4F, 0.0F, -0.0436F, 0.0F));
+
+		PartDefinition bone7 = Dalmatier4.addOrReplaceChild("bone7", CubeListBuilder.create().texOffs(500, 0).addBox(-0.45F, -9.2862F, -0.9526F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(-1.0F, -1.0F, 6.25F, 1.309F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

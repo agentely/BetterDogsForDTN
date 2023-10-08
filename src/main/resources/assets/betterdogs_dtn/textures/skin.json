@@ -414,6 +414,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Dalmatian (Black)",
+            "skin_id" : "betterdogs_dtn:textures/dalmatian_black",
+            "use_model" : "betterdogs_dtn:dalmatian",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Dalmatian (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/dalmatian_brown",
+            "use_model" : "betterdogs_dtn:dalmatian",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Pug (Black)",
             "skin_id" : "betterdogs_dtn:textures/pug_black",
             "use_model" : "betterdogs_dtn:pug",
