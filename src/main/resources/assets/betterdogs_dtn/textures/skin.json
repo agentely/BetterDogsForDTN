@@ -169,6 +169,27 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Jack Russel Terrier (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/jack_russel_black_tan",
+            "use_model" : "betterdogs_dtn:jack_russel",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Jack Russel Terrier (Black White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/jack_russel_black_white_tan",
+            "use_model" : "betterdogs_dtn:jack_russel",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Jack Russel Terrier (White Red)",
+            "skin_id" : "betterdogs_dtn:textures/jack_russel_white_red",
+            "use_model" : "betterdogs_dtn:jack_russel",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - King Charles (Black Tan)",
             "skin_id" : "betterdogs_dtn:textures/king_charles_black_tan",
             "use_model" : "betterdogs_dtn:king_charles",

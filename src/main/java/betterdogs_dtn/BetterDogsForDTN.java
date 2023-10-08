@@ -50,6 +50,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("labrador_golden_retriever"), ModelLayerLocations.LAB_GOL));        
         event.register(new Builder(getRes("dalmatian"), ModelLayerLocations.DUMA));        
         event.register(new Builder(getRes("great_dane"), ModelLayerLocations.GREAT_DANE));        
+        event.register(new Builder(getRes("jack_russel"), ModelLayerLocations.JACK_RUSSEL));        
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
@@ -80,6 +81,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.LAB_GOL, LayerDefinitions::labrador_golden_retriever);
         event.registerLayerDefinition(ModelLayerLocations.DUMA, LayerDefinitions::dalmatian);
         event.registerLayerDefinition(ModelLayerLocations.GREAT_DANE, LayerDefinitions::great_dane);
+        event.registerLayerDefinition(ModelLayerLocations.JACK_RUSSEL, LayerDefinitions::jack_russel);
     }
 
     public static ResourceLocation getRes(String name) {
