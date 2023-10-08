@@ -365,6 +365,48 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Great Dane (Black)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_black_default",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Great Dane (Black Cropped)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_black_cropped",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Great Dane (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_brown_default",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Great Dane (Brown Cropped)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_brown_cropped",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Great Dane (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_gray_default",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Great Dane (Gray Cropped)",
+            "skin_id" : "betterdogs_dtn:textures/great_dane_gray_cropped",
+            "use_model" : "betterdogs_dtn:great_dane",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Labrador (Brown)",
             "skin_id" : "betterdogs_dtn:textures/labrador_brown",
             "use_model" : "betterdogs_dtn:labrador_golden_retriever",

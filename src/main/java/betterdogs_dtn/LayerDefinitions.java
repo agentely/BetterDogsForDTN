@@ -1969,4 +1969,112 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition great_dane() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 9.0F, 8.75F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition erhehe = real_tail.addOrReplaceChild("erhehe", CubeListBuilder.create(), PartPose.offset(0.0F, 4.5F, -10.9F));
+
+		PartDefinition erhej = erhehe.addOrReplaceChild("erhej", CubeListBuilder.create(), PartPose.offset(-1.0F, -2.0F, 8.0F));
+
+		PartDefinition greatdane8 = erhej.addOrReplaceChild("greatdane8", CubeListBuilder.create().texOffs(1291, 18).addBox(-2.0F, -1.5436F, 2.0511F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offset(2.5F, -1.0F, 0.0F));
+
+		PartDefinition bone118 = greatdane8.addOrReplaceChild("bone118", CubeListBuilder.create().texOffs(1265, 20).addBox(-0.999F, -4.1654F, 2.1673F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.202F)), PartPose.offsetAndRotation(-1.0F, 7.1F, -1.4F, -0.5672F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-0.5F, 16.0F, 7.0F));
+
+		PartDefinition wegewg2 = right_hind_leg.addOrReplaceChild("wegewg2", CubeListBuilder.create(), PartPose.offset(3.0F, 0.0F, 0.0F));
+
+		PartDefinition greatdane2 = wegewg2.addOrReplaceChild("greatdane2", CubeListBuilder.create().texOffs(1285, 0).mirror().addBox(0.0F, -0.25F, -0.5F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offset(-5.75F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(0.5F, 16.0F, 7.0F));
+
+		PartDefinition wegewg = left_hind_leg.addOrReplaceChild("wegewg", CubeListBuilder.create(), PartPose.offset(-3.0F, 0.0F, 0.0F));
+
+		PartDefinition greatdane4 = wegewg.addOrReplaceChild("greatdane4", CubeListBuilder.create().texOffs(1285, 0).addBox(-2.0F, -0.25F, -0.5F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(5.75F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
+
+		PartDefinition htjr3 = right_front_leg.addOrReplaceChild("htjr3", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition greatdanebasset2 = htjr3.addOrReplaceChild("greatdanebasset2", CubeListBuilder.create().texOffs(668, 0).mirror().addBox(0.0F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offset(-0.75F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.5F, 16.0F, -4.0F));
+
+		PartDefinition htjr2 = left_front_leg.addOrReplaceChild("htjr2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition greatdanebasset3 = htjr2.addOrReplaceChild("greatdanebasset3", CubeListBuilder.create().texOffs(668, 0).addBox(-2.0F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(0.75F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 12.0F, 3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_1 = body.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, -2.0F));
+
+		PartDefinition greatdane3 = body_sub_1.addOrReplaceChild("greatdane3", CubeListBuilder.create().texOffs(1269, 18).addBox(-3.5F, -4.6F, -0.75F, 7.0F, 6.0F, 8.0F, new CubeDeformation(0.4F))
+		.texOffs(1234, 14).addBox(1.3F, 2.2F, 4.25F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.4F))
+		.texOffs(1234, 14).addBox(-3.3F, 2.2F, 4.25F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(0.0F, -0.25F, 1.15F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 12.5F, -3.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_2 = upper_body.addOrReplaceChild("mane_sub_2", CubeListBuilder.create(), PartPose.offset(0.0F, 3.0F, -4.0F));
+
+		PartDefinition greatdane7 = mane_sub_2.addOrReplaceChild("greatdane7", CubeListBuilder.create().texOffs(1260, 1).addBox(-8.0F, -7.75F, 2.9F, 8.0F, 8.0F, 9.0F, new CubeDeformation(0.2F)), PartPose.offset(4.0F, 1.25F, -3.0F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 7.5F, -7.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.75F, -4.75F, -1.5F));
+
+		PartDefinition oor3 = left_ear.addOrReplaceChild("oor3", CubeListBuilder.create().texOffs(1252, 23).addBox(2.0653F, -19.4291F, -12.8019F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.1F))
+		.texOffs(1257, 21).addBox(2.1602F, -19.4155F, -12.3189F, 1.0F, 6.0F, 5.0F, new CubeDeformation(-0.1F))
+		.texOffs(1228, 3).addBox(2.0979F, -13.629F, -11.942F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(3.45F, 18.75F, 10.65F, -0.0436F, 0.2182F, -0.1745F));
+
+		PartDefinition oor5 = left_ear.addOrReplaceChild("oor5", CubeListBuilder.create().texOffs(1255, 10).addBox(-2.4902F, -15.05F, -10.0117F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.3F))
+		.texOffs(1250, 14).addBox(-2.5887F, -12.55F, -10.429F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.3F)), PartPose.offsetAndRotation(3.4F, 8.75F, 9.0F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone4 = oor5.addOrReplaceChild("bone4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.0F, -0.3132F, 0.0436F, 0.0F, 1.1781F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.75F, -4.75F, -1.5F));
+
+		PartDefinition oor2 = right_ear.addOrReplaceChild("oor2", CubeListBuilder.create().texOffs(1252, 23).mirror().addBox(-3.0653F, -19.4291F, -12.8019F, 1.0F, 3.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false)
+		.texOffs(1257, 21).mirror().addBox(-3.1602F, -19.4155F, -12.3189F, 1.0F, 6.0F, 5.0F, new CubeDeformation(-0.1F)).mirror(false)
+		.texOffs(1228, 3).mirror().addBox(-3.0979F, -13.629F, -11.942F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-3.45F, 18.75F, 10.65F, -0.0436F, -0.2182F, 0.1745F));
+
+		PartDefinition oor4 = right_ear.addOrReplaceChild("oor4", CubeListBuilder.create().texOffs(1255, 10).mirror().addBox(1.4902F, -15.05F, -10.0117F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.3F)).mirror(false)
+		.texOffs(1250, 14).mirror().addBox(1.5887F, -12.55F, -10.429F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.3F)).mirror(false), PartPose.offsetAndRotation(-3.4F, 8.75F, 9.0F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone5 = oor4.addOrReplaceChild("bone5", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.4924F, 3.0F, -0.3132F, 0.0436F, 0.0F, -1.1781F));
+
+		PartDefinition wgwgw2 = real_head.addOrReplaceChild("wgwgw2", CubeListBuilder.create(), PartPose.offset(-1.0F, 6.0F, 0.0F));
+
+		PartDefinition greatdane6 = wgwgw2.addOrReplaceChild("greatdane6", CubeListBuilder.create().texOffs(1229, 0).addBox(-3.0F, -20.25F, -11.75F, 6.0F, 7.0F, 7.0F, new CubeDeformation(0.0F))
+		.texOffs(1211, 27).addBox(-0.5F, -17.55F, -16.35F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F))
+		.texOffs(1211, 27).addBox(-1.85F, -18.95F, -11.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.09F))
+		.texOffs(1249, 0).addBox(-2.3F, -18.95F, -11.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.08F))
+		.texOffs(1211, 27).addBox(0.8F, -18.95F, -11.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.09F))
+		.texOffs(1249, 0).addBox(1.25F, -18.95F, -11.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.08F)), PartPose.offset(1.0F, 8.5F, 7.5F));
+
+		PartDefinition bone2 = greatdane6.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(1285, 26).addBox(-2.0F, -14.4097F, -9.1813F, 4.0F, 3.0F, 3.0F, new CubeDeformation(0.15F)), PartPose.offsetAndRotation(0.0F, -2.75F, 5.25F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition mond2 = greatdane6.addOrReplaceChild("mond2", CubeListBuilder.create().texOffs(1229, 22).addBox(-1.75F, -12.033F, -9.62F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F))
+		.texOffs(1222, 14).addBox(0.0F, -12.033F, -9.62F, 1.0F, 4.0F, 5.0F, new CubeDeformation(-0.01F))
+		.texOffs(1243, 22).addBox(0.75F, -12.033F, -9.62F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F))
+		.texOffs(1248, 0).addBox(-0.5F, -8.724F, -9.5079F, 2.0F, 2.0F, 5.0F, new CubeDeformation(-0.1F))
+		.texOffs(1203, 27).addBox(-1.75F, -7.1672F, -9.4895F, 2.0F, 1.0F, 4.0F, new CubeDeformation(-0.05F))
+		.texOffs(1229, 14).addBox(-1.75F, -7.1581F, -6.5894F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.06F))
+		.texOffs(1226, 24).addBox(-1.75F, -6.3854F, -7.924F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F))
+		.texOffs(1185, 14).addBox(0.75F, -7.1672F, -9.4895F, 2.0F, 1.0F, 4.0F, new CubeDeformation(-0.05F))
+		.texOffs(1229, 14).addBox(0.75F, -7.1581F, -6.5894F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.06F))
+		.texOffs(1226, 24).addBox(0.75F, -6.3854F, -7.924F, 2.0F, 1.0F, 2.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-0.5F, -6.0F, -6.25F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition neus2 = mond2.addOrReplaceChild("neus2", CubeListBuilder.create().texOffs(1238, 23).addBox(0.0F, -14.3019F, -4.9991F, 1.0F, 1.0F, 3.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.0F, -1.5976F, 4.6741F, 0.48F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = greatdane6.addOrReplaceChild("bone3", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.4F, -7.5F, 0.35F, 0.0436F, 0.0F, -1.1781F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
