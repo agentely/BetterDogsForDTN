@@ -519,6 +519,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Samoyed (White)",
+            "skin_id" : "betterdogs_dtn:textures/samoyed_white",
+            "use_model" : "betterdogs_dtn:samoyed",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Samoyed (Yellow)",
+            "skin_id" : "betterdogs_dtn:textures/samoyed_yellow",
+            "use_model" : "betterdogs_dtn:samoyed",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Wolf (Black)",
             "skin_id" : "betterdogs_dtn:textures/wolf_black",
             "use_model" : "betterdogs_dtn:wolf",

@@ -29,4 +29,6 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation GREAT_DANE = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "great_dane"), "main");
     public static final ModelLayerLocation JACK_RUSSEL = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "jack_russel"), "main");
     public static final ModelLayerLocation POMERANIAN = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "pomeranian"), "main");
+    public static final ModelLayerLocation SAMOYED = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "samoyed"), "main");
+
 }
