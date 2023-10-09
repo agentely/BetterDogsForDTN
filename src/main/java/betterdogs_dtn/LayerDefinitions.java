@@ -2957,4 +2957,87 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition shiba_inu() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 13.05F, 8.75F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition shiba_tail3 = real_tail.addOrReplaceChild("shiba_tail3", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, -1.25F, 0.3F, -0.5672F, 0.0F, 0.0F));
+
+		PartDefinition shibatail_rotation3 = shiba_tail3.addOrReplaceChild("shibatail_rotation3", CubeListBuilder.create().texOffs(817, 0).addBox(-2.5F, 0.1037F, -1.0343F, 3.0F, 2.0F, 3.0F, new CubeDeformation(-0.0001F))
+		.texOffs(822, 24).addBox(-2.5F, 0.15F, -3.95F, 3.0F, 5.0F, 3.0F, new CubeDeformation(-0.001F)), PartPose.offsetAndRotation(0.0F, 1.0F, -2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = shibatail_rotation3.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(816, 6).addBox(-2.0F, -4.1304F, 17.4983F, 3.0F, 5.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(816, 14).addBox(-2.0F, -7.1278F, 14.5982F, 3.0F, 8.0F, 3.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(-0.5F, 22.3528F, 3.6224F, 1.597F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 16.0F, 7.0F));
+
+		PartDefinition shibainu4 = right_hind_leg.addOrReplaceChild("shibainu4", CubeListBuilder.create().texOffs(800, 0).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 16.0F, 7.0F));
+
+		PartDefinition shibainu2 = left_hind_leg.addOrReplaceChild("shibainu2", CubeListBuilder.create().texOffs(808, 0).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 16.0F, -4.0F));
+
+		PartDefinition shibainu6 = right_front_leg.addOrReplaceChild("shibainu6", CubeListBuilder.create().texOffs(800, 0).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 16.0F, -4.0F));
+
+		PartDefinition shibainu5 = left_front_leg.addOrReplaceChild("shibainu5", CubeListBuilder.create().texOffs(808, 0).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 15.4F, 3.3F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition shiba_body3 = body.addOrReplaceChild("shiba_body3", CubeListBuilder.create(), PartPose.offset(0.0F, -1.3F, 1.4F));
+
+		PartDefinition shibainu3 = shiba_body3.addOrReplaceChild("shibainu3", CubeListBuilder.create().texOffs(758, 16).addBox(-3.5F, -2.25F, -4.85F, 7.0F, 9.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 15.4F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition shibainu8 = upper_body.addOrReplaceChild("shibainu8", CubeListBuilder.create().texOffs(747, 0).addBox(-5.0F, -3.0F, -10.3F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 0.0F, 6.4F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 11.7F, -5.4F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -1.2F, -1.1F));
+
+		PartDefinition shiba_ear_right3 = right_ear.addOrReplaceChild("shiba_ear_right3", CubeListBuilder.create().texOffs(797, 24).addBox(-3.8784F, -1.4616F, -9.4398F, 3.0F, 4.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(807, 15).addBox(-3.8784F, -2.3616F, -9.8498F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.4F))
+		.texOffs(774, 0).addBox(-2.8784F, -2.4616F, -9.4398F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5F, -2.4333F, 9.2133F, 0.0781F, -0.2538F, -0.1351F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -1.2F, -1.1F));
+
+		PartDefinition shiba_ear_left3 = left_ear.addOrReplaceChild("shiba_ear_left3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.5F, -2.4333F, 9.2133F, 0.0781F, 0.2538F, 0.1351F));
+
+		PartDefinition mane_sub_2 = shiba_ear_left3.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(797, 24).mirror().addBox(0.8784F, -1.4616F, -9.4398F, 3.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(807, 15).mirror().addBox(0.8784F, -2.3616F, -9.8498F, 3.0F, 4.0F, 1.0F, new CubeDeformation(-0.4F)).mirror(false)
+		.texOffs(774, 0).mirror().addBox(1.8784F, -2.4616F, -9.4398F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition shibahead3 = real_head.addOrReplaceChild("shibahead3", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.3F, 9.4F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition shiba_rotation3 = shibahead3.addOrReplaceChild("shiba_rotation3", CubeListBuilder.create().texOffs(779, 10).addBox(-3.5F, -4.16F, -11.4333F, 7.0F, 6.0F, 7.0F, new CubeDeformation(-0.18F))
+		.texOffs(781, 12).addBox(-4.05F, -2.87F, -10.4833F, 1.0F, 4.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.0F, -1.24F, 0.1333F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_5 = shiba_rotation3.addOrReplaceChild("mane_sub_5", CubeListBuilder.create().texOffs(781, 12).mirror().addBox(3.05F, -2.87F, -10.4833F, 1.0F, 4.0F, 5.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition neus3 = shiba_rotation3.addOrReplaceChild("neus3", CubeListBuilder.create().texOffs(929, 23).addBox(-1.5F, -3.6348F, -9.288F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.95F)), PartPose.offsetAndRotation(0.0F, 0.9545F, -6.1153F, 0.1309F, 0.0F, 0.0F));
+
+		PartDefinition mond3 = shiba_rotation3.addOrReplaceChild("mond3", CubeListBuilder.create().texOffs(787, 25).addBox(-1.5F, -2.749F, -9.3062F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.15F))
+		.texOffs(800, 14).addBox(-0.5F, -2.6996F, -9.3719F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, 1.3386F, -4.9502F, 0.0785F, 0.0F, 0.0F));
+
+		PartDefinition bone4 = mond3.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(807, 27).addBox(-1.5F, -2.5988F, -10.3385F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.2F))
+		.texOffs(346, 25).addBox(-1.5F, -2.1688F, -10.3438F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.0F, 0.9894F, 1.0988F, 0.0262F, 0.0F, 0.0F));
+
+		PartDefinition neus5 = shiba_rotation3.addOrReplaceChild("neus5", CubeListBuilder.create().texOffs(785, 0).addBox(-0.5F, -8.1882F, -4.0707F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.3306F, -3.0984F, 1.0036F, 0.0F, 0.0F));
+
+		PartDefinition oog3 = shiba_rotation3.addOrReplaceChild("oog3", CubeListBuilder.create().texOffs(774, 2).addBox(3.7342F, -11.4486F, -11.98F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.02F)), PartPose.offsetAndRotation(-6.3F, 9.09F, 0.7167F, 0.0F, 0.0F, 0.0436F));
+
+		PartDefinition oog5 = shiba_rotation3.addOrReplaceChild("oog5", CubeListBuilder.create().texOffs(774, 2).addBox(2.0388F, -11.5489F, -11.98F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.02F)), PartPose.offsetAndRotation(-0.5F, 9.49F, 0.7167F, 0.0F, 0.0F, -0.0436F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

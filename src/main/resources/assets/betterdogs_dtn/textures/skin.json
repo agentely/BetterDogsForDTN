@@ -92,6 +92,27 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Shiba Inu (Black White)",
+            "skin_id" : "betterdogs_dtn:textures/shiba_inu_black_white_tan",
+            "use_model" : "betterdogs_dtn:shiba_inu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Shiba Inu (Red) #1",
+            "skin_id" : "betterdogs_dtn:textures/shiba_inu_red_1",
+            "use_model" : "betterdogs_dtn:shiba_inu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Shiba Inu (Red) #2",
+            "skin_id" : "betterdogs_dtn:textures/shiba_inu_red_2",
+            "use_model" : "betterdogs_dtn:shiba_inu",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Shih Tzu (Do)",
             "skin_id" : "betterdogs_dtn:textures/shih_tzu_do",
             "use_model" : "betterdogs_dtn:shih_tzu",
