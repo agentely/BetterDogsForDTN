@@ -491,6 +491,20 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - St. Bernard (Light)",
+            "skin_id" : "betterdogs_dtn:textures/st_bernard_light",
+            "use_model" : "betterdogs_dtn:st_bernard",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - St. Bernard (Dark)",
+            "skin_id" : "betterdogs_dtn:textures/st_bernard_dark",
+            "use_model" : "betterdogs_dtn:st_bernard",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Pug (Black)",
             "skin_id" : "betterdogs_dtn:textures/pug_black",
             "use_model" : "betterdogs_dtn:pug",

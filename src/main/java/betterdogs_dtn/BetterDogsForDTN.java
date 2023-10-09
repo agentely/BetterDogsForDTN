@@ -56,6 +56,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("pomeranian"), ModelLayerLocations.POMERANIAN)
             .withCustomRootPivot(new Vector3f(0, 17, 0)));
         event.register(new Builder(getRes("samoyed"), ModelLayerLocations.SAMOYED));        
+        event.register(new Builder(getRes("st_bernard"), ModelLayerLocations.ST_BERNARD));        
       
     }
 
@@ -90,6 +91,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.JACK_RUSSEL, LayerDefinitions::jack_russel);
         event.registerLayerDefinition(ModelLayerLocations.POMERANIAN, LayerDefinitions::pomeranian);
         event.registerLayerDefinition(ModelLayerLocations.SAMOYED, LayerDefinitions::samoyed);
+        event.registerLayerDefinition(ModelLayerLocations.ST_BERNARD, LayerDefinitions::st_bernard);
     }
 
     public static ResourceLocation getRes(String name) {
