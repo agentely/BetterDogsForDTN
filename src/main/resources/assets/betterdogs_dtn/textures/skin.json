@@ -554,6 +554,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Neapolitan Mastiff (Black White)",
+            "skin_id" : "betterdogs_dtn:textures/neapolitan_mastiff_black_white",
+            "use_model" : "betterdogs_dtn:neapolitan_mastiff",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Neapolitan Mastiff (Black)",
+            "skin_id" : "betterdogs_dtn:textures/neapolitan_mastiff_black",
+            "use_model" : "betterdogs_dtn:neapolitan_mastiff",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Neapolitan Mastiff (Brown White)",
+            "skin_id" : "betterdogs_dtn:textures/neapolitan_mastiff_brown_white",
+            "use_model" : "betterdogs_dtn:neapolitan_mastiff",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Neapolitan Mastiff (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/neapolitan_mastiff_brown",
+            "use_model" : "betterdogs_dtn:neapolitan_mastiff",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Pomeranian (Black)",
             "skin_id" : "betterdogs_dtn:textures/pomeranian_black",
             "use_model" : "betterdogs_dtn:pomeranian",

@@ -2687,4 +2687,98 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition neapolitan_mastiff() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 10.5F, 8.25F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition mane = real_tail.addOrReplaceChild("mane", CubeListBuilder.create(), PartPose.offset(-1.0F, 2.5F, -8.2F));
+
+		PartDefinition tail2 = mane.addOrReplaceChild("tail2", CubeListBuilder.create(), PartPose.offset(0.0F, -2.0F, 8.0F));
+
+		PartDefinition neapolitanmastiff8 = tail2.addOrReplaceChild("neapolitanmastiff8", CubeListBuilder.create().texOffs(1394, 0).addBox(-0.5F, -12.0F, 9.0F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.3F)), PartPose.offset(1.0F, 12.0F, -10.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.25F, 16.0F, 7.0F));
+
+		PartDefinition leg2 = right_hind_leg.addOrReplaceChild("leg2", CubeListBuilder.create(), PartPose.offset(2.75F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff5 = leg2.addOrReplaceChild("neapolitanmastiff5", CubeListBuilder.create().texOffs(1386, 14).addBox(-3.25F, -8.1F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(-0.5F, 8.0F, -7.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(2.25F, 16.0F, 7.0F));
+
+		PartDefinition leg1 = left_hind_leg.addOrReplaceChild("leg1", CubeListBuilder.create(), PartPose.offset(-4.75F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff4 = leg1.addOrReplaceChild("neapolitanmastiff4", CubeListBuilder.create().texOffs(1386, 14).addBox(1.25F, -8.1F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(2.5F, 8.0F, -7.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
+
+		PartDefinition leg4 = right_front_leg.addOrReplaceChild("leg4", CubeListBuilder.create(), PartPose.offset(3.0F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff7 = leg4.addOrReplaceChild("neapolitanmastiff7", CubeListBuilder.create().texOffs(1386, 14).addBox(-3.5F, -8.2F, -5.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(-0.5F, 8.0F, 4.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.5F, 16.0F, -4.0F));
+
+		PartDefinition leg3 = left_front_leg.addOrReplaceChild("leg3", CubeListBuilder.create(), PartPose.offset(-5.0F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff6 = leg3.addOrReplaceChild("neapolitanmastiff6", CubeListBuilder.create().texOffs(1386, 14).addBox(1.5F, -8.2F, -5.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(2.5F, 8.0F, 4.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 14.0F, 2.0F));
+
+		PartDefinition body2 = body.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition body_rotation = body2.addOrReplaceChild("body_rotation", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body_sub_1 = body_rotation.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff2 = body_sub_1.addOrReplaceChild("neapolitanmastiff2", CubeListBuilder.create().texOffs(1386, 16).addBox(-3.5F, -3.4F, -1.75F, 7.0F, 7.0F, 9.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, -0.25F, 0.4F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition mane_rotation = upper_body.addOrReplaceChild("mane_rotation", CubeListBuilder.create(), PartPose.offset(1.0F, 2.5F, -2.5F));
+
+		PartDefinition mane_sub_1 = mane_rotation.addOrReplaceChild("mane_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff3 = mane_sub_1.addOrReplaceChild("neapolitanmastiff3", CubeListBuilder.create().texOffs(1370, 0).addBox(-8.0F, -6.75F, 3.65F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.1F)), PartPose.offset(4.0F, 1.25F, -5.0F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -7.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -3.0F, 0.5F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -3.0F, 0.5F));
+
+		PartDefinition head2 = real_head.addOrReplaceChild("head2", CubeListBuilder.create(), PartPose.offset(-1.0F, 0.0F, 0.0F));
+
+		PartDefinition neapolitanmastiff = head2.addOrReplaceChild("neapolitanmastiff", CubeListBuilder.create().texOffs(1344, 0).addBox(-3.0F, -20.25F, -11.75F, 6.0F, 7.0F, 7.0F, new CubeDeformation(0.1F))
+		.texOffs(1347, 5).addBox(-0.5F, -17.65F, -15.05F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.2F))
+		.texOffs(1347, 5).addBox(-1.85F, -19.05F, -11.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(1360, 15).addBox(-2.3F, -18.95F, -11.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F))
+		.texOffs(1347, 5).addBox(0.8F, -19.05F, -11.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(1360, 15).addBox(1.25F, -18.95F, -11.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F)), PartPose.offset(1.0F, 13.9F, 7.5F));
+
+		PartDefinition oor38 = neapolitanmastiff.addOrReplaceChild("oor38", CubeListBuilder.create().texOffs(1364, 25).addBox(1.5182F, -19.7853F, -12.2376F, 1.0F, 3.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(1370, 19).addBox(1.5856F, -16.62F, -12.4453F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(-10.75F, -0.95F, 0.05F, -0.0436F, -0.2182F, 0.1745F));
+
+		PartDefinition oor39 = neapolitanmastiff.addOrReplaceChild("oor39", CubeListBuilder.create().texOffs(1364, 25).addBox(2.2962F, -19.4328F, -12.933F, 1.0F, 3.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(1370, 19).addBox(2.2744F, -16.2308F, -13.0417F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(6.2F, -0.5F, 1.65F, -0.0436F, 0.2182F, -0.1745F));
+
+		PartDefinition mond9 = neapolitanmastiff.addOrReplaceChild("mond9", CubeListBuilder.create().texOffs(1374, 23).addBox(-1.75F, -12.0155F, -8.2204F, 2.0F, 5.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(1358, 22).addBox(0.0F, -12.0112F, -8.1205F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1324, 16).addBox(0.75F, -12.0155F, -8.2204F, 2.0F, 5.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(1335, 1).addBox(-0.1F, -12.0155F, -8.2204F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
+		.texOffs(1363, 18).addBox(-0.5F, -9.1648F, -8.2884F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1363, 3).addBox(-1.65F, -7.1498F, -8.0898F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.1F))
+		.texOffs(1370, 24).addBox(-1.75F, -7.1581F, -6.5894F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.09F))
+		.texOffs(1344, 14).addBox(-1.5F, -7.684F, -6.7162F, 4.0F, 2.0F, 2.0F, new CubeDeformation(0.1F))
+		.texOffs(1363, 3).addBox(0.65F, -7.1498F, -8.0898F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.1F))
+		.texOffs(1370, 24).addBox(0.75F, -7.1581F, -6.5894F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(-0.5F, -6.0F, -6.25F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition neus6 = mond9.addOrReplaceChild("neus6", CubeListBuilder.create().texOffs(1343, 0).addBox(0.0F, -13.44F, -4.9613F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, -0.6295F, 1.629F, 0.3054F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

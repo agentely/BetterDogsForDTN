@@ -60,6 +60,7 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("poodle"), ModelLayerLocations.POODLE));        
         event.register(new Builder(getRes("husky"), ModelLayerLocations.HUSKY));        
         event.register(new Builder(getRes("doberman"), ModelLayerLocations.ADOBEMAN));        
+        event.register(new Builder(getRes("neapolitan_mastiff"), ModelLayerLocations.NEAPO));        
       
     }
 
@@ -98,7 +99,8 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.POODLE, LayerDefinitions::poodle);
         event.registerLayerDefinition(ModelLayerLocations.HUSKY, LayerDefinitions::husky);
         event.registerLayerDefinition(ModelLayerLocations.ADOBEMAN, LayerDefinitions::doberman);
-    }
+        event.registerLayerDefinition(ModelLayerLocations.NEAPO, LayerDefinitions::neapolitan_mastiff);
+   }
 
     public static ResourceLocation getRes(String name) {
         return new ResourceLocation(Constants.MOD_ID, name);
