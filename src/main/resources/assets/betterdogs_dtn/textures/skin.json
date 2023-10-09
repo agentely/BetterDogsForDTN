@@ -386,6 +386,13 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Rottweiler (Dark Brown)",
+            "skin_id" : "betterdogs_dtn:textures/rottweiler_dark_brown",
+            "use_model" : "betterdogs_dtn:rottweiler",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Great Dane (Black)",
             "skin_id" : "betterdogs_dtn:textures/great_dane_black_default",
             "use_model" : "betterdogs_dtn:great_dane",
