@@ -582,6 +582,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Husky (Black) #1",
+            "skin_id" : "betterdogs_dtn:textures/husky_black_var1",
+            "use_model" : "betterdogs_dtn:husky",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Husky (Black) #2",
+            "skin_id" : "betterdogs_dtn:textures/husky_black_var2",
+            "use_model" : "betterdogs_dtn:husky",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Husky (Black) #3",
+            "skin_id" : "betterdogs_dtn:textures/husky_black_var3",
+            "use_model" : "betterdogs_dtn:husky",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Husky (Red)",
+            "skin_id" : "betterdogs_dtn:textures/husky_red",
+            "use_model" : "betterdogs_dtn:husky",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Wolf (Black)",
             "skin_id" : "betterdogs_dtn:textures/wolf_black",
             "use_model" : "betterdogs_dtn:wolf",
