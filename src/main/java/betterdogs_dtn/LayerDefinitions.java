@@ -2407,4 +2407,104 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition poodle() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 10.5F, 8.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition poedel_tail = real_tail.addOrReplaceChild("poedel_tail", CubeListBuilder.create().texOffs(38, 24).addBox(-0.5F, -2.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(0.0F, 1.2253F, 1.3418F, 0.829F, 0.0F, 0.0F));
+
+		PartDefinition bone167 = poedel_tail.addOrReplaceChild("bone167", CubeListBuilder.create().texOffs(27, 16).addBox(-1.0F, -12.3767F, 13.6831F, 3.0F, 5.0F, 3.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-0.5F, 20.5196F, -1.0727F, 0.9163F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.75F, 16.0F, 7.0F));
+
+		PartDefinition poodle_leg2 = right_hind_leg.addOrReplaceChild("poodle_leg2", CubeListBuilder.create(), PartPose.offset(0.1F, 8.0F, -7.0F));
+
+		PartDefinition Labradorpoedel_leg2_rot = poodle_leg2.addOrReplaceChild("Labradorpoedel_leg2_rot", CubeListBuilder.create().texOffs(199, 0).addBox(0.6F, 14.8F, 14.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(-1.6F, -23.0F, -8.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.75F, 16.0F, 7.0F));
+
+		PartDefinition poodle_leg1 = left_hind_leg.addOrReplaceChild("poodle_leg1", CubeListBuilder.create(), PartPose.offset(0.05F, -12.0F, -7.0F));
+
+		PartDefinition Labradorpoedel_leg1_rot = poodle_leg1.addOrReplaceChild("Labradorpoedel_leg1_rot", CubeListBuilder.create(), PartPose.offset(-1.7F, -7.0F, -8.0F));
+
+		PartDefinition mane_sub_182 = Labradorpoedel_leg1_rot.addOrReplaceChild("mane_sub_182", CubeListBuilder.create().texOffs(199, 0).mirror().addBox(0.6F, 18.8F, 14.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.0F, 16.0F, -4.5F));
+
+		PartDefinition poodle_leg4 = right_front_leg.addOrReplaceChild("poodle_leg4", CubeListBuilder.create(), PartPose.offset(0.0F, -3.55F, 4.0F));
+
+		PartDefinition labrador4_rot = poodle_leg4.addOrReplaceChild("labrador4_rot", CubeListBuilder.create().texOffs(199, 0).addBox(-2.25F, -0.45F, 2.45F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(1.25F, 3.8F, -7.5F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 16.0F, -4.5F));
+
+		PartDefinition poodle_leg3 = left_front_leg.addOrReplaceChild("poodle_leg3", CubeListBuilder.create(), PartPose.offset(0.0F, -3.65F, 6.0F));
+
+		PartDefinition labrador3_rot = poodle_leg3.addOrReplaceChild("labrador3_rot", CubeListBuilder.create(), PartPose.offset(-2.0F, 12.15F, -7.5F));
+
+		PartDefinition mane_sub_176 = labrador3_rot.addOrReplaceChild("mane_sub_176", CubeListBuilder.create().texOffs(199, 0).mirror().addBox(1.0F, -8.7F, 0.45F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 13.0F, 2.0F));
+
+		PartDefinition poedel_body = body.addOrReplaceChild("poedel_body", CubeListBuilder.create().texOffs(27, 0).addBox(-3.0F, -4.75F, 0.4F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 1.75F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, -2.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition poedel_mane = upper_body.addOrReplaceChild("poedel_mane", CubeListBuilder.create().texOffs(1785, 16).addBox(-4.0F, -13.0F, -1.5F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 9.0F, -2.0F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 9.5F, -6.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-3.25F, -4.75F, 0.0F));
+
+		PartDefinition poedel_oor_links2 = right_ear.addOrReplaceChild("poedel_oor_links2", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.4F, 4.0F, 12.5F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone159 = poedel_oor_links2.addOrReplaceChild("bone159", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.4734F, -1.634F, -8.4201F, -0.0862F, -0.0431F, -1.3493F));
+
+		PartDefinition mane_sub_216 = bone159.addOrReplaceChild("mane_sub_216", CubeListBuilder.create().texOffs(1606, 3).mirror().addBox(-3.8271F, -0.5029F, -6.1906F, 6.0F, 4.0F, 4.0F, new CubeDeformation(0.1F)).mirror(false)
+		.texOffs(1633, 17).mirror().addBox(-6.0271F, -0.5029F, -6.1906F, 2.0F, 4.0F, 4.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(3.25F, -4.75F, 0.0F));
+
+		PartDefinition poedel_oor_links = left_ear.addOrReplaceChild("poedel_oor_links", CubeListBuilder.create(), PartPose.offsetAndRotation(2.4F, 4.0F, 12.5F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone160 = poedel_oor_links.addOrReplaceChild("bone160", CubeListBuilder.create().texOffs(1606, 3).addBox(-2.1729F, -0.5029F, -6.1906F, 6.0F, 4.0F, 4.0F, new CubeDeformation(0.1F))
+		.texOffs(1633, 17).addBox(4.0271F, -0.5029F, -6.1906F, 2.0F, 4.0F, 4.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.4734F, -1.634F, -8.4201F, -0.0862F, 0.0431F, 1.3493F));
+
+		PartDefinition poedel_head = real_head.addOrReplaceChild("poedel_head", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 2.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition poedel_head_rot = poedel_head.addOrReplaceChild("poedel_head_rot", CubeListBuilder.create().texOffs(1761, 21).addBox(-4.0F, -2.35F, -3.25F, 6.0F, 5.0F, 6.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(1.0F, -2.25F, 2.5F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bone163 = poedel_head_rot.addOrReplaceChild("bone163", CubeListBuilder.create().texOffs(1765, 0).addBox(-3.0F, -2.2391F, -2.7502F, 6.0F, 3.0F, 6.0F, new CubeDeformation(0.2F))
+		.texOffs(1612, 25).addBox(-3.0F, 0.6609F, -2.7502F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.19F)), PartPose.offsetAndRotation(-1.0F, -2.75F, -0.5F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition oog24 = poedel_head_rot.addOrReplaceChild("oog24", CubeListBuilder.create().texOffs(1593, 2).addBox(0.9504F, -11.5F, -9.05F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F))
+		.texOffs(1593, 0).addBox(0.4487F, -11.4F, -9.05F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(-0.3F, 9.9F, 5.8F, 0.0F, 0.0F, -0.0175F));
+
+		PartDefinition oog25 = poedel_head_rot.addOrReplaceChild("oog25", CubeListBuilder.create().texOffs(1593, 0).addBox(3.15F, -11.3802F, -9.15F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.05F))
+		.texOffs(1593, 2).addBox(2.6482F, -11.4802F, -9.15F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.04F)), PartPose.offsetAndRotation(-6.3F, 9.8F, 5.9F, 0.0F, 0.0F, 0.0175F));
+
+		PartDefinition bone40 = poedel_head_rot.addOrReplaceChild("bone40", CubeListBuilder.create().texOffs(1616, 18).addBox(-1.5F, -1.7421F, -2.1386F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.2F))
+		.texOffs(1583, 0).addBox(-1.5F, -0.2132F, -2.1105F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.22F)), PartPose.offsetAndRotation(-1.0F, 1.7838F, -4.1134F, 0.3578F, 0.0F, 0.0F));
+
+		PartDefinition bone166 = bone40.addOrReplaceChild("bone166", CubeListBuilder.create().texOffs(1582, 7).addBox(-1.5F, -0.4332F, -1.7591F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.23F)), PartPose.offsetAndRotation(0.0F, 0.6496F, -0.332F, -0.0873F, 0.0F, 0.0F));
+
+		PartDefinition bone162 = bone40.addOrReplaceChild("bone162", CubeListBuilder.create().texOffs(1759, 0).addBox(-1.5F, -1.3865F, -0.8772F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.9F)), PartPose.offsetAndRotation(0.0F, -1.0791F, -2.2862F, 0.1134F, 0.0F, 0.0F));
+
+		PartDefinition oor59 = poedel_head_rot.addOrReplaceChild("oor59", CubeListBuilder.create(), PartPose.offsetAndRotation(-6.65F, 1.5F, 7.5F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone133 = oor59.addOrReplaceChild("bone133", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.5F, -0.4868F, 0.0436F, 0.0F, -1.3701F));
+
+		PartDefinition oor29 = poedel_head_rot.addOrReplaceChild("oor29", CubeListBuilder.create(), PartPose.offsetAndRotation(-6.65F, 1.5F, 7.5F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone113 = oor29.addOrReplaceChild("bone113", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.5F, -0.4868F, 0.0436F, 0.0F, -1.3701F));
+
+		PartDefinition bone161 = poedel_head_rot.addOrReplaceChild("bone161", CubeListBuilder.create().texOffs(1592, 6).addBox(-0.5F, -0.2311F, -0.8157F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.15F)), PartPose.offsetAndRotation(-1.0F, 0.0302F, -3.5651F, 0.7418F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

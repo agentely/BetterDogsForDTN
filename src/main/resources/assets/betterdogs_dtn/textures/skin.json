@@ -533,6 +533,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Poodle (Black)",
+            "skin_id" : "betterdogs_dtn:textures/poodle_black",
+            "use_model" : "betterdogs_dtn:poodle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Poodle (Brown)",
+            "skin_id" : "betterdogs_dtn:textures/poodle_brown",
+            "use_model" : "betterdogs_dtn:poodle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Poodle (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/poodle_gray",
+            "use_model" : "betterdogs_dtn:poodle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Poodle (White)",
+            "skin_id" : "betterdogs_dtn:textures/poodle_white",
+            "use_model" : "betterdogs_dtn:poodle",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Samoyed (White)",
             "skin_id" : "betterdogs_dtn:textures/samoyed_white",
             "use_model" : "betterdogs_dtn:samoyed",

@@ -31,5 +31,6 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation POMERANIAN = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "pomeranian"), "main");
     public static final ModelLayerLocation SAMOYED = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "samoyed"), "main");
     public static final ModelLayerLocation ST_BERNARD = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "st_bernard"), "main");
+    public static final ModelLayerLocation POODLE = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "poodle"), "main");
 
 }
