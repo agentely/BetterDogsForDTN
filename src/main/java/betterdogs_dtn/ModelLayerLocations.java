@@ -33,5 +33,7 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation ST_BERNARD = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "st_bernard"), "main");
     public static final ModelLayerLocation POODLE = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "poodle"), "main");
     public static final ModelLayerLocation HUSKY = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "husky"), "main");
+    public static final ModelLayerLocation ADOBEMAN = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "doberman"), "main");
+
 
 }

@@ -2587,4 +2587,104 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition doberman() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, 8.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition doberman_tail2 = real_tail.addOrReplaceChild("doberman_tail2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -5.5208F, 11.8125F, -0.7854F, 0.0F, 0.0F));
+
+		PartDefinition doberman_tail_rot2 = doberman_tail2.addOrReplaceChild("doberman_tail_rot2", CubeListBuilder.create().texOffs(1174, 0).addBox(-2.0F, 5.734F, -13.1308F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(1.5F, -0.25F, 0.75F, 0.7854F, 0.0F, 0.0F));
+
+		PartDefinition doberman_tailpart3 = doberman_tail_rot2.addOrReplaceChild("doberman_tailpart3", CubeListBuilder.create().texOffs(1167, 14).addBox(-0.999F, 8.8709F, -3.2454F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.201F)), PartPose.offsetAndRotation(-1.0F, 7.1F, -3.4F, -0.8727F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, 7.0F));
+
+		PartDefinition doberman_rot6 = right_hind_leg.addOrReplaceChild("doberman_rot6", CubeListBuilder.create().texOffs(1168, 22).addBox(-1.0F, -2.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5F, 2.0F, 0.0F));
+
+		PartDefinition boxer3 = doberman_rot6.addOrReplaceChild("boxer3", CubeListBuilder.create().texOffs(1580, 20).addBox(-2.5F, -8.8492F, 6.0349F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(1.5F, 6.35F, -8.65F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(2.5F, 16.0F, 7.0F));
+
+		PartDefinition doberman_rot5 = left_hind_leg.addOrReplaceChild("doberman_rot5", CubeListBuilder.create().texOffs(1168, 22).addBox(1.0F, -8.0F, 6.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.5F, 8.0F, -7.0F));
+
+		PartDefinition boxer2 = doberman_rot5.addOrReplaceChild("boxer2", CubeListBuilder.create().texOffs(1580, 20).addBox(0.5F, -8.7992F, 6.0349F, 2.0F, 4.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offsetAndRotation(0.5F, 0.3F, -1.65F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 16.0F, -4.0F));
+
+		PartDefinition doberman_rot3 = right_front_leg.addOrReplaceChild("doberman_rot3", CubeListBuilder.create().texOffs(1159, 14).addBox(-3.25F, -8.0F, -5.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.5F, 8.0F, 4.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.5F, 16.0F, -4.0F));
+
+		PartDefinition doberman_rot2 = left_front_leg.addOrReplaceChild("doberman_rot2", CubeListBuilder.create().texOffs(1159, 14).addBox(1.25F, -1.0F, 3.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.5F, 1.0F, -4.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.5F, 2.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition doberman_body2 = body.addOrReplaceChild("doberman_body2", CubeListBuilder.create(), PartPose.offset(0.0F, 4.55F, 0.9F));
+
+		PartDefinition dobermanpoedel_rot2 = doberman_body2.addOrReplaceChild("dobermanpoedel_rot2", CubeListBuilder.create().texOffs(1127, 5).addBox(-3.5F, -2.75F, -6.75F, 7.0F, 7.0F, 9.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.6F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition doberman_mane2 = upper_body.addOrReplaceChild("doberman_mane2", CubeListBuilder.create().texOffs(1150, 0).addBox(-4.0F, -13.0F, -7.6F, 8.0F, 6.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 3.6F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 12.1F, -5.2F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -6.3F, -0.5F));
+
+		PartDefinition ear_right3 = right_ear.addOrReplaceChild("ear_right3", CubeListBuilder.create(), PartPose.offsetAndRotation(-4.15F, 2.8F, 6.9F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition mane_sub_5 = ear_right3.addOrReplaceChild("mane_sub_5", CubeListBuilder.create().texOffs(1101, 0).mirror().addBox(2.7872F, -7.55F, -7.4095F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(1097, 1).mirror().addBox(2.8857F, -5.55F, -7.8269F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition bone10 = ear_right3.addOrReplaceChild("bone10", CubeListBuilder.create(), PartPose.offsetAndRotation(0.469F, -1.9199F, -9.1519F, 0.0435F, 0.0038F, -1.2653F));
+
+		PartDefinition mane_sub_6 = bone10.addOrReplaceChild("mane_sub_6", CubeListBuilder.create().texOffs(1139, 0).mirror().addBox(-1.2664F, 0.6837F, 0.3817F, 3.0F, 1.0F, 3.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition bone11 = bone10.addOrReplaceChild("bone11", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.7419F, 1.0951F, 0.997F, 0.0F, -0.1309F, 0.0F));
+
+		PartDefinition mane_sub_7 = bone11.addOrReplaceChild("mane_sub_7", CubeListBuilder.create().texOffs(1152, 0).mirror().addBox(-0.4122F, -0.3959F, -0.5189F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.09F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -6.6F, -0.3F));
+
+		PartDefinition ear_left3 = left_ear.addOrReplaceChild("ear_left3", CubeListBuilder.create().texOffs(1101, 0).addBox(-2.5717F, -11.15F, -14.3032F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1097, 1).addBox(-2.6702F, -9.15F, -14.7205F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.15F, 6.6F, 13.7F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone5 = ear_left3.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(1139, 0).addBox(-4.8275F, -1.8553F, -6.3963F, 3.0F, 1.0F, 3.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(-0.469F, -1.9199F, -9.1519F, 0.0435F, -0.0038F, 1.2653F));
+
+		PartDefinition bone6 = bone5.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(1152, 0).addBox(-2.7705F, -2.9349F, -7.6428F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(1.7419F, 1.0951F, 0.997F, 0.0F, 0.1309F, 0.0F));
+
+		PartDefinition doberman_headfull2 = real_head.addOrReplaceChild("doberman_headfull2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.15F, 0.7F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition doberman_neck2 = doberman_headfull2.addOrReplaceChild("doberman_neck2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition doberman_neck_rot2 = doberman_neck2.addOrReplaceChild("doberman_neck_rot2", CubeListBuilder.create().texOffs(1688, 10).addBox(-2.0F, -0.8354F, -0.6787F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -2.0374F, 1.6237F, -1.2217F, 0.0F, 0.0F));
+
+		PartDefinition doberman_head2 = doberman_headfull2.addOrReplaceChild("doberman_head2", CubeListBuilder.create(), PartPose.offset(0.0F, -0.4F, 2.45F));
+
+		PartDefinition doberman_head_rot2 = doberman_head2.addOrReplaceChild("doberman_head_rot2", CubeListBuilder.create().texOffs(1098, 20).addBox(-2.9F, -1.71F, -2.41F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
+		.texOffs(1098, 20).addBox(-0.1F, -1.71F, -2.41F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
+		.texOffs(1117, 21).addBox(-3.5F, -1.85F, -2.35F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.0F, -1.25F, 2.75F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition bone2 = doberman_head_rot2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(885, 10).addBox(-1.5F, 0.5697F, -0.8168F, 3.0F, 2.0F, 5.0F, new CubeDeformation(-0.26F)), PartPose.offsetAndRotation(-1.0F, 1.5502F, -5.7891F, 0.1309F, 0.0F, 0.0F));
+
+		PartDefinition oog2 = doberman_head_rot2.addOrReplaceChild("oog2", CubeListBuilder.create().texOffs(1135, 0).addBox(0.7522F, -9.9999F, -8.24F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
+		.texOffs(1131, 0).addBox(0.6022F, -10.2999F, -8.2F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.5F, 9.8F, 5.8F));
+
+		PartDefinition oog3 = doberman_head_rot2.addOrReplaceChild("oog3", CubeListBuilder.create().texOffs(1131, 0).addBox(1.3918F, -10.278F, -8.3F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1135, 0).addBox(1.2418F, -9.978F, -8.34F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F)), PartPose.offset(-4.5F, 9.8F, 5.9F));
+
+		PartDefinition bone3 = doberman_head_rot2.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(1139, 24).addBox(-1.5F, 0.5548F, -0.6737F, 3.0F, 3.0F, 5.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-1.0F, 0.1259F, -6.3967F, 0.1833F, 0.0F, 0.0F));
+
+		PartDefinition bone4 = bone3.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(1735, 0).addBox(-1.5F, 0.204F, -0.3596F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.8F)), PartPose.offsetAndRotation(0.0F, -0.2649F, -1.0632F, -0.0436F, 0.0F, 0.0F));
+
+		PartDefinition bone9 = doberman_head_rot2.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(1131, 2).addBox(-1.0F, -8.6053F, -5.7313F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(-1.0F, 9.2F, -2.5F, -0.6109F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

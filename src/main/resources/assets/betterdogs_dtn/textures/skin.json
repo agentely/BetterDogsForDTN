@@ -435,6 +435,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Doberman (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/doberman_black_tan_default",
+            "use_model" : "betterdogs_dtn:doberman",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Doberman (Black Tan Cropped)",
+            "skin_id" : "betterdogs_dtn:textures/doberman_black_tan_cropped",
+            "use_model" : "betterdogs_dtn:doberman",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Doberman (Red Tan)",
+            "skin_id" : "betterdogs_dtn:textures/doberman_red_tan_default",
+            "use_model" : "betterdogs_dtn:doberman",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Doberman (Red Tan Cropped)",
+            "skin_id" : "betterdogs_dtn:textures/doberman_red_tan_cropped",
+            "use_model" : "betterdogs_dtn:doberman",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Labrador (Brown)",
             "skin_id" : "betterdogs_dtn:textures/labrador_brown",
             "use_model" : "betterdogs_dtn:labrador_golden_retriever",
