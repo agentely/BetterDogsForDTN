@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[40,)"
-license="GNU GPLv3"
+license="All Right Reserved"
 issueTrackerURL=""
 displayURL=""
 logoFile=""
@@ -10,8 +10,8 @@ logoFile=""
     updateJSONURL=""
     displayName="Better Dogs For DTN"
     credits=""
-    authors=""
-    description=""
+    authors="MrBlueYeti"
+    description="The Better Dogs resource packs, now for Doggy Talents Next."
 [[dependencies.betterdogs_dtn]] #optional
     modId="forge"
     mandatory=true

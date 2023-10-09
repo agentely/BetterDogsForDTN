@@ -5,7 +5,7 @@ plugins {
 }
 
 version = '1.0'
-group = 'xxx.yyy.zzz'
+group = 'com.github.mrblueyeti'
 archivesBaseName = "BetterDogsForDTN-1.20.1"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
@@ -105,11 +105,11 @@ jar {
     manifest {
         attributes([
             "Specification-Title": "Better Dogs For DTN",
-            "Specification-Vendor": "xxxxx",
+            "Specification-Vendor": "MrBlueYeti",
             "Specification-Version": project.version,
             "Implementation-Title": project.name,
             "Implementation-Version": project.version,
-            "Implementation-Vendor" :"xxxxxx",
+            "Implementation-Vendor" :"MrBlueYeti",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
