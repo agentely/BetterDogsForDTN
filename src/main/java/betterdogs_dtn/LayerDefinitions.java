@@ -2781,4 +2781,180 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition afghan_hound() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 8.5F, 8.75F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition afghan_tail = real_tail.addOrReplaceChild("afghan_tail", CubeListBuilder.create(), PartPose.offset(-0.5F, -7.7747F, 1.9418F));
+
+		PartDefinition bone139 = afghan_tail.addOrReplaceChild("bone139", CubeListBuilder.create().texOffs(1964, 6).addBox(-1.0F, -0.1F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1984, 26).addBox(-1.0F, -0.1F, -3.0F, 1.0F, 3.0F, 2.0F, new CubeDeformation(-0.01F))
+		.texOffs(1966, 24).addBox(-1.0F, 2.9F, -3.0F, 1.0F, 3.0F, 3.0F, new CubeDeformation(-0.01F)), PartPose.offset(0.5F, 8.3129F, -2.5117F));
+
+		PartDefinition afghan_tail_mid = bone139.addOrReplaceChild("afghan_tail_mid", CubeListBuilder.create().texOffs(1974, 28).addBox(-0.375F, 0.875F, 0.375F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1898, 2).addBox(-0.375F, 1.875F, 1.375F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1983, 2).addBox(-0.875F, 2.875F, -0.625F, 1.0F, 3.0F, 4.0F, new CubeDeformation(-0.01F))
+		.texOffs(1948, 0).addBox(-0.375F, -0.125F, -1.625F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.125F, 3.025F, 0.625F));
+
+		PartDefinition afghan_tail_bottom = afghan_tail_mid.addOrReplaceChild("afghan_tail_bottom", CubeListBuilder.create().texOffs(1942, 1).addBox(-0.4167F, -2.9167F, 0.9167F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1918, 1).addBox(-0.9167F, -3.9167F, 1.9167F, 1.0F, 4.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1954, 2).addBox(-0.4167F, -3.9167F, -0.0833F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1954, 2).addBox(-0.4167F, -4.9167F, -1.0833F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1946, 0).addBox(-0.4167F, -3.9167F, -2.0833F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(1924, 2).addBox(-0.4167F, -1.9167F, -0.0833F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(1981, 1).addBox(-0.9167F, 0.0833F, -0.1033F, 1.0F, 3.0F, 2.0F, new CubeDeformation(-0.01F)), PartPose.offset(0.0417F, 2.7917F, 3.4583F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 14.75F, 6.5F));
+
+		PartDefinition afghan_leg2 = right_hind_leg.addOrReplaceChild("afghan_leg2", CubeListBuilder.create().texOffs(1868, 1).mirror().addBox(-0.35F, -2.0F, -7.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(2058, 20).mirror().addBox(-0.85F, -3.0F, -5.0F, 3.0F, 4.0F, 8.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.75F, 2.25F, 1.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_leg2 = afghan_leg2.addOrReplaceChild("afghan_lig_leg2", CubeListBuilder.create().texOffs(2098, 23).mirror().addBox(-0.85F, -3.0F, -7.0F, 3.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_legside2 = afghan_lig_leg2.addOrReplaceChild("afghan_lig_legside2", CubeListBuilder.create().texOffs(2050, 0).mirror().addBox(-4.536F, -0.5451F, -6.0F, 5.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.7F, -2.3F, -1.0F, 0.0F, 0.0F, -0.9163F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 14.75F, 6.5F));
+
+		PartDefinition afghan_leg3 = left_hind_leg.addOrReplaceChild("afghan_leg3", CubeListBuilder.create().texOffs(1868, 1).addBox(-1.65F, -2.0F, -7.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F))
+		.texOffs(2058, 20).addBox(-2.15F, -3.0F, -5.0F, 3.0F, 4.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.75F, 2.25F, 1.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_leg4 = afghan_leg3.addOrReplaceChild("afghan_lig_leg4", CubeListBuilder.create().texOffs(2098, 23).addBox(-2.15F, -3.0F, -7.0F, 3.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_legside3 = afghan_lig_leg4.addOrReplaceChild("afghan_lig_legside3", CubeListBuilder.create().texOffs(2050, 0).addBox(-0.464F, -0.5451F, -6.0F, 5.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.7F, -2.3F, -1.0F, 0.0F, 0.0F, 0.9163F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.25F, 14.0F, -3.0F));
+
+		PartDefinition afghan_leg4_r1 = right_front_leg.addOrReplaceChild("afghan_leg4_r1", CubeListBuilder.create().texOffs(2080, 17).mirror().addBox(-0.1088F, -1.5571F, -6.0F, 3.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.3912F, 4.0571F, -0.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_leg3 = right_front_leg.addOrReplaceChild("afghan_lig_leg3", CubeListBuilder.create(), PartPose.offsetAndRotation(-16.9F, 5.0F, 1.0F, 0.0F, 0.0F, -0.6545F));
+
+		PartDefinition afghan_lig_leg4_r1 = afghan_lig_leg3.addOrReplaceChild("afghan_lig_leg4_r1", CubeListBuilder.create().texOffs(2110, 17).mirror().addBox(-0.1378F, 9.5721F, -13.25F, 4.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(10.1513F, -2.5375F, -8.0F, 1.5708F, 0.6545F, 0.6545F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.25F, 14.0F, -3.0F));
+
+		PartDefinition afghan_leg3_r1 = left_front_leg.addOrReplaceChild("afghan_leg3_r1", CubeListBuilder.create().texOffs(2080, 17).addBox(-2.8912F, -1.5571F, -6.0F, 3.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.3912F, 4.0571F, -0.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_lig_leg5 = left_front_leg.addOrReplaceChild("afghan_lig_leg5", CubeListBuilder.create(), PartPose.offsetAndRotation(16.9F, 5.0F, 1.0F, 0.0F, 0.0F, 0.6545F));
+
+		PartDefinition afghan_lig_leg3_r1 = afghan_lig_leg5.addOrReplaceChild("afghan_lig_leg3_r1", CubeListBuilder.create().texOffs(2110, 17).addBox(-3.8622F, 9.5721F, -13.25F, 4.0F, 1.0F, 12.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-10.1513F, -2.5375F, -8.0F, 1.5708F, -0.6545F, -0.6545F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 12.0F, 4.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_body3 = body.addOrReplaceChild("afghan_body3", CubeListBuilder.create().texOffs(1924, 0).addBox(-3.0F, -10.6F, 16.85F, 6.0F, 7.0F, 6.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 9.0F, -19.0F));
+
+		PartDefinition afghan_body_coat_left2 = afghan_body3.addOrReplaceChild("afghan_body_coat_left2", CubeListBuilder.create(), PartPose.offsetAndRotation(2.3814F, -1.0439F, 3.7562F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone13 = afghan_body_coat_left2.addOrReplaceChild("bone13", CubeListBuilder.create().texOffs(2050, 11).addBox(1.6563F, -15.7895F, -9.4F, 1.0F, 10.0F, 7.0F, new CubeDeformation(0.22F)), PartPose.offsetAndRotation(0.7386F, 0.0F, -0.1302F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_body_coat_right2 = afghan_body3.addOrReplaceChild("afghan_body_coat_right2", CubeListBuilder.create(), PartPose.offsetAndRotation(-2.3814F, -1.0439F, 3.7562F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone14 = afghan_body_coat_right2.addOrReplaceChild("bone14", CubeListBuilder.create().texOffs(2050, 11).mirror().addBox(-3.3949F, -15.6592F, -9.4F, 1.0F, 10.0F, 7.0F, new CubeDeformation(0.22F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mane_coat_back2 = afghan_body3.addOrReplaceChild("afghan_mane_coat_back2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.2F, 1.65F, 4.85F, 0.0F, 0.0F, 1.5708F));
+
+		PartDefinition bone15 = afghan_mane_coat_back2.addOrReplaceChild("bone15", CubeListBuilder.create().texOffs(2030, 10).addBox(-4.193F, -17.5262F, -2.8F, 1.0F, 12.0F, 6.0F, new CubeDeformation(0.21F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, -0.1309F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mane2 = upper_body.addOrReplaceChild("afghan_mane2", CubeListBuilder.create().texOffs(1940, 5).addBox(-4.0F, -13.0F, -6.5F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.2F)), PartPose.offset(0.0F, 10.0F, 4.0F));
+
+		PartDefinition afghan_mane_coat_left2 = afghan_mane2.addOrReplaceChild("afghan_mane_coat_left2", CubeListBuilder.create(), PartPose.offsetAndRotation(3.7F, -9.0F, 5.6F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone8 = afghan_mane_coat_left2.addOrReplaceChild("bone8", CubeListBuilder.create().texOffs(2012, 8).addBox(-1.8019F, 5.0863F, -3.8439F, 1.0F, 12.0F, 8.0F, new CubeDeformation(0.22F)), PartPose.offsetAndRotation(0.2462F, 0.0F, -0.0434F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mane_lig3 = bone8.addOrReplaceChild("afghan_mane_lig3", CubeListBuilder.create().texOffs(2133, 7).addBox(-4.0355F, 2.0355F, -4.0F, 1.0F, 3.0F, 8.0F, new CubeDeformation(0.22F)), PartPose.offsetAndRotation(0.6384F, 7.8877F, 0.1561F, 0.0F, 0.0F, -0.6109F));
+
+		PartDefinition afghan_mane_coat_right2 = afghan_mane2.addOrReplaceChild("afghan_mane_coat_right2", CubeListBuilder.create(), PartPose.offsetAndRotation(-3.7F, -9.0F, 5.6F, 0.0F, 0.1745F, 0.0F));
+
+		PartDefinition bone10 = afghan_mane_coat_right2.addOrReplaceChild("bone10", CubeListBuilder.create().texOffs(2012, 8).mirror().addBox(0.8019F, 5.0863F, -3.8439F, 1.0F, 12.0F, 8.0F, new CubeDeformation(0.22F)).mirror(false), PartPose.offsetAndRotation(-0.2462F, 0.0F, -0.0434F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mane_lig4 = bone10.addOrReplaceChild("afghan_mane_lig4", CubeListBuilder.create().texOffs(2133, 7).mirror().addBox(3.0355F, 2.0355F, -4.0F, 1.0F, 3.0F, 8.0F, new CubeDeformation(0.22F)).mirror(false), PartPose.offsetAndRotation(-0.6384F, 7.8877F, 0.1561F, 0.0F, 0.0F, 0.6109F));
+
+		PartDefinition afghan_mane_coat_front2 = afghan_mane2.addOrReplaceChild("afghan_mane_coat_front2", CubeListBuilder.create(), PartPose.offset(0.2F, -12.35F, 4.85F));
+
+		PartDefinition bone11 = afghan_mane_coat_front2.addOrReplaceChild("bone11", CubeListBuilder.create().texOffs(2157, 6).addBox(-0.2508F, 4.3153F, -4.2F, 1.0F, 12.0F, 8.0F, new CubeDeformation(0.22F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, -0.0436F, -1.5708F));
+
+		PartDefinition bone12 = bone11.addOrReplaceChild("bone12", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.3573F, 1.2803F, -0.2F, 0.0F, 0.0F, -0.3927F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 6.5F, -7.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.5F, -3.0F, 0.75F));
+
+		PartDefinition afghan_ear_left3 = left_ear.addOrReplaceChild("afghan_ear_left3", CubeListBuilder.create(), PartPose.offset(0.65F, -0.5F, 0.25F));
+
+		PartDefinition bone9 = afghan_ear_left3.addOrReplaceChild("bone9", CubeListBuilder.create().texOffs(1941, 25).addBox(-2.5662F, -1.768F, -2.1275F, 10.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.5021F, 2.054F, -0.5098F, -0.0843F, 0.0468F, 1.3928F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.5F, -3.0F, 0.75F));
+
+		PartDefinition afghan_ear_right3 = right_ear.addOrReplaceChild("afghan_ear_right3", CubeListBuilder.create(), PartPose.offset(-0.65F, -0.5F, 0.25F));
+
+		PartDefinition bone7 = afghan_ear_right3.addOrReplaceChild("bone7", CubeListBuilder.create().texOffs(1941, 25).mirror().addBox(-7.4338F, -1.768F, -2.1275F, 10.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.5021F, 2.054F, -0.5098F, -0.0843F, -0.0468F, -1.3928F));
+
+		PartDefinition poedel_head_rot3 = real_head.addOrReplaceChild("poedel_head_rot3", CubeListBuilder.create().texOffs(1880, 9).addBox(-2.5F, -4.35F, -2.5F, 5.0F, 5.0F, 6.0F, new CubeDeformation(-0.1F))
+		.texOffs(1972, 10).addBox(2.3F, -4.35F, -2.0F, 1.0F, 5.0F, 6.0F, new CubeDeformation(-0.1F))
+		.texOffs(1823, 14).addBox(-2.5F, 0.45F, -2.5F, 5.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offset(0.0F, 0.5F, 0.5F));
+
+		PartDefinition mane_sub_2 = poedel_head_rot3.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(1972, 10).mirror().addBox(-4.3F, -2.35F, -3.0F, 1.0F, 5.0F, 6.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offset(1.0F, -2.0F, 1.0F));
+
+		PartDefinition afghan_head_snood_overlay2 = poedel_head_rot3.addOrReplaceChild("afghan_head_snood_overlay2", CubeListBuilder.create().texOffs(1839, 12).addBox(-2.5F, -14.85F, 5.5F, 5.0F, 5.0F, 6.0F, new CubeDeformation(0.15F)), PartPose.offset(0.0F, 10.5F, -8.0F));
+
+		PartDefinition afghan_neck2 = poedel_head_rot3.addOrReplaceChild("afghan_neck2", CubeListBuilder.create().texOffs(1993, 0).addBox(-2.5F, -2.8887F, -2.69F, 4.0F, 5.0F, 4.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.5F, 1.15F, 2.5F, 0.48F, 0.0F, 0.0F));
+
+		PartDefinition afghan_wig_right2 = poedel_head_rot3.addOrReplaceChild("afghan_wig_right2", CubeListBuilder.create().texOffs(1872, 0).addBox(-3.5F, -0.1456F, -3.4032F, 7.0F, 1.0F, 6.0F, new CubeDeformation(0.0F))
+		.texOffs(1701, 28).addBox(-0.5F, -1.1456F, -0.4032F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(1972, 25).addBox(-3.5F, -1.1456F, -3.4032F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -4.65F, 1.0F, -0.1309F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_3 = afghan_wig_right2.addOrReplaceChild("mane_sub_3", CubeListBuilder.create().texOffs(1972, 25).mirror().addBox(0.5F, -1.1456F, -3.4032F, 3.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition snood2 = afghan_wig_right2.addOrReplaceChild("snood2", CubeListBuilder.create(), PartPose.offset(0.0F, 15.25F, -8.5F));
+
+		PartDefinition snood_left2 = snood2.addOrReplaceChild("snood_left2", CubeListBuilder.create().texOffs(2048, 0).mirror().addBox(0.5F, -16.3956F, 5.0968F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition snood_overlay_left2 = snood_left2.addOrReplaceChild("snood_overlay_left2", CubeListBuilder.create().texOffs(2028, 0).mirror().addBox(0.5F, -16.3956F, 5.0968F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.15F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition snood_overlay_right2 = snood_left2.addOrReplaceChild("snood_overlay_right2", CubeListBuilder.create().texOffs(2028, 0).addBox(-3.5F, -16.3956F, 5.0968F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.15F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition snood_right2 = snood2.addOrReplaceChild("snood_right2", CubeListBuilder.create().texOffs(2048, 0).addBox(-3.5F, -16.3956F, 5.0968F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition snood_mid2 = snood2.addOrReplaceChild("snood_mid2", CubeListBuilder.create().texOffs(2040, 0).mirror().addBox(-0.5F, -15.3956F, 5.0968F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition oog2 = poedel_head_rot3.addOrReplaceChild("oog2", CubeListBuilder.create().texOffs(1569, 25).addBox(-2.5584F, -11.3931F, -9.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.3F, 7.9F, 6.8F));
+
+		PartDefinition mane_sub_4 = oog2.addOrReplaceChild("mane_sub_4", CubeListBuilder.create().texOffs(1563, 17).mirror().addBox(0.2584F, -12.1931F, -9.75F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.45F)).mirror(false)
+		.texOffs(1569, 25).mirror().addBox(0.9584F, -11.3931F, -9.25F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition oog3 = poedel_head_rot3.addOrReplaceChild("oog3", CubeListBuilder.create().texOffs(1563, 17).addBox(-2.0084F, -12.1931F, -9.75F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.45F)), PartPose.offset(-0.55F, 7.9F, 6.8F));
+
+		PartDefinition bone2 = poedel_head_rot3.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(1779, 9).addBox(-1.5F, -1.9132F, -2.192F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.15F)), PartPose.offsetAndRotation(0.0F, -0.4662F, -3.2634F, 0.3578F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mouth_rot2 = bone2.addOrReplaceChild("afghan_mouth_rot2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.8496F, -0.132F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition afghan_mouth2 = afghan_mouth_rot2.addOrReplaceChild("afghan_mouth2", CubeListBuilder.create().texOffs(627, 11).addBox(-1.5F, -0.2441F, -2.7887F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.23F))
+		.texOffs(1809, 9).addBox(-1.5F, -0.665F, -2.7902F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.2F))
+		.texOffs(102, 14).addBox(-1.5F, -1.265F, -2.7902F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.2F)), PartPose.offset(0.0F, 0.0F, 1.0F));
+
+		PartDefinition afghan_tongue_rot2 = afghan_mouth2.addOrReplaceChild("afghan_tongue_rot2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.25F, 1.1413F, -1.4874F, -0.0664F, 0.0F, 0.0F));
+
+		PartDefinition afghan_tongue2 = afghan_tongue_rot2.addOrReplaceChild("afghan_tongue2", CubeListBuilder.create().texOffs(806, 21).addBox(-1.75F, -2.4602F, -2.4124F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.4F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition bone3 = bone2.addOrReplaceChild("bone3", CubeListBuilder.create().texOffs(1729, 14).addBox(-1.5F, -1.7088F, -0.9361F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.75F)), PartPose.offsetAndRotation(0.0F, -0.8918F, -2.3563F, 0.0698F, 0.0F, 0.0F));
+
+		PartDefinition oor2 = poedel_head_rot3.addOrReplaceChild("oor2", CubeListBuilder.create(), PartPose.offsetAndRotation(-5.65F, -0.5F, 8.5F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone4 = oor2.addOrReplaceChild("bone4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.5F, -0.4868F, 0.0436F, 0.0F, -1.3701F));
+
+		PartDefinition oor3 = poedel_head_rot3.addOrReplaceChild("oor3", CubeListBuilder.create(), PartPose.offsetAndRotation(-5.65F, -0.5F, 8.5F, 0.0F, -0.1745F, 0.0F));
+
+		PartDefinition bone5 = oor3.addOrReplaceChild("bone5", CubeListBuilder.create(), PartPose.offsetAndRotation(0.4924F, 3.5F, -0.4868F, 0.0436F, 0.0F, -1.3701F));
+
+		PartDefinition bone6 = poedel_head_rot3.addOrReplaceChild("bone6", CubeListBuilder.create().texOffs(1483, 15).addBox(-0.5F, -0.8826F, -0.9123F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -1.9698F, -2.5651F, 0.7418F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }

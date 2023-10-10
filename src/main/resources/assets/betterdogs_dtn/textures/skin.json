@@ -22,6 +22,34 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Afghan Hound (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/afghan_hound_black_tan",
+            "use_model" : "betterdogs_dtn:afghan_hound",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Afghan Hound (Gray White Tan)",
+            "skin_id" : "betterdogs_dtn:textures/afghan_hound_gray_white_tan",
+            "use_model" : "betterdogs_dtn:afghan_hound",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Afghan Hound (Tan)",
+            "skin_id" : "betterdogs_dtn:textures/afghan_hound_tan",
+            "use_model" : "betterdogs_dtn:afghan_hound",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Afghan Hound (Black White)",
+            "skin_id" : "betterdogs_dtn:textures/afghan_hound_black_white",
+            "use_model" : "betterdogs_dtn:afghan_hound",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Corgi (Yellow)",
             "skin_id" : "betterdogs_dtn:textures/corgi_yellow",
             "use_model" : "betterdogs_dtn:corgi",
