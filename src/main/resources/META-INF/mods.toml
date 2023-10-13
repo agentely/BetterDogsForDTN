@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="All Right Reserved"
 issueTrackerURL=""
 displayURL=""
-logoFile=""
+logoFile="bd_dtn_banner.png"
 [[mods]] #mandatory
     modId="betterdogs_dtn"
     version="${file.jarVersion}"
