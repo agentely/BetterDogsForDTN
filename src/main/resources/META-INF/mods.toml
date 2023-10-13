@@ -7,7 +7,7 @@ logoFile="bd_dtn_banner.png"
 [[mods]] #mandatory
     modId="betterdogs_dtn"
     version="${file.jarVersion}"
-    updateJSONURL=""
+    updateJSONURL="https://raw.githubusercontent.com/Mrblueyeti/BetterDogsForDTN/5a1f7643d862e85c05f1e9cd248c02e7fd1603f6/check_fior_updates/update.json"
     displayName="Better Dogs For DTN"
     credits=""
     authors="MrBlueYeti"
