@@ -29,6 +29,6 @@ logoFile=""
 [[dependencies.betterdogs_dtn]]
     modId="doggytalents"
     mandatory=true
-    versionRange="[1.16.0,)"
+    versionRange="[1.17.0,)"
     ordering="NONE"
     side="BOTH"
