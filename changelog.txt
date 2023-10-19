@@ -1,0 +1,667 @@
+﻿Doggy Talents Next - Changelog
+
+Update List Key
+(+) A new feature
+(-) A removed feature
+(#) A changed feature
+(*) A bug fix
+(/) Other
+
+v1.0beta - 28th October 2022
++ Initial upgrade:
+  + Update to 1.19.2
+  # Modify the mechanic to allows switching Navigation and MoveControl, this allows Dog to navigate on different landscape
+  + Make Dog practically swim underwater with SwimmerDog Talent
+  + Make Dog practically ridable underwater
+  # Modify Swimming Mechanic Talent: 
+    + The Dog will stop swimming and float as usual when low on air supply
+    + The Dog will stop swimming and float as usual when near land, this allows the Dog to smoothly transform 
+    between walking and swimming
+    / TODO FIX : Upon transition, the Dog may jump up higher than usual. 
+  # Modify Hunger Mechanic:
+    + When a Dog is hungry (isLowHunger() -> true) he will come near his owner, whine (ask for food) and tit his head while
+    stay there for a few seconds, his movement speed will also drastically drecease.
+    + When a Dog is zero hunger, depending on the difficulty, certain things may happen :
+      + PEACEFUL : Nothing happens
+      + EASY : He will gradually take damage, but stops at 1 HP
+      + NORMAL : He will take damage faster than the preceeding
+      + HARD : He will quickly take damage and may starve to death.
+  # Modifying Attacking Mechanic :
+  / Two files are involved : DogLeapAtTargetGoal, Dog::getMaxFallDistance and DogMeleeAttackGoal
+    + Ajust Dog leaping threashold to make the attack as acurrate as possible while
+    still make the Dog sometimes leap. Make the Dog think before jumping to execute the jump as safe as possible. 
+    + Adjust the Dog attack goal to efficently attack with safety in mind
+
+v1.0.1beta - 28th October 2022
+*Dog can only attack one time, and require recalc every tick.
+*Remove debug codes
++Improves the dog attacking moves, making it more smooth, make the dog no longer pause.
+
+v1.0.2beta - 31th October 2022
+*CRITICAL BUG FIX: referencing potential null pointer before checking if it is null in DogMeleeAttackGoal
+
+v1.0.3beta - 1th November 2022 
+*Fix Super User Command Bug that caused Super users to get kicked out of server
+#Make hunger dog a.i also check continueToUse based on if the dog is still hungry or not
+
+v1.1.0beta - 3th November 2022
+#Make owner can ride SwimerDog at level 2+
++Add Heel By Name feature to the Whistler :
+  +Right click and will open up a gui for user to type the name of the dog and the dog will teleport
+  to the user even when sitting
+#Adjust starve hurting interval
++Dog now teleport with consideration about whether the owner is sprinting or not
+when he is, the dog will not teleport to the block which would potentially obstruct
+the owner sprinting.
+
+v1.2.0beta - 9th November 2022
++ Make dog don't go in front of owner when he is mining (useful in strip-mining because he might hit lava)
++ Make dog teleport to and then follow the owner while health is lower than 6.0 (❤️❤️❤️), and also beg for
+assistance.
+
+v1.3.0beta - 17th November 2022
+/Make the Mining Cautious Logic make more sense : 
+    / @Credit idea thanks to Sophisticated Wolves from NightKosh
+    The dog only go into the mode when owner did a swing with DiggerItem in hand 
+    and remains in the mode for 30 seconds more when the owner 
+    no longer swinging with DiggerItem in hand.
+/Heel by name:
+    + Add the option to make the dog sit upon heel completion. Can be achieved by Shift+Enter 
+    finishing the command.
+/Creeper Sweeper Talent:
+    + Make them also growl when a creeper is nearby while sitting on player's head. this
+    allow utilization of the feature to better alert creeper.
+/Whistle Mode Picking Interface:
+    - remove the old Shift+Click Cycling style, the method has proven itself to be relatively
+    annoying and unintuitive, by allowing a great chance of accidental mode switch and trigger.
+    + Instead the user will be presented with a Screen for them to choose the mode, they can quickly
+    pick the mode through the screen via either searching then pressing enter, using the up and arrow 
+    key to choose the mode then pressing enter or pressing the corresponding number key. This minimize
+    accidental switch because the player doesn't change the mode immediately when shift+click.
++ Add Dog Eating Effect : Eating now makes sound and particles.
++ Increase FindWaterGoal speed to 1.5 for practical reasons.
+*BUG FIX : fix SwimmerDog occasionally become uninterative with a bouncing effect upon switching back to land
+this bug is created by the MoveControl for Swimming is not properly reset upon transition, this make the 
+dog's yya occasionally goes larger than 0.2 on land which cause the dog to always move up
+while being canceled by gravity, which cause a side effect that the dog is never on land, which 
+prevents path updates. This has been fixed by properly reseting the old moveControl before setting new one.
+/Rescue Dog Talent :
+    / Limit the heal radius and check if the dog can see the heal target.
+    + Rescue Dogs now also heals other Dogs and Wolves of the same owner, with each heal session costs 20
+    Hunger.
+    + Rescue Dogs now move to the target (Owner or dogs and wolves of the same owner) when low on health
+    (health <= 8.0) and then heals when in radius. 
+    + Rescues Dogs also check if they can afford to heal the target (hunger - healCost >= 10)
+    before actually moving to them. If they can't then the dog will not proceed to go and heal the target.
+    in radius 
++ Dogs now eats from nearby ChestDog who are storing food when hunger is lower than 50.
+    + They will also move to the ChestDog and eat only when in radius.
+
+v1.3.1beta - 17th November 2022
+*CRITICAL BUG FIX : NPE on DogAteFromChestDogGoal
+
+v1.3.2 - 17th November 2022
+*HOTFIX : Dog Bed crashing game.
+
+v1.4.0 - 8th Decemeber 2022
++ Added Saturation Effect for dogs
+    + When "adding" hunger to dog, if there is "excess" hunger then that
+    will be added to the saturation hunger instead
+    Saturation Hunger :
+    When larger than Zero
+    +every hunger the dog lost will count against it
+    instead of the real hunger value.
+    + If health < maxHealth : The dog will heal 1 health each 0.5s interval
+    with the cost of 3 saturation hunger per health.
+    NOTICE : The dog hunger value still caps at
+    the real max value.
+/ Dog Tail angle now depends on the ratio between the dog's health and his max health. (ACTUALLY)
+/ When dog attacks an entity, if far away from owner more than 20 blocks, teleport
+/ Dog now check if he can reach the target before begin attacking
+/ Added timeout in dog attack, he will discard the target if staying in a spot for too long without reach.
+/ Dog now consider nearest skeleton away from the Owner instead of himself.
+/ Dog now be able to deal damage mid-air
+
+v1.4.1 - 8th December 2022
+*HOTFIX : Path reach check now regards Y coordinates.
+
+v1.5.0 - 15th December 2022
+/ When feeding from ChestDogs, dogs who are on Low Health continue to eat while hunger < max hunger
+/ Reduced RescueDogs heal cooldown to 2 seconds
++ Added New Armor System
+  + This system works in form of a Talent. In order to get your dog armor, you have to train
+  your dog "Doggy Armor", unlike other levels the max level for this talent is 3.
+  + You then right click the dog with any ArmorItems in hand and a GUI will open letting
+  you place or remove any vanilla armor on dog anytime.
+  + The dog will actually equip the armor, in other words, the armors is now fully
+  functional, which means that Enchantments is supported.
+  + If the dog have "Doggy Armor" leveled up to 3, he will automatically pick up surrounding
+  xPs to repair any armors with the Mending Enchantment.
+* BUG FIX : Missing texture when dog is eating.
+/ Improved dog's DogGoAwayFromFire AI and DogFindWater AI.
++ Idle dogs now try to resists pushes that cause them to move somewhere questionable.
+/ Improvements to Level 5 HellHound Dogs :
+  + They no longer afraid of fire and will treat it like water and fire like open spot.
+  + They now swims faster in lava
+  + Everytime they exit lava, they will shake like wolves usually do after exiting Water.
+  + But instead of water particles, they will shake out Lava/Fire particles and 
+  + Every enermies within a 3 blocks radius will be set on fire for 5 second minimum.
+
+v1.5.1 - 16th December 2022
+/ Improved Dog Find Water when on fire AI
+  + dog now searches through inflating "shells" instead of iterating like normal nested loops
+  which means the dog have a higher chance of nailing the nearest water source.
+
+v1.5.2 - 18th December 2022
++ Fixed dog occasionally spin in a circle forever while searching to escape fire danger.
+
+v1.6.0 - 19th December 2022
+/ Refined Dog Avoid Fire Goal.
+/ Dogs now tp to owner on request by Heel By Name even if he is riding a boat or minecart
+/ Smoother Low Health AI
+/ Redefine Guard Mode :
+  + Dogs in this mode should make sure that the radius (GUARD_DISTANCE = 5)
+    around the owner is clear of enermy, if there
+    is enermy in the radius, the dog will attack it
+    until it either leaves the area or dies.
++ Added variants to the Beserker Mode and Guard Mode as a safer alternative:
+  + GUARD_FLAT/BESERER_MINOR : Dog won't attack Piglins (includes Zombified) or Endermans in this mode
+  + GUARD_MINOR : Dog won't do any attack but
+    growl to warn the owner if danger is
+    in the radius. The dog will
+    groul at Max Volume.
+/ Changed dog default follow behaviour :
+  + 12 blocks away: Attempts to teleport to owner, however, dog keeps pathfind to the owner.
+  + 20 blocks away: Dog stops and explicitly search for tp-able pos around the owner and tp if there is
+  with 0.5s interval
+
+v1.7.0 - 20th December 2022
+*HOTFIX 🔥🔥🔥 "Literally" : Hell Hound Level < 5 even when not fireproof yet stil
+consider lava as water like level 5.
+/ Dogs with Hell Hound 5 or SwimmerDogTalent any level will teleport to Lava or Water
+respectively.
+/ Dogs now teleport to leaves, as i see there is no reason for them not to, this allow 
+them to better follow you when you are exploring on top of trees, as some biome are quite 
+covered by trees.
++ Added Water Holder Talent:
+  + Notice the dog's fur, it loves absorbing water. And the dog loves shaking it dry. 
+  This talent allows your dog to store water. When you, your other wolves or dogs is on 
+  fire, he will run to each and shake his fur, reduce the burning time or completely 
+  extinguish you. The higher the level, the more water the dog can store, 
+  so as the burning time the dog can reduce! You can either use a water bucket 
+  on the dog to refil or the dog will automatically absorb water when in contact with 
+  rain or water source. You can check the amount of water left by using any bucket 
+  on the dog while holding shift.
+
+v1.7.1 - 26th December 2022
++ Dog Armor Renderer now defaults to iron texture when cannot find texture.
+* BUG FIX : when dog is one block higher than the bed (not on the bed)
+he will lie down.
+/ Dog Go Away From Fire AI is now heavily optimized to balance between
+performance and effectiveness.
++ Dogs now can eat (Enchanted or Normal) Golden Apple
++ WaterHolderDogs and RescueDogs now continues to do their talent specific actions 
+in GUARD_MINOR mode
++ RecuesDogs now become silent in Guard Minor, this allows them to focus on guarding
+the owner or other guard dogs' health instead without interfering with Creeper Detection.
+
+v1.8.0 - 30th December 2022
+/ Dogs will now only eat from ChestDogs of the same owner
+/ Improved Dog Commands :
+  + Respawn and Locate commands now accept an additional optional argument, which is the dog
+  UUID, which can be fetched via Intellisense based on the preceeding dogName argument.
+  This make it easier when two dogs who have the same name need to be respawned.
+* BUG FIX : 
+  / Bug : Upon using the tp command to tp the dog too far away, the location data failed to Update
+  and you lose track of your beloved friend.
+  + Dog location is now forced to update whenever a dog is about to be untracked.
++ INCAPACITATED MODE/ IMMORTAL DOGS :
+  + This is one of the feature that is a huge part of Classic Doggy Talents. 
+  It now have been re-introduced. Which some notable improvements.
+  + More info in the wiki.
+
+v1.8.1 - 30th December 2022
+* HOTFIX : if Incapacitated Dogs fall into the void, they will not die, but perhaps being deleted...   
+
+v1.8.2 - 7th January 2023
++ HAPPY NEW YEAR !!!! 🎆🎉🎆🎉🦴🐶
+* CRITICAL BUG FIX : Accesories and Talents now properly in sync with the client.
+* BUG FIX : Upon a target is in lava but still close, a dog sometimes tries to "reach out" to it,
+Which cause a small chance of the dog slipping in lava.
+/ RescueDogs now don't heal Incapacitated Dogs, cause it only waste hunger.
+/ OPTIMIZED DOG EXPLICIT SAFE BLOCK SEARCH
+  + The procedure of the dog explicitly finding the safe position nearby a block
+  have been heavily optimized using Dynamic Programming, yet still, as tested,
+  retains the accuracy.
+/RescueDogs healing bonus chance is now :
+  + 20% : 3 ❤️
+  + 25% : 2 ❤️
+  + 30% : 1 ❤️
+  + rest : No
+/FireFighterDogs extinguish turn is now Unlimited when max level.
+
+v1.9.0 - 10th January 2023
++ Added CONDUCTING BONE :
+  + This expensive baton is used to summon dogs from everywhere in the world and
+  send the dog back to his bed no matter where it is. More info at the wiki.
+/ Optimized Dog Eat From ChestDogs logic, dog only start going if within reach and not far away.
++ New way to manage your dogs health (Configurable) : When sneaking, every dog's name will be rendered
+with a certain part highlighted a certain color, the color and the length of the part is based on the
+percentage of health the dog has left.
+/ Only standing dogs is allowed to claim bed, this make getting mutiple dogs claiming their beds easier.
+/ G Flat and B Minor dogs behavior changes :
+  / The dog won't attack piglins ONLY IF the owner is wearing any gold armor piece. 
+
+1.9.1 - 10th January 2023
+* HOTFIX: Hellhound 5 dog considering MagmaBlock open area and suffocate upon teleportation.
+
+1.9.2 - 19th January 2023
+* HOTFIX: NPE on Dog Go Away from Fire A.I
++ Rescue dog now stops going to target when incapacitated.
++ B/Bm/G/Gb mode dog now fight every enermy!
+
+1.9.3 - 2th February 2023
+* HOTFIX : ChestDog + TorchDog level < 5 placing torch cause the whole 
+world to crash and is unable to join until the bug is resolved.
+
+1.10.0 - 14th February 2023
++ Re-design and added a brand new Dog Gui:
+  + The doggytalents UI have not been updated for a long time,
+  + and the most recent one is not much different than the 
+  + Very OG UI that DoggyTalents born with in 2013. 
+  + This re-design aims to provide a whole new look and feel for the
+  + UI. The UI will have a modern vibe with simplicity and intuitivity.
+  + Users can now intuitively add and remove Accessories without using
+  + the collar shear, which renders it useless and ready for removal
+  + after another in development method/item which aids for ownership change
+  + ,"de-training" and "un-taming".
++ All of the quick-select screen like Conducting Bone/Heel by name screen... are now
+clickable.
+* Hungy dogs will now occasionally remind owner when they're hungry, and won't be locked until
+  / world restart again
+* Fixed all bugs related to Immortal Dogs on dedicated server and made it mainstream and the prefered
+way.
+* Fixed potential getOwner null bugs.
+* Attacker now stops attacking incapacitated dogs and treat them as not a valid target
++ Re-added byuuid branch in dog commands.
+/ Dogs now only eat MEAT food from chestDog and avoid eating Golden Apple.
+/ Improved fire avoid goal.
++ (Configurable) Dogs now greet owner when he approaches after he leaving him for too long.
+There is a limit to how many dogs and greet the owner at once, and the rest will not greet
+to avoid the dogs being too annoying. The default limit is 5 but you can disable it or change It
+via config.
++ (Configurable) Now you can play tag with your dogs! Notice that this is just a fun game when
+you are occasionally doing nothing in the game like waiting for your friend or, smelting something,
+and never intended as a challenge, so go easy on your bud.
+/ Incapacitated Dogs now whine less when half-recovered.
+
+1.10.1 - 14th February 2023
+*HOTFIX: Fixed Dog attack efficency lost. 
+
+1.10.2 - 16th February 2023
+*Fixed dogs improperly dismount in water.
+
+1.10.3 - 22th February 2023
++ Happy Birthday Chopin! 🎉
+/ Arrows now go straight through dog instead of bouncing off.
+/ Numerious updates to the Heel By Name feature :
+  / Heel by Name list now sorts according to how recent is the last time the dog get called.
+  / UI tweaks to improve fast calling.
+  / Soft Heel (Togglable via GUI) : Instead of always teleporting, dog will come to you like
+  when he is following.
++ Added 2 configurations for dogs :
+  + Regards Team Players : Allows dogs with some talents to also support players of the same team as the owner.
+  + Force Sit : Prevent some actions that may cause the dog to stand up.
++ Rescue Dogs and Water Holder Dogs now also heals/extinguish players of the same team as the owner with
+(with Regards Team Player enabled), and will stand up to carry the action when sit (unless Force Sit).
+/ Tweaks to New Dog GUI.
+/ (Configurable) Creeper Sweeper dogs don't growl when level being maxed, instead focus on attacking.
+
+1.10.4 - 22th February 2023
++ Tweak Heel By Name UI.
+
+1.10.5 - 24th February 2023
+/ Code refactoring.
+/ Properly implement triggerableAction API now, dogs now can stashes trivial action for
+non trivial action.
++ Added To Bed Whistle :
+  + Command every dog to move to bed if nearby (< 20 blocks)
+
+1.10.6 - 3th March 2023
++ Added several GUI component for future usage:
+  + ScrollView : a fixed viewport that renders its chidlren in a scrollable container.
+  + Dynamic Size : size defined by childrens
+  / Fixed Relative positioning.
+/ Only owner or canInteract() can access stats serverside.
++ When player shift, he can see every low hunger dogs' hunger digit rendered in red.
+this allow easier identification of who's to feed. (This feature is tied with the render
+health color in name and configurable in the same manner)
+* Dog nows always checks if the owner is mining, and will enter mining cautious mode
+any time you swing with a digger item in hand. Also they will not teleport in front of you.
+* Dog playing tag no longer occasionally tp back to owner when entering water.
+* Dog no longer "greet" owner when freshly trained.
+* Fix small dog unable to claim bed sometimes.
+ 
+1.10.7 - 3th March 2023
+/ Dog Go Behind Whistle :
+  * HOTFIX : Only dog which are 20 blocks or less away from the owner and shouldFollowOwner 
+  may respond to that.
+  * HOTFIX : Also add a 1 second cooldown on usage.
+  * HOTFIX : Fixed Improper pathfind, causing dog to sometimes go infront of owner instead.
+  + Improve accuracy.
+
+1.11.0 - 1th April 2023
+/ Added cooldown to the toBed whistle
++ Revamped Skin System :
+  + This skin system allows skins to have its own models and metadata.
+  + DogRender can switch between different models when rendering different dog with different skins
+  + This allows for future JEM and animation intergration.
+  + For accessories added support for 64x64 texture, allowing more flexiblity.
++ Accessories can now be rendered Translucent if on demand.
++ Added Low Graphics textures for incapacitated dogs:
+  + If users is vulnerable to blood or gore, they can choose to render this texture instead
+  of all of the others, this texture looks and feels much friendlier than the rest.
++ Added More Accessories ! 🎉
+  + Smarty Glasses : Want your dog to look like a scientist? This one certainly make him more like it🧑‍🔬
+  + Pianist Suit : A nice and formal suit for pianists!
+  + Bowtie : Finally, dogs can now wear bowties!
+  + Death Hood : Want to make your dog looking more... deadly ?💀
+  + Wig : Oh yeah, check out my hair style!
+* Fixed dog snout glitching under his chin.
++ Name all of the skins
+* Fixed armor boots rendering enchanted while it is not.
++ Overhaul Radar Mechanic :
+  +Users will be presented with a screen
+  to pick dogs to locate, after they selected
+  the dog, the locating dog data is then being
+  written into the item nbt tag of the stack,
+  Right click again to clear.
+
+  If user is holding a Radar with the tag,
+  there will be a text rendered in the direction of where the dog is telling
+  user how far away.
+
+1.11.1 - 8th April 2023
++ Dog Gui navbars now can be controlled by using whatever key you use for going left or right.
+* Fixed removal of accessories from the dog sometimes removed the wrong accessory:
+  / which is caused by the client sorting the actual synced data for rendering
+* Fixed radar causes shaders to not render anything when activated.
++ Defeated Dogs now whine less
++ Fixed dogs sometimes refused to sit even when doing a goal which allows cancelation through sitting.
+
+1.11.2 - 11th April 2023
+* Fixed stupid🤡 inversion that cause non accessories to be listed instead of accessories in the
+Style>Accessories view.
++ Radar text now can actually be seen through, although the code to make it work is ... questionable.
+
+1.12.0 - 4th May 2023
+# Go Behind Action improvement : Dogs now can find and go to a block that is behind owner 
+which also requires going upstairs.
+# Code refactor in GUI framework.
+* Low Health dog no longer earrape players if they spam click him.
+# Removed "x64" texture requirements in accessories. DogModel with different texSize and 
+same cubes with classical now request another model with the original texSize to be rendered.
+# Allow Accessories to have different textures between the front and the back legs.
++ New Accessories : Conan Suit.
++ BEASTARS ビースターズ ! : =============================
++ Added styles from the popular anime series. 
++
++ Accessories :
++ The series's school uniform for male and female.
++
++ Skins :
++ Legoshi the Wolf
++ Juno the Wolf
++ Jack the Golden Retriever
++ 
++ Added egg sandwiches, Legoshi's favorite food, yum!
++ ======================================================
+# TextOnlyButtons now properly center bold text.
++ Added Amnesia Bone ===================================
++ This expensive nether-infused item allows you to do three things :
++ 1. Detrain the dog, talent by talent.
++ 2. Untame the dog.
++ 3. Change dog's owner.
++ Like the Conducting Bone, user accesses the functions via a GUI.
++ Each stack of the item has a Use Cap, which is currently 8. If user
++ reaches this cap, the item will break regardless of anything. This cap is completely
++ fixed and seperated from the durability system and cannot be altered by any means 
++ including enchantments.
++ Each Changes owner & Untame usage will count towards the cap. Fortunately, this does not
++ apply to the Detrain function, in which each usage do not count towards the cap.
++ However, every functions cost XP, the amount is following:
++ 5 for changeOwner
++ 3 for untame
++ 2 for maxLevel detrain
++ 1 for otherLevel detrain
++ ======================================================
+* Fixed DoggyArmor desync.
++ Added Doggy Tools Talent ⛏️==========================
++ This talent give dogs a toolbar where dog can make uses of specific
++ tools.
++ For example :
++ If a dog has a target, he will find the
++ nearest weapon from left to right of
++ the toolbar and equip.
++ If a dog has a hoe in the toolbar, the dog
++ will help you farming!
++ Also note that currently dogs can only use tools when near owner.
++ ======================================================
+# Friendly fire preventing function is now more explicit:
+By default, the option now only affects the dog's owner and player who shares the same team.
+Other player can still attack the dog as normal with FF disabled.
+There is now a dedicated ServerConfig for disabling FF for all players towards all dogs.
++ Dog now also makes sound when crit an entity, it is the same sound when you jump-attack.
+# Knockback Immunity is now more explicit.
+No more free Knockback Immunity. Instead it can be achieved via the Shock Absorber Talent.
++ When an player "order" a dog whom he does not have the permission to interact with, a toast 
+will be shown on his screen.
++ RescueBox now will get out of the way for Bowtie to render if present.
+- FINALLY!!! THE REMOVAL OF THE SHEAR ✂️🚫 ============
+- Removed items :
+- Collar Shear - can be considered unintuitive and unethical to use and underestimate the loyalty
+- of dogs in general.
+- Change Owner.
+- Both is replaced with the new GUI for modifying accessories and The Amnesia Bone.
+- ======================================================
+
+1.12.1 -  5th May 2023
+* HOTFIX : Skin failed to init when switching tab using keyboard.
+
+1.12.2 - 7th May 2023
+* HOTFIX : dog corrupts when player logged out while sharing the same boat with the dog.
+* fix desync when dog is mounted to player while already being a passanger of a different vehicle.
+
+1.13.0 - 11th June 2023
+# Incapacitated Dogs no longer unable to completely move, in other words, will float if died in lava for the owner to rescue.
++ Readded and Integrate the Command Emblem into the Whistle :
+Users can now assign Hotkeys to activate up to 4 commands in the Whistle without having to open the Gui to change.
+Executes the hotkeys while holding the Whistle and the command assigned is activated!
+* Prevent dog from potentially pursuing dead/defeated ChestDogs
++ Added Dropdown menu in Gui
++ Added Group System and Heel By Group Command:
+User can assigns each dog to certain groups where they will refer to when needing to heel all of the dog in that group
+using the Heel By Group commands.
++ Added St Bernald Skin
++ Added LowHealthStrategy system
+Owner now can tell the dogs what they should do when on low health: 
+There is 3 options : Do nothing and continue on what they are doing, stick to you or try to run away from any targetting 
+enemies while still try to be close to the owner.
++ SwimmerDogs now resist push from water.
++ When riding SwimmerDogs, rider can hold space to float up.
+# Dog now strategically eat Egg Sandwich from ChestDogs.
++ Added Cross Origin Teleport:
+Now, by default, dog will resist dimension change when in portal, this prevents dog accidentally wander to a portal, 
+(This however can be configured)
+Added Cross Origin Teleport as an option in the dog's menu. If turned on, dog will automatically teleport to owner when 
+he either distant teleport somehow or change dimension, and they will do it safely. Else, they will remains where they are.
++ Added Option to keep dog's UUID when turned into Trained Dog from Vanilla Dogs and being brought back from the dead.
+* Old DoggyTalents get dye color from dye using the wrong function, which causes dyes when applying on the dog collar
+looks different to applying to the vanilla dogs.
+# Trained dog now preserve name and collar from vanilla dogs, which owner can changes anytime.
++ Added key hint in Dog's menu, hinting user that they can press the respective keys to navigate between tabs
++ Added config to add a cap to how much dog user can heel at a time.
+# Improved Heel Command.
++ Added Bandage System and Incapacitated Dogs improve:
+When a dog is incapacitated, users can apply band-aid to him, if they apply enough band-aid, the dog can begin to walk
+and follows the owner, he will automatically find and go rest on any beds nearby, he will also avoid beds which is occupied
+by another defeated dog.
+
+1.13.1 - 11th June 2023
+* HOTFIX : Dedicated Server failed to start for some reason.
+
+1.14.0 - 9th July 2023
++ Added Author/Based-on metadata for Dog Skins
++ Optimize Push Protection
++ Dog cannot push each other while navigating. (Configurable)
++ Improved Dog's navigation's accuracy
++ Ōkami 大神 (2006): =============================
+Added Okami Amaterasu skin.
+"Ah...Amaterasu. Origin of all that is good and mother to us all."
+==================================================
++ Smoother transition between Tamed Wolves and Trained.
+* Fix dog who is avoidiing fire constantly sit up and down in some case.
+
+1.14.0 - 11th July 2023
++ Support 1.18.2
+
+1.15.0 - 3th August 2023
++ Happy 11th Birthday DT !!! 🎉🎉🎉🎉
++ Added Doggy Artifact Sys:
+  + Each dog can have up to 3 artifacts equiped, each artifacts provides a temporary function
+  opposed to the permanent function that talents provide.
++ Removed Floating Effect from Pillow Paw 5.
++ Added Feathered Mantle Artifact :
+  + An extra step for Pillow Paw 5 dogs to float.
++ Added several items as a replacement to its predecessor:
+  + Shrinking Mallet: Replacing Tiny Bone
+  + Magnifying Bone: Replacing Big Bone
+  + Canine Tracker: Replacing Radar
+  + Energizer Stick: Replacing Chew Stick
++ New treat textures! Yum!
+* Fixed and improved dog run away from fire logic
++ Puppy Eyes now increase your reputation instead.
+* Fix Water Holder dog repeatedly extinguish themselves while jumping in lava.
++ (Configurable) Dog's Name Tag now renders completely grayed out if he does not belongs
+to the viewing player.
+* Fix dog greets spectator players.
+# Added glint to Creative Items
++ Dog's HP now increases with the level too.
++ Added Bach's Wig
+# Change recipe, id for the Tantan cape
+# Change recipe for the Classic Cape
+* Temporary disable accessory models rendering on young pup.
+# Untamed dogs now forget their name.
+# Made dog hunger unit decrease speed configurable. Finally! 
++ Ōkami 大神 (2006): =============================
+Added the Kusa 5 skins (and the rest of the Canine Warriors)
+Kusa 5:
++ Ko
++ Chi
++ Tei
++ Rei
++ Shin
+
+The rest:
++ Hayabusa
++ Ume
++ Take
+==================================================
++ Doggy Talents Music Discs ======================
++ Two Bach recordings performed by Kimiko Ishizaka. Dog who is wearing Bach's wig
+have a 0.15% chance of dropping a disc in this set after killing an entity. 
+Both recordings are provided into the CC0 - Public Domain by their author.
+1. J.S Bach - Art Of Fugue: Contrapunctus XI [BWV 1080] [Kimiko Ishizaka]
+2. J.S Bach - WTC I: Fugue in C# Minor [BWV 849] [Kimiko Ishizaka]
+
++ One Okami recordings arranged by DashieDev and played by MuseScore. This disc
+is also included in the loot sets of dogs wearings Bach's Wig.
+1. Okami - "Ryoshima Coast" (Arr. DashieDev for Orgran)
+==================================================
+
+(1.18.2 only) 1.15.1 - 7th August 2023
+* Fix dog cannot be ridden.
+
+1.15.2 - 12th August 2023
+* HOTFIX: Dogs improper water jump.
+
+1.16.0 - 10th September 2023 
+狼才能次
+===========
+アニメションヾ(☆▽☆)!!!
++ **ANIMATIONS!!!** Your dogs are more delightful than ever! 
+They can now Beg, Lie down, or do a little Scratchie… and a lot more waiting for you to discover!
+===========
++ Added a cute doggy at the loading screen to wait along with you.
++ Added Kanji Background to indicate Dog’s level: 常 (Normal) 、高 (Super) 、特 (Master) 、神 (Dire). 
++ Added Kanji Background to defeated screen 敗 (Regular Incap) 、Burn/Lava (焼) 、溺 (Drown) 、毒 (Poison) 、餓 (Starve).
++ Option to attempt to disable third party nametag.
++ Option to use a provided copy for classical (For Fresh Animation users).
++ Added a Search bar for Skins tab.
++ Added a music disc: F. Chopin - Valse Du Petit Chien (Placeholder recording).
++ Added The 8 Satomi Power Orbs (recipe in wiki) works extremely well with Canine Tracker.
++ Added “Cheems” *(so long pal…rest in peace)*
++ Added Windie - Arcanine.
+===========
+- Remove the old DoggyTalent info screen.
+===========
+# Revamp the icons for adding, removing accessories, plus adding a warning icon for visually incompatible accessories.
+# non-Swimmer dogs tp-ing to the Ocean floor.
+# Remove the Orbs from the KUSA, instead making them as separate accessories.
+# Defeated Menu now show causes of death.
+# Feathered Mantle is now Yellow
+# Fix Dog Bed description.
+# Creative Tab icon is now a Doggy Charm.* Incap Texture fix 
+# Tartan Cape’s id: tantan_cape.
+===========
+* Baby Dogs can now wear Accessories!
+* Fixed: Chest Dogs occasionally freeze for no reason.
+* Fixed: Doggy Artifacts GUI made an oopsie.
+
+1.16.1 - 11th September 2023 
+# Make Skin search case insensitive
+* Fix DoggyToolsScreen
+* HOTFIX: Talents sync
+
+1.16.2 - 11th September 2023 
+# Clean up Legoshi, Death texture
+# Fix Death Model offset
+* Fix Doggy Tools Inventory Title still rendering.
+* HOTFIX: Incap dog cant die regardless if source is bypass vulnerability.
+* Fix VariantDogModel wrongly pick the tail for rendering. (Classy forgot-to-break-in-switch programming error)
++ Option to disable armor rendering
+* Fix Ammy Model
++ Handle case when hunger is disabled:
+You can continue to feed dog till dog health is full, you only have to wait till the saturation runs out
+Dog will not render the hunger number.
+# Stat units are human readable now.
+# Completely redo Dog Armor:
++ Added a cube to cover dog's bottom.
+* HOTFIX: Doggy Tools Inventory reset when a talent is added.
+
+1.16.3 - 17th September 2023
+* Fix missing rottweiler texture.
++ Added a name Randomizer to suggest a random name from resource-pack-based database to help the Owner
+choosing their dog's name.
++ EVERY PLANKS/WOOLS both from vanilla and modded are now Supported as Bed Variant by default.
+However, the textures only render if the woods/wool texture is placed in normal blocks style 
+(Having the file placing at the <namespace>:textures/block path and its name is the block's id)
+Otherwise, a nani texture is rendered instead, variants like that can be explicitly supported via resource packs
+by placing the textures representing the block at the <namespace>:textures/block folder of that resources packs
+and name the file the same as the block's id.
+* Faint Animation Ear Fix
+# Incapacitated dog no longer look at player.
+# Bed no longer breaks if the block underneath it is broken.
++ LOGS BED !!!!!
+# Missing bed variant text changes.
+==================================================
++ Added some INTERESTING Model:
++ Pochita from Chainsaw Man
++ Finally, DACHSUND !!!
++ actual PUGS !!!
++ BORZOI!!!
+==================================================
++ Added Gender Bone: You can now change your dog's gender.
+# Dogs can now be set to be Baby Wolf forever using Shrinking Mallet.
+* Fix Baby Dog's root pivot point.
+# Dog will show burn textures when is on fire while suffer from the fatal blow.

@@ -1,5 +1,6 @@
 package betterdogs_dtn;
-import org.joml.Vector3f;
+
+import com.mojang.math.Vector3f;
 
 import betterdogs_dtn.models.BDWolf;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
